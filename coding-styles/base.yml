@@ -1,0 +1,58 @@
+---
+# These rules are the baseline coding style that prevails in most JS projects in the wild. It's main
+# purpose is to serve as a baseline for all other coding style guidelines.
+rules:
+  # Require parens in arrow function arguments
+  # Arrow functions can omit parentheses when they have exactly one parameter. Since their main
+  # strength lies in being short and concise, parens around arguments should be omitted when they
+  # are not needed.
+  arrow-parens:
+    - 1
+    - as-needed
+
+  # Require space before/after arrow function's arrow
+  arrow-spacing:
+    - 1
+    - before: true
+      after: true
+
+  # Enforce spacing around the * in generator functions
+  # This rule enforces that the * is placed together with the `function` keyword. The reasoning is
+  # that a generator function is a special type of function, therefore it should come together with
+  # the `function` keyword. In contrast, it has nothing to do with the function's name, which may
+  # be missing completely.
+  generator-star-spacing:
+    - 1
+    - before: false
+      after: true
+
+  # Require Following Curly Brace Conventions
+  # This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
+  # statements are wrapped in curly braces.
+  curly:
+    - 2
+    # All block statements must be wrapped in curly braces
+    - all
+
+  # Enforce newline before and after dot
+  # This rule aims to enforce newline consistency in member expressions. This rule prevents the use
+  # of mixed newlines around the dot in a member expression.
+  dot-location:
+    - 2
+    # Require the dot to be placed together with the property identifier
+    - property
+
+  # Require Dot Notation
+  # This rule is aimed at maintaining code consistency and improving code readability by encouraging
+  # use of the dot notation style whenever possible.
+  dot-notation: 2
+
+  # Disallow return in else
+  # If an if block contains a return statement, the else block becomes unnecessary. Its contents can
+  # be placed outside of the block.
+  no-else-return: 1
+
+  # Disallow multiple spaces
+  # This rule aims to disallow multiple whitespace around logical expressions, conditional
+  # expressions, declarations, array elements, object properties, sequences and function parameters.
+  no-multi-spaces: 2

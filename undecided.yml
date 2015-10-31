@@ -1,0 +1,38 @@
+---
+# The following rules are available, but no consensus has been reached how to classify them or what
+# the default configuration should be.
+#
+# Note: Rules should be present here only temporarily - they should be moved to their respective
+# configuration files as soon as possible.
+rules:
+  # Require Object Literal Shorthand Syntax
+  # EcmaScript 6 provides a concise form for defining object literal methods and properties. This
+  # syntax can make defining complex object literals much cleaner.
+  object-shorthand: 0
+
+  # Suggest using Reflect methods where applicable
+  prefer-reflect: 0
+
+  # Disallow generator functions that do not have yield
+  require-yield: 0
+
+  # Disallow use of the void operator
+  no-void: 0
+
+  # Require Radix Parameter
+  # This rule is aimed at preventing the unintended conversion of a string to a number of a
+  # different base than intended.
+  radix: 0
+
+  # Require IIFEs to be Wrapped
+  wrap-iife: 0
+
+  # Limit Maximum Depth
+  # This rule aims to reduce the complexity of your code by allowing you to configure the maximum
+  # depth blocks can be nested in a function.
+  max-depth: 0
+
+  # Limit Maximum Number of Parameters
+  # Functions that take numerous parameters can be difficult to read and write because it requires
+  # the memorization of what each parameter is, its type, and the order they should appear in.
+  max-params: 0

@@ -1,0 +1,7 @@
+---
+# This file configures eslint to only allow JS language syntax known to be present in legacy
+# Node.js 0.12 and older.
+extends: ./known-errors.yml
+
+env:
+  node: true
