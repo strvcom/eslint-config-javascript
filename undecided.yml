@@ -36,3 +36,20 @@ rules:
   # Functions that take numerous parameters can be difficult to read and write because it requires
   # the memorization of what each parameter is, its type, and the order they should appear in.
   max-params: 0
+
+  # Require Function Expressions to have a Name
+  # If you provide the optional name for a function expression then you will get the name of the
+  # function expression in the stack trace.
+  func-names: 0
+
+  # Validate Indentation
+  # This rule is aimed to enforce consistent indentation style.
+  indent: 0
+
+  # Require or disallow spaces before/after unary operators
+  # This rule enforces consistency regarding the spaces after words unary operators and after/before
+  # nonwords unary operators.
+  space-unary-ops: 0
+
+  # Require Regex Literals to be Wrapped
+  wrap-regex: 0
