@@ -57,3 +57,36 @@ rules:
   # Disallow ++ and --
   # Unused, these operators are quite useful as long as whitespace is used responsibly around them.
   no-plusplus: 0
+
+  # Require IDs to match a pattern
+  # Unused, too restrictive.
+  id-match: 0
+
+  # Enforce JSX Quote Style
+  # Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
+  # exists.
+  jsx-quotes: 0
+
+  # Enforce empty lines around comments
+  # Unused, too restrictive.
+  lines-around-comment: 0
+
+  # Disallow continue
+  # Unused, continue seems to be quite useful.
+  no-continue: 0
+
+  # Disallow use of negated expressions in conditions
+  # Unused, too restrictive.
+  no-negated-condition: 0
+
+  # Disallow certain syntax
+  # Unused, no use case.
+  no-restricted-syntax: 0
+
+  # Disallow Ternary Operators
+  # You kidding me? Ternaries are great!
+  no-ternary: 0
+
+  # Variable Sorting
+  # Unused, too restrictive.
+  sort-vars: 0
