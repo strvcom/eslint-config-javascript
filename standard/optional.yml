@@ -1,5 +1,10 @@
 ---
 rules:
+  # Require JSDoc comment
+  # This rule generates warnings for nodes that do not have JSDoc comments when they should.
+  # Currently only function declarations are checked.
+  require-jsdoc: 1
+
   # Validates JSDoc comments are syntactically correct
   # This rule aims to prevent invalid and incomplete JSDoc comments.
   valid-jsdoc:

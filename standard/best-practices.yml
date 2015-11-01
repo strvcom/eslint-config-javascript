@@ -167,3 +167,14 @@ rules:
   # Yoda conditions are so named because the literal value of the condition comes first while the
   # variable comes second ("red" === color).
   yoda: 2
+
+  # Disallow creation of dense arrays using the Array constructor
+  # Use of the Array constructor to construct a new array is generally discouraged in favour of
+  # array literal notation because of the single-argument pitfall.
+  no-array-constructor: 1
+
+  # Disallow the use of the Object constructor
+  # While there are no performance differences between the two approaches, the byte savings and
+  # conciseness of the object literal form is what has made it the de facto way of creating new
+  # objects.
+  no-new-object: 1
