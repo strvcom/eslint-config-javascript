@@ -2,6 +2,12 @@
 # These rules are the baseline coding style that prevails in most JS projects in the wild. It's main
 # purpose is to serve as a baseline for all other coding style guidelines.
 rules:
+  # Require braces in arrow function body
+  # This rule can enforce the use of braces around arrow function body.
+  arrow-body-style:
+    - 1
+    - as-needed
+
   # Require parens in arrow function arguments
   # Arrow functions can omit parentheses when they have exactly one parameter. Since their main
   # strength lies in being short and concise, parens around arguments should be omitted when they
@@ -30,7 +36,7 @@ rules:
   # This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
   # statements are wrapped in curly braces.
   curly:
-    - 2
+    - 1
     # All block statements must be wrapped in curly braces
     - all
 
@@ -38,14 +44,14 @@ rules:
   # This rule aims to enforce newline consistency in member expressions. This rule prevents the use
   # of mixed newlines around the dot in a member expression.
   dot-location:
-    - 2
+    - 1
     # Require the dot to be placed together with the property identifier
     - property
 
   # Require Dot Notation
   # This rule is aimed at maintaining code consistency and improving code readability by encouraging
   # use of the dot notation style whenever possible.
-  dot-notation: 2
+  dot-notation: 1
 
   # Disallow return in else
   # If an if block contains a return statement, the else block becomes unnecessary. Its contents can
@@ -55,4 +61,288 @@ rules:
   # Disallow multiple spaces
   # This rule aims to disallow multiple whitespace around logical expressions, conditional
   # expressions, declarations, array elements, object properties, sequences and function parameters.
-  no-multi-spaces: 2
+  no-multi-spaces: 1
+
+  # Disallow or enforce spaces inside of brackets
+  array-bracket-spacing:
+    - 1
+    # Disallow
+    - never
+
+  # Disallow or enforce spaces inside of single line blocks
+  block-spacing:
+    - 1
+    # Enforce
+    - always
+
+  # Require Brace Style
+  # The one true brace style is one of the most common brace styles in JavaScript, in which the
+  # opening curly brace of a block is placed on the same line as its corresponding statement or
+  # declaration.
+  brace-style:
+    - 1
+    - 1tbs
+    - allowSingleLine: true
+
+  # Require Camelcase
+  # This rule looks for any underscores (_) located within the source code. It ignores leading and
+  # trailing underscores and only checks those in the middle of a variable name. If ESLint decides
+  # that the variable is a constant (all uppercase), then no warning will be thrown.
+  camelcase:
+    - 1
+    - properties: always
+
+  # Enforces spacing around commas
+  # This rule aims to enforce spacing around a comma.
+  comma-spacing:
+    - 1
+    # A space must be only after comma, i.e. `var a, b`
+    - before: false
+      after: true
+
+  # Comma style
+  # This rule is aimed at enforcing a particular comma style in JavaScript.
+  comma-style:
+    - 1
+    # Commas should be placed at the end of line, not at the beginning
+    - last
+
+  # Disallow or enforce spaces inside of computed properties
+  # This rule aims to maintain consistency around the spacing inside of computed properties.
+  computed-property-spacing:
+    - 1
+    # No spaces allowed
+    - never
+
+  # Require Consistent This
+  # This rule designates a variable as the chosen alias for `this`.
+  consistent-this:
+    - 1
+    - self
+
+  # Require file to end with single newline
+  # Benefits of trailing newlines include the ability to concatenate or append to files as well as
+  # output files to the terminal without interfering with shell prompts.
+  eol-last:
+    - 1
+    - unix
+
+  # Enforce Function Style
+  # Due to these different behaviors, it is common to have guidelines as to which style of function
+  # should be used. There is really no correct or incorrect choice here, it is just a preference.
+  # A good reason to use function declarations is that the function names then appear in stack
+  # traces which help during debugging.
+  func-style:
+    - 1
+    - declaration
+    # Allow arrow functions to be saved into variables
+    - allowArrowFunctions: true
+
+  # Limit minimum and maximum length for identifiers
+  # This rule is aimed at increasing code readability and maintainability by enforcing an identifier
+  # length convention.
+  id-length:
+    - 1
+    - min: 2
+      max: 25
+      exceptions:
+        - i
+        - _
+
+  # Enforce Property Spacing
+  # This rule will warn when spacing in properties does not match the specified options. In the case
+  # of long lines, it is acceptable to add a new line wherever whitespace is allowed.
+  key-spacing:
+    - 1
+    - beforeColon: false
+      afterColon: true
+      mode: strict
+
+  # Disallow mixing CRLF and LF linebreaks
+  # This rule aims to ensure having consistent line endings independent of operating system.
+  linebreak-style:
+    - 2
+    - unix
+
+  # Set Maximum Depth of Nested Callbacks
+  # This rule is aimed at increasing code clarity by discouraging deeply nesting callbacks.
+  max-nested-callbacks:
+    - 1
+    - 4
+
+  # Require Constructors to Use Initial Caps
+  # This rule is aimed at helping to distinguish regular functions from constructor functions. As
+  # such, it warns whenever it sees new followed by an identifier that isn't capitalized or whenever
+  # it sees capitalized function called directly without new operator.
+  new-cap:
+    - 1
+    - newIsCap: true
+      capIsNew: true
+
+  # Require Parens for Constructors
+  # This rule is aimed at highlighting a lack of convention and increasing code clarity by requiring
+  # the use of parentheses when invoking a constructor via the new keyword.
+  new-parens: 1
+
+  # Require or disallow an empty newline after variable declarations
+  # This rule enforces a coding style where empty newlines are required after var, let, or const
+  # statements to achieve a consistent coding style across the project.
+  newline-after-var: 1
+
+  # Disallows comments after code
+  # This rule will disallow comments on the same line as code.
+  no-inline-comments: 1
+
+  # Disallow if as the Only Statement in an else Block
+  # This rule warns when an if statement's else block contains only another if statement.
+  no-lonely-if: 1
+
+  # Disallow mixed spaces and tabs for indentation
+  # The no-mixed-spaces-and-tabs rule is aimed at flagging any lines of code that are indented with
+  # a mixture of tabs and spaces.
+  no-mixed-spaces-and-tabs: 1
+
+  # Disallows multiple blank lines
+  # Whitespace is useful for separating logical sections of code, but excess whitespace takes up
+  # more of the screen.
+  no-multiple-empty-lines:
+    - 1
+    - max: 2
+      maxEOF: 1
+
+  # Disallow Nested Ternaries
+  # The no-nested-ternary rule aims to increase the clarity and readability of code by disallowing
+  # the use of nested ternary expressions.
+  no-nested-ternary: 2
+
+  # Disallow Spaces in Function Calls
+  # While it's possible to have whitespace between the name of a function and the parentheses that
+  # execute it, such patterns tend to look more like errors.
+  no-spaced-func: 1
+
+  # Disallow trailing spaces at the end of lines
+  # Sometimes in the course of editing files, you can end up with extra whitespace at the end of
+  # lines. These whitespace differences can be picked up by source control systems and flagged as
+  # diffs, causing frustration for developers. While this extra whitespace causes no functional
+  # issues, many code conventions require that trailing spaces be removed before checkin.
+  no-trailing-spaces: 1
+
+  # Disallow Dangling Underscores in Identifiers
+  no-underscore-dangle: 1
+
+  # Disallow conditional expressions that can be expressed with simpler constructs
+  no-unneeded-ternary:
+    - 1
+    # Use || instead of ternary in default assignments
+    - defaultAssignment: false
+
+  # Enforce spaces inside of curly braces in objects
+  # This rule aims to maintain consistency around the spacing inside of object literals. It also
+  # applies to EcmaScript 6 destructured assignment and import/export specifiers.
+  object-curly-spacing:
+    - 1
+    - always
+
+  # Require or Disallow One Variable Declaration per Scope
+  # This rule is aimed at enforcing the use of one variable declaration per function (for var) and
+  # multiple variable declaration per block (for let and const) scope.
+  one-var:
+    - 1
+    - var: always
+      let: never
+      const: never
+
+  # Operator Assignment Shorthand
+  # This rule enforces use of the shorthand assignment operators by requiring them where possible.
+  operator-assignment:
+    - 1
+    - always
+
+  # Operator Linebreak
+  # When a statement is too long to fit on a single line, line breaks are generally inserted next to
+  # the operators separating expressions. This rule is aimed at enforcing a particular operator line
+  # break style.
+  operator-linebreak:
+    - 1
+    - after
+    - overrides:
+        # For multiline ternaries, put the `:` on the next line (perhaps align with `?`)
+        ':': before
+
+  # Enforce padding within blocks
+  # This rule enforces consistent padding within blocks.
+  padded-blocks:
+    - 1
+    - never
+
+  # Quoting Style for Property Names
+  # This rule aims to enforce use of quotes in property names.
+  quote-props:
+    - 1
+    # Require quotes where necessary, disallow where unnecessary
+    - as-needed
+
+  # Enforce Quote Style
+  # This rule is aimed at ensuring consistency of string quotes.
+  quotes:
+    - 1
+    - single
+    - avoid-escape
+
+  # Enforce spacing before and after semicolons
+  semi-spacing:
+    - 1
+    - before: false
+      after: true
+
+  # Enforce or Disallow Semicolons
+  # This rule is aimed at ensuring consistent use of semicolons.
+  semi:
+    - 1
+    - never
+
+  # Require or disallow spaces following keywords
+  # This rule will enforce consistency of spacing after the keywords `if`, `else`, `for`, `while`,
+  # `do`, `switch`, `try`, `catch`, `finally`, and `with`.
+  space-after-keywords:
+    - 1
+    - always
+
+  # Require Or Disallow Space Before Blocks
+  # This rule will enforce consistency of spacing before blocks.
+  space-before-blocks:
+    - 1
+    - always
+
+  # Require or disallow a space before function parenthesis
+  space-before-function-paren:
+    - 1
+    - always
+
+  # Require or disallow spaces before keywords
+  # This rule will enforce consistency of spacing before the keywords `if`, `else`, `for`, `while`,
+  # `do`, `switch`, `throw`, `try`, `catch`, `finally`, `with`, `break`, `continue`, `return`,
+  # `function`, `yield`, `class` and variable declarations (`let`, `const`, `var`) and label
+  # statements.
+  space-before-keywords:
+    - 1
+    - always
+
+  # Disallow or enforce spaces inside of parentheses
+  # This rule will enforce consistency of spacing directly inside of parentheses, by disallowing or
+  # requiring one or more spaces to the right of ( and to the left of ). In either case, () will
+  # still be allowed.
+  space-in-parens:
+    - 1
+    - never
+
+  # Require Spaces Around Infix Operators
+  # This rule is aimed at ensuring there are spaces around infix operators.
+  space-infix-ops: 1
+
+  # Require spaces following `return`, `throw`, and `case`
+  space-return-throw-case: 1
+
+  # Require or disallow a whitespace beginning a comment
+  # This rule will enforce consistency of spacing after the start of a comment // or /*.
+  spaced-comment: 1
