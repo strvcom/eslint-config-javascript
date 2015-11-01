@@ -21,6 +21,12 @@ rules:
   # exists.
   no-alert: 0
 
+  # Disallow arrow functions where a condition is expected
+  # Arrow functions (=>) are similar in syntax to some comparison operators (>, <, <=, and >=). This
+  # rule warns against using the arrow function syntax in places where a condition is expected.
+  # Unused, it seems to be flagging good-looking code.
+  no-arrow-condition: 0
+
   # Disallow Regexs That Look Like Division
   # Unused, `return /=foo/` does not really look like a division to me.
   no-div-regex: 0

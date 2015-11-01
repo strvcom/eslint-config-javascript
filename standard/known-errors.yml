@@ -127,11 +127,6 @@ rules:
   # This rule is aimed to flag invalid/missing super() calls.
   constructor-super: 2
 
-  # Disallow arrow functions where a condition is expected
-  # Arrow functions (=>) are similar in syntax to some comparison operators (>, <, <=, and >=). This
-  # rule warns against using the arrow function syntax in places where a condition is expected.
-  no-arrow-condition: 2
-
   # Disallow modifying variables of class declarations
   # This rule is aimed to flag modifying variables of class declarations.
   no-class-assign: 2
