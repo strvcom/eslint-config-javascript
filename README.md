@@ -43,16 +43,29 @@ These rules are intended to be used independently on platform.
 
 You will need to put these files into your project somehow. Here are some options:
 
-- Copy/paste these files into a folder within your project
-- Add this repository as a git submodule (preferred)
+- Copy/paste these files into a folder within your project (**not recommended**)
+- Add this repository as a git submodule (**preferred**)
+- Add this repository as `npm` dev dependency (see [here](https://docs.npmjs.com/cli/install))
 
 Everyone knows how to copy/paste stuff. Let's look at the second option:
 
 Within your project, do:
 
-`git submodule add git@github.com:strvcom/js-coding-standards.git [destination]`
+`git submodule add https://github.com/strvcom/js-coding-standards.git [destination-dir]`
 
-Where `destination` is an optional folder name of your choice where to put the files (defaults to this project's name).
+Where `destination-dir` is an optional folder name of your choice where to put the files (defaults to this project's name).
+
+When you later want to update the ruleset to a newer git revision, `cd` into the submodule's directory and pull, just like any other git repo:
+
+```sh
+# Assuming this is the folder where you decided to put the submodule
+cd js-coding-standards
+git pull
+# Don't forget to commit this "update" in your main project!
+cd ..
+git add js-coding-standards
+git commit
+```
 
 ### Configuration
 
