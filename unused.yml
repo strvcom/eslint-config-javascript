@@ -96,3 +96,9 @@ rules:
   # Variable Sorting
   # Unused, too restrictive.
   sort-vars: 0
+
+# Disallow Magic Numbers
+# Unused, too restrictive. It was flagging i.e. `array.indexOf('a') !== -1` (is 'a' in this array?)
+# as errors. Also, status code checks in HTTP responses were being reported as issues.
+# While I generally like the idea, current implementation simply won't fly well.
+no-magic-numbers: 0
