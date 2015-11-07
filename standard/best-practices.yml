@@ -6,6 +6,13 @@ rules:
     - 2
     - never
 
+  # Disallow lexical declarations in case/default clauses
+  # This rule disallows lexical declarations (let, const, function and class) in case/default
+  # clauses. The reason is that the lexical declaration is visible in the entire switch block but it
+  # only gets initialized when it is assigned, which will only happen if the case where it is
+  # defined is reached.
+  no-case-declarations: 1
+
   # Disallow Use of console
   # In general, you should use a logging library which offers more flexibility in terms of log level
   # configuration and log destinations (i.e. sending logs to external storage/monitoring service),
