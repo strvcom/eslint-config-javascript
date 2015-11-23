@@ -2,6 +2,8 @@
 
 > Write bulletproof JavaScript like a pro!
 
+**ESLint version required:** `>=1.9.0`
+
 ## About
 
 This repository contains various configuration files for the awesome JavaScript linter, [ESLint][eslint-url]. The configuration files are purposefully separated into various categories to allow their composition according to developers' preferences or requirements. It should also make adoption of ESlint across existing codebases easier.
