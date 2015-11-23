@@ -73,6 +73,8 @@ git commit
 
 Once you have the rules in place, you must create your own *.eslintrc* configuration file in your project's root and include those configuration files that you want to use for this project. See the [examples](examples) directory for some hints.
 
+> **Note:** Starting from ESLint 1.10, using extensionless *.eslintrc* is **deprecated** - you should always create this file with a supported file extension (`.json`, `.js`, `.yml`, `.yaml`). See ESLint's [release notes for 1.10][eslint-release-1-10] for more information.
+
 ## Status
 
 - **standard:** Feedback required
@@ -88,3 +90,4 @@ This project is supposed to be a collaborative effort of the whole company, ther
 
 
 [eslint-url]: http://eslint.org
+[eslint-release-1-10]: http://eslint.org/blog/2015/11/eslint-v1.10.0-released/#configuration-file-formats
