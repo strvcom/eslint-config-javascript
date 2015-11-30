@@ -243,6 +243,13 @@ rules:
     - 1
     - always
 
+  # Require Object Literal Shorthand Syntax
+  # EcmaScript 6 provides a concise form for defining object literal methods and properties. This
+  # syntax can make defining complex object literals much cleaner.
+  object-shorthand:
+    - 1
+    - always
+
   # Require or Disallow One Variable Declaration per Scope
   # This rule is aimed at enforcing the use of one variable declaration per function (for var) and
   # multiple variable declaration per block (for let and const) scope.
