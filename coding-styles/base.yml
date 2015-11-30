@@ -317,7 +317,7 @@ rules:
   # Require or disallow a space before function parenthesis
   space-before-function-paren:
     - 1
-    - always
+    - never
 
   # Require or disallow spaces before keywords
   # This rule will enforce consistency of spacing before the keywords `if`, `else`, `for`, `while`,
