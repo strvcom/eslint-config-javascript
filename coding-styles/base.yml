@@ -274,6 +274,7 @@ rules:
     - after
     - overrides:
         # For multiline ternaries, put the `:` on the next line (perhaps align with `?`)
+        '?': before
         ':': before
 
   # Enforce padding within blocks
