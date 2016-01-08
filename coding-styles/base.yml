@@ -271,11 +271,7 @@ rules:
   # break style.
   operator-linebreak:
     - 1
-    - after
-    - overrides:
-        # For multiline ternaries, put the `:` on the next line (perhaps align with `?`)
-        '?': before
-        ':': before
+    - before
 
   # Enforce padding within blocks
   # This rule enforces consistent padding within blocks.
