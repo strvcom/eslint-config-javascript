@@ -305,13 +305,6 @@ rules:
     - 1
     - never
 
-  # Require or disallow spaces following keywords
-  # This rule will enforce consistency of spacing after the keywords `if`, `else`, `for`, `while`,
-  # `do`, `switch`, `try`, `catch`, `finally`, and `with`.
-  space-after-keywords:
-    - 1
-    - always
-
   # Require Or Disallow Space Before Blocks
   # This rule will enforce consistency of spacing before blocks.
   space-before-blocks:
@@ -322,15 +315,6 @@ rules:
   space-before-function-paren:
     - 1
     - never
-
-  # Require or disallow spaces before keywords
-  # This rule will enforce consistency of spacing before the keywords `if`, `else`, `for`, `while`,
-  # `do`, `switch`, `throw`, `try`, `catch`, `finally`, `with`, `break`, `continue`, `return`,
-  # `function`, `yield`, `class` and variable declarations (`let`, `const`, `var`) and label
-  # statements.
-  space-before-keywords:
-    - 1
-    - always
 
   # Disallow or enforce spaces inside of parentheses
   # This rule will enforce consistency of spacing directly inside of parentheses, by disallowing or
@@ -344,8 +328,11 @@ rules:
   # This rule is aimed at ensuring there are spaces around infix operators.
   space-infix-ops: 1
 
-  # Require spaces following `return`, `throw`, and `case`
-  space-return-throw-case: 1
+  # This rule will enforce consistency of spacing around keywords and keyword-like tokens
+  keyword-spacing:
+    - 1
+    - before: true
+      after: true
 
   # Require or disallow a whitespace beginning a comment
   # This rule will enforce consistency of spacing after the start of a comment // or /*.

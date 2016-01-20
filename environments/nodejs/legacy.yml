@@ -5,3 +5,6 @@ extends: ./known-errors.yml
 
 env:
   node: true
+
+parserOptions:
+  ecmaVersion: 5

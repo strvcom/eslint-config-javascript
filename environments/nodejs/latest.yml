@@ -1,25 +1,9 @@
 ---
-# This file configures allowed JS language syntax for the latest Node.js release and disables
-# ES 2015 features known to be missing / not implemented yet.
-#
-# You can override some features back to enabled if you use a transpiler like Babel which provides
-# this functionality. For Babel specifically, see:
-# https://www.npmjs.com/package/babel-eslint
+# This file configures ESLint to work with the newest ES 2015 syntax and features
 extends: ./known-errors.yml
 
 env:
   node: true
-  # Enable everything - we will individually disable unsupported features below
-  es6: true
 
-ecmaFeatures:
-  # Front-end specific
-  jsx: false
-  # These are not implemented / behind flag - enable with caution (or use a transpiler)
-  defaultParams: false
-  destructuring: false
-  modules: false
-  regexUFlag: false
-  regexYFlag: false
-  restParams: false
-  experimentalObjectRestSpread: false
+parserOptions:
+  ecmaVersion: 6
