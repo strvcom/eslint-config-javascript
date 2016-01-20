@@ -4,6 +4,7 @@ extends: ./known-errors.yml
 
 env:
   node: true
+  es6: true
 
 parserOptions:
   ecmaVersion: 6
