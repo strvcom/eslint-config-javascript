@@ -1,0 +1,31 @@
+'use strict'
+
+module.exports = {
+  // This file configures ESLint to work with the newest ES 2015 syntax and features
+  extends: 'javascript/environments/nodejs/known-errors',
+
+  env: {
+    node: true,
+    es6: true
+  },
+
+  parserOptions: {
+    ecmaVersion: 6
+  },
+
+  rules: {
+    // ESLint no longer supports disabling some still unsuported ES 2015 features, so we need to use
+    // this rule to disable that syntax
+    'no-restricted-syntax': [
+      2,
+      // Rest parameters (not to be confused with rest arguments)
+      'RestElement',
+      // Default function parameters
+      'AssignmentPattern',
+      // Destructuring assignment
+      'ObjectPattern',
+      // Experimental object/rest spread
+      'ExperimentalRestProperty'
+    ]
+  }
+}
