@@ -2,7 +2,7 @@
 
 > Write bulletproof JavaScript like a pro!
 
-**ESLint version required:** `>=2.0.0`
+**ESLint version required:** `>=1.10.0`
 
 ## About
 
