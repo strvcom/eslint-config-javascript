@@ -71,6 +71,11 @@ module.exports = {
     // Unused, these operators are quite useful as long as whitespace is used responsibly around them.
     'no-plusplus': 0,
 
+    // Disallow use of the void operator
+    // void is quite useful with IIFEs and for discarding return values when using return for
+    // short-circuiting.
+    'no-void': 0,
+
     // Require IDs to match a pattern
     // Unused, too restrictive.
     'id-match': 0,
@@ -92,10 +97,6 @@ module.exports = {
     // Unused, too restrictive.
     'no-negated-condition': 0,
 
-    // Disallow certain syntax
-    // Unused, no use case.
-    'no-restricted-syntax': 0,
-
     // Disallow Ternary Operators
     // You kidding me? Ternaries are great!
     'no-ternary': 0,
@@ -108,6 +109,17 @@ module.exports = {
     // Unused, too restrictive. It was flagging i.e. `array.indexOf('a') !== -1` (is 'a' in this array?)
     // as errors. Also, status code checks in HTTP responses were being reported as issues.
     // While I generally like the idea, current implementation simply won't fly well.
-    'no-magic-numbers': 0
+    'no-magic-numbers': 0,
+
+    // Require Radix Parameter
+    // This rule is aimed at preventing the unintended conversion of a string to a number of a
+    // different base than intended.
+    // Unused, too restrictive. Front-end team might have some interest in this as the whole radix
+    // issue started with different browsers using different radix for different numbers.
+    'radix': 0,
+
+    // Require Regex Literals to be Wrapped
+    // Unused, too restrictive.
+    'wrap-regex': 0
   }
 }

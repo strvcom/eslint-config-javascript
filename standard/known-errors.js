@@ -260,6 +260,9 @@ module.exports = {
     'no-unused-expressions': [2, {
       allowShortCircuit: true,
       allowTernary: true
-    }]
+    }],
+
+    // Disallow generator functions that do not have yield
+    'require-yield': 2
   }
 }

@@ -14,6 +14,13 @@ module.exports = {
     // Never allow trailing commas
     'comma-dangle': [2, 'never'],
 
+    // Require Function Expressions to have a Name
+    // If you provide the optional name for a function expression then you will get the name of the
+    // function expression in the stack trace.
+    // If you are tempted to create anonymous function expression, consider using arrow function
+    // instead.
+    'func-names': 1,
+
     // Disallow lexical declarations in case/default clauses
     // This rule disallows lexical declarations (let, const, function and class) in case/default
     // clauses. The reason is that the lexical declaration is visible in the entire switch block but it
@@ -170,6 +177,9 @@ module.exports = {
     // current scope, making it impossible to tell what a variable inside the block actually refers to.
     // Additionally, the with statement cannot be used in strict mode.
     'no-with': 2,
+
+    // Suggest using Reflect methods where applicable
+    'prefer-reflect': 1,
 
     // Require Variable Declarations to be at the top of their scope
     // This rule aims to keep all variable declarations in the leading series of statements. Allowing

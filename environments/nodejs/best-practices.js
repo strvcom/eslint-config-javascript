@@ -51,6 +51,10 @@ module.exports = {
     // modified after the initial assignment. This helps v8 to better optimise code at runtime.
     'prefer-const': 1,
 
+    // Suggest using Reflect methods where applicable
+    // Reflection API is still unsupported in Node.js (as of v5.5)
+    'prefer-reflect': 0,
+
     // Suggest using the spread operator instead of .apply()
     // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
     // spread operator.

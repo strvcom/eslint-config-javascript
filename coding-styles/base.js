@@ -138,6 +138,12 @@ module.exports = {
       ]
     }],
 
+    // Validate Indentation
+    // This rule is aimed to enforce consistent indentation style.
+    'indent': [1, 2, {
+      SwitchCase: 1
+    }],
+
     // Enforce Property Spacing
     // This rule will warn when spacing in properties does not match the specified options. In the case
     // of long lines, it is acceptable to add a new line wherever whitespace is allowed.
@@ -145,6 +151,12 @@ module.exports = {
       beforeColon: false,
       afterColon: true,
       mode: 'strict'
+    }],
+
+    // This rule will enforce consistency of spacing around keywords and keyword-like tokens
+    'keyword-spacing': [1, {
+      before: true,
+      after: true
     }],
 
     // Disallow mixing CRLF and LF linebreaks
@@ -290,14 +302,19 @@ module.exports = {
     // This rule is aimed at ensuring there are spaces around infix operators.
     'space-infix-ops': 1,
 
-    // This rule will enforce consistency of spacing around keywords and keyword-like tokens
-    'keyword-spacing': [1, {
-      before: true,
-      after: true
+    // Require or disallow spaces before/after unary operators
+    // This rule enforces consistency regarding the spaces after words unary operators and after/before
+    // nonwords unary operators.
+    'space-unary-ops': [1, {
+      words: true,
+      nonwords: false
     }],
 
     // Require or disallow a whitespace beginning a comment
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
-    'spaced-comment': 1
+    'spaced-comment': 1,
+
+    // Require IIFEs to be Wrapped
+    'wrap-iife': [1, 'inside']
   }
 }
