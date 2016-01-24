@@ -59,4 +59,3 @@ Once the ruleset is installed, you must create your own *.eslintrc* configuratio
 This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](LICENSE) file for more information.
 
 [eslint-url]: http://eslint.org
-[eslint-release-1-10]: http://eslint.org/blog/2015/11/eslint-v1.10.0-released/#configuration-file-formats
