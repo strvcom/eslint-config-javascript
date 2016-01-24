@@ -17,23 +17,16 @@ module.exports = {
     es6: true
   },
 
-  parserOptions: {
-    ecmaVersion: 6
-  },
-
-  rules: {
-    // ESLint no longer supports disabling some still unsuported ES 2015 features, so we need to use
-    // this rule to disable that syntax
-    'no-restricted-syntax': [
-      2,
-      // Rest parameters (not to be confused with rest arguments)
-      'RestElement',
-      // Default function parameters
-      'AssignmentPattern',
-      // Destructuring assignment
-      'ObjectPattern',
-      // Experimental object/rest spread
-      'ExperimentalRestProperty'
-    ]
+  ecmaFeatures: {
+    // Front-end specific
+    jsx: false,
+    // These are not implemented / behind flag - enable with caution (or use a transpiler)
+    defaultParams: false,
+    destructuring: false,
+    modules: false,
+    regexUFlag: false,
+    regexYFlag: false,
+    restParams: false,
+    experimentalObjectRestSpread: false
   }
 }

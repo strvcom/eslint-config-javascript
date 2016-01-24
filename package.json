@@ -15,9 +15,9 @@
     "eslintconfig"
   ],
   "license": "BSD-3-Clause",
-  "main": "environments/nodejs/known-errors",
+  "main": "environments/nodejs/latest",
   "peerDependencies": {
-    "eslint": "^2.0.0-beta.2"
+    "eslint": "^1.10.0"
   },
   "repository": {
     "type": "git",

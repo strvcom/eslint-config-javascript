@@ -153,12 +153,6 @@ module.exports = {
       mode: 'strict'
     }],
 
-    // This rule will enforce consistency of spacing around keywords and keyword-like tokens
-    'keyword-spacing': [1, {
-      before: true,
-      after: true
-    }],
-
     // Disallow mixing CRLF and LF linebreaks
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': [2, 'unix'],
@@ -285,12 +279,24 @@ module.exports = {
     // This rule is aimed at ensuring consistent use of semicolons.
     'semi': [1, 'never'],
 
+    // Require or disallow spaces following keywords
+    // This rule will enforce consistency of spacing after the keywords `if`, `else`, `for`, `while`,
+    // `do`, `switch`, `try`, `catch`, `finally`, and `with`.
+    'space-after-keywords': [1, 'always'],
+
     // Require Or Disallow Space Before Blocks
     // This rule will enforce consistency of spacing before blocks.
     'space-before-blocks': [1, 'always'],
 
     // Require or disallow a space before function parenthesis
     'space-before-function-paren': [1, 'never'],
+
+    // Require or disallow spaces before keywords
+    // This rule will enforce consistency of spacing before the keywords `if`, `else`, `for`, `while`,
+    // `do`, `switch`, `throw`, `try`, `catch`, `finally`, `with`, `break`, `continue`, `return`,
+    // `function`, `yield`, `class` and variable declarations (`let`, `const`, `var`) and label
+    // statements.
+    'space-before-keywords': [1, 'always'],
 
     // Disallow or enforce spaces inside of parentheses
     // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing or
