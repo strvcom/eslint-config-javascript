@@ -1,5 +1,5 @@
 'use strict'
 
 module.exports = {
-  extends: 'javascript/standard/optional.js'
+  extends: 'javascript/standard/optional'
 }
