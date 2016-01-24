@@ -9,19 +9,7 @@
 'use strict'
 
 module.exports = {
-  'rules': {
-    // Enforce/Disallow Variable Initializations
-    // Unused, too restrictive. On frequent occasions, you need to declare a property uninitialised and
-    // give it value later.
-    'init-declarations': 0,
-
-    // Disallow Shadowing of Variables Inside of catch
-    // In IE 8 and earlier, the catch clause parameter can overwrite the value of a variable in the
-    // outer scope, if that variable has the same name as the catch clause parameter.
-    // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
-    // exists.
-    'no-catch-shadow': 0,
-
+  rules: {
     // Treat var as Block Scoped
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,
@@ -63,10 +51,6 @@ module.exports = {
     // exists.
     'no-script-url': 0,
 
-    // Limit Maximum Number of Statements
-    // Unused, too restrictive.
-    'max-statements': 0,
-
     // Disallow ++ and --
     // Unused, these operators are quite useful as long as whitespace is used responsibly around them.
     'no-plusplus': 0,
@@ -93,33 +77,8 @@ module.exports = {
     // Unused, continue seems to be quite useful.
     'no-continue': 0,
 
-    // Disallow use of negated expressions in conditions
-    // Unused, too restrictive.
-    'no-negated-condition': 0,
-
     // Disallow Ternary Operators
     // You kidding me? Ternaries are great!
-    'no-ternary': 0,
-
-    // Variable Sorting
-    // Unused, too restrictive.
-    'sort-vars': 0,
-
-    // Disallow Magic Numbers
-    // Unused, too restrictive. It was flagging i.e. `array.indexOf('a') !== -1` (is 'a' in this array?)
-    // as errors. Also, status code checks in HTTP responses were being reported as issues.
-    // While I generally like the idea, current implementation simply won't fly well.
-    'no-magic-numbers': 0,
-
-    // Require Radix Parameter
-    // This rule is aimed at preventing the unintended conversion of a string to a number of a
-    // different base than intended.
-    // Unused, too restrictive. Front-end team might have some interest in this as the whole radix
-    // issue started with different browsers using different radix for different numbers.
-    'radix': 0,
-
-    // Require Regex Literals to be Wrapped
-    // Unused, too restrictive.
-    'wrap-regex': 0
+    'no-ternary': 0
   }
 }
