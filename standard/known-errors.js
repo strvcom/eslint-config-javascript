@@ -60,6 +60,10 @@ module.exports = {
     // point on.
     'no-ex-assign': 2,
 
+    // Disallow Unnecessary Labels
+    // If a loop contains no nested loops or switches, labeling the loop is unnecessary.
+    'no-extra-label': 2,
+
     // Disallow Extra Semicolons
     // JavaScript will more or less let you put semicolons after any statement without complaining.
     // Typos and misunderstandings about where semicolons are required can lead to extra semicolons
@@ -95,6 +99,10 @@ module.exports = {
     // Disallow negated left operand of `in` operator
     'no-negated-in-lhs': 2,
 
+    // Disallow Symbol Constructor
+    // This rule is aimed at preventing the accidental calling of Symbol with the `new` operator.
+    'no-new-symbol': 2,
+
     // Disallow Global Object Function Calls
     // This rule is aimed at preventing the accidental calling of global objects as functions.
     'no-obj-calls': 2,
@@ -102,6 +110,11 @@ module.exports = {
     // Disallow Spaces in Regular Expressions
     // This rule aims to eliminate errors due to multiple spaces inside of a regular expression.
     'no-regex-spaces': 2,
+
+    // Disallow Self Assignment
+    // Self assignments have no effect, so probably those are an error due to incomplete
+    // refactoring. Those indicate that what you should do is still remaining.
+    'no-self-assign': 2,
 
     // Disallow Sparse Arrays
     // Sparse arrays contain empty slots, most frequently due to multiple commas being used in an
@@ -118,6 +131,21 @@ module.exports = {
     // This rule is aimed at detecting unreachable code. It produces an error when a statements in a
     // block exist after a `return`, `throw`, `break`, or `continue` statement.
     'no-unreachable': 2,
+
+    // Disallow Unused Labels
+    // Labels that are declared and not used anywhere in the code are most likely an error due to
+    // incomplete refactoring.
+    'no-unused-labels': 2,
+
+    // Disallow unnecessary constructor
+    // ES2015 provides a default class constructor if one is not specified. As such, it is
+    // unnecessary to provide an empty constructor or one that simply delegates into its parent
+    // class.
+    'no-useless-constructor': 2,
+
+    // Suggest using the rest parameters instead of `arguments`
+    // This rule is aimed to flag usage of `arguments` variables.
+    'prefer-rest-params': 2,
 
     // Require isNaN()
     // This rule is aimed at eliminating potential errors as the result of comparing against the
@@ -206,9 +234,11 @@ module.exports = {
     // ECMAScript 5 while in strict mode.
     'no-caller': 2,
 
-    // No empty labels
-    // This error occurs when a label is used to mark a statement that is not an iteration or switch.
-    'no-empty-label': 2,
+    // Disallow Labeled Statements
+    // This rule aims to eliminate the use of labeled statements in JavaScript. It will warn
+    // whenever a labeled statement is encountered and whenever break or continue are used with a
+    // label.
+    'no-labels': 2,
 
     // Disallow empty destructuring patterns
     // This rule aims to flag any empty patterns in destructured objects and arrays.

@@ -186,6 +186,13 @@ module.exports = {
     // statements to achieve a consistent coding style across the project.
     'newline-after-var': 1,
 
+    // Newline Per Chained Method Call
+    // This rule checks and reports the chained calls if there are no new lines after each call or
+    // deep member access.
+    'newline-per-chained-call': [1, {
+      ignoreChainWithDepth: 3
+    }],
+
     // Disallows comments after code
     // This rule will disallow comments on the same line as code.
     'no-inline-comments': 1,
@@ -233,6 +240,12 @@ module.exports = {
       defaultAssignment: false
     }],
 
+    // Disallow whitespace before properties
+    // This rule alerts for whitespace around the dot or brackets before properties of objects if
+    // they are on the same line. It does not alert for whitespace when the object and property are
+    // on separate lines.
+    'no-whitespace-before-property': 1,
+
     // Enforce spaces inside of curly braces in objects
     // This rule aims to maintain consistency around the spacing inside of object literals. It also
     // applies to EcmaScript 6 destructured assignment and import/export specifiers.
@@ -251,6 +264,12 @@ module.exports = {
       let: 'never',
       const: 'never'
     }],
+
+    // Require a newline around variable declarations
+    // This rule enforces a consistent coding style where newlines are required after each var
+    // declaration or just when there is a variable initialization. It ignores var declarations
+    // inside for loop conditionals.
+    'one-var-declaration-per-line': 1,
 
     // Operator Assignment Shorthand
     // This rule enforces use of the shorthand assignment operators by requiring them where possible.
@@ -314,7 +333,14 @@ module.exports = {
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
     'spaced-comment': 1,
 
+    // Enforce Usage of Spacing in Template Strings
+    // This rule aims to maintain consistency around the spacing inside of template literals.
+    'template-curly-spacing': 1,
+
     // Require IIFEs to be Wrapped
-    'wrap-iife': [1, 'inside']
+    'wrap-iife': [1, 'inside'],
+
+    // Enforce spacing around the * in `yield*` expressions
+    'yield-star-spacing': [1, 'after']
   }
 }

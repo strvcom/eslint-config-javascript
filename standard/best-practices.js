@@ -10,6 +10,10 @@
 
 module.exports = {
   rules: {
+    // Enforce return statements in callbacks of array's methods
+    // This rule enforces usage of return statement in callbacks of array's methods.
+    'array-callback-return': 1,
+
     // This rule enforces consistent use of trailing commas in object and array literals
     // Never allow trailing commas
     'comma-dangle': [2, 'never'],
@@ -161,6 +165,11 @@ module.exports = {
     // operand from left to right and returns the value of the last operand. However, this frequently
     // obscures side effects, and its use is often an accident.
     'no-sequences': 2,
+
+    // Disallow unmodified conditions of loops
+    // This rule finds references which are inside of loop conditions, then checks the variables of
+    // those references are modified in the loop.
+    'no-unmodified-loop-condition': 1,
 
     // Disallow unnecessary .call() and .apply()
     // This rule is aimed to flag usage of Function.prototype.call() and Function.prototype.apply()

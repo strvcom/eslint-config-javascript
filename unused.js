@@ -14,6 +14,10 @@ module.exports = {
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,
 
+    // Blacklist certain identifiers
+    // Unused, too restrictive.
+    'id-blacklist': 0,
+
     // Disallow Use of Alert
     // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
     // exists.
@@ -29,6 +33,12 @@ module.exports = {
     // Disallow Null Comparisons
     // Unused in favour of eqeqeq rule requiring all comparisons to be strict.
     'no-eq-null': 0,
+
+    // Disallow var and Named Functions in Global Scope
+    // This rule disallows var and named function declarations at the top-level script scope. This
+    // does not apply to ES and CommonJS modules since they have a module scope.
+    // Unused, front-end specific.
+    'no-implicit-globals': 0,
 
     // Disallow Iterator (__iterator__)
     // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
@@ -76,6 +86,14 @@ module.exports = {
     // Disallow continue
     // Unused, continue seems to be quite useful.
     'no-continue': 0,
+
+    // Disallow specific imports
+    // Unused, no use case.
+    'no-restricted-imports': 0,
+
+    // Disallow specific modules
+    // Unused, no use case.
+    'no-restricted-modules': 0,
 
     // Disallow Ternary Operators
     // You kidding me? Ternaries are great!

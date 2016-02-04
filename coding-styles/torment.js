@@ -32,8 +32,12 @@ module.exports = {
     // Disallow use of negated expressions in conditions
     'no-negated-condition': 1,
 
+    // Import Sorting
+    // Of course you should sort your imports! It makes your code look more like poetry!
+    'sort-imports': 1,
+
     // Variable Sorting
-    // Of course you should sort your vars! It makes your code look more like poetry!
+    // Sort all the things!
     'sort-vars': 1,
 
     // Disallow Magic Numbers
