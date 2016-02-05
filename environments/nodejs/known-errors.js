@@ -30,6 +30,10 @@ module.exports = {
     // It's better to throw an error and allow the application to handle it appropriately. Unhandled
     // errors always exit the process, but contrary to `process.exit()` they also print a stack
     // trace.
-    'no-process-exit': 2
+    'no-process-exit': 2,
+
+    // Suggest using the rest parameters instead of `arguments`
+    // @TODO: Requires Node.js support
+    'prefer-rest-params': 0
   }
 }

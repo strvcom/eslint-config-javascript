@@ -41,7 +41,7 @@ module.exports = {
     'no-sync': 1,
 
     // Suggest using Reflect methods where applicable
-    // Reflection API is still unsupported in Node.js (as of v5.5)
+    // @TODO: Requires Node.js support
     'prefer-reflect': 0,
 
     // Disallow process.env
