@@ -77,6 +77,11 @@ module.exports = {
     // before its declaration
     'no-use-before-define': [2, 'nofunc'],
 
+    // Require let or const instead of var
+    // This rule is aimed at discouraging the use of var and encouraging the use of const or let
+    // instead.
+    'no-var': 2,
+
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
@@ -189,8 +194,26 @@ module.exports = {
     // to. Additionally, the with statement cannot be used in strict mode.
     'no-with': 2,
 
+    // Suggest using arrow functions as callbacks
+    // This rule is aimed to flag usage of function expressions in an argument list.
+    'prefer-arrow-callback': 1,
+
+    // Suggest using const
+    // This rule is aimed at flagging variables that are declared using let keyword, but never
+    // modified after the initial assignment. This helps v8 to better optimise code at runtime.
+    'prefer-const': 1,
+
     // Suggest using Reflect methods where applicable
     'prefer-reflect': 1,
+
+    // Suggest using the spread operator instead of .apply()
+    // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
+    // spread operator.
+    'prefer-spread': 1,
+
+    // Suggest using template literals instead of string concatenation
+    // This rule is aimed to flag usage of + operators with strings.
+    'prefer-template': 1,
 
     // Require Variable Declarations to be at the top of their scope
     // This rule aims to keep all variable declarations in the leading series of statements.

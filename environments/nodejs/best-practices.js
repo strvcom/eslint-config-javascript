@@ -18,6 +18,9 @@ module.exports = {
     // Require 'use strict' to be present at module-level scope
     strict: [2, 'global'],
 
+    // Enforce Return After Callback
+    // This rule is aimed at ensuring that callbacks used outside of the main function block are
+    // always part-of or immediately preceding a return statement.
     'callback-return': [2, [
       // The following variables will be considered callbacks. More can be added as necessary.
       'cb',
@@ -37,32 +40,9 @@ module.exports = {
     // specifically for the method suffix "Sync" (as is the convention with Node.js operations).
     'no-sync': 1,
 
-    // Require let or const instead of var
-    // This rule is aimed at discouraging the use of var and encouraging the use of const or let
-    // instead.
-    'no-var': 2,
-
-    // Suggest using arrow functions as callbacks
-    // This rule is aimed to flag usage of function expressions in an argument list.
-    'prefer-arrow-callback': 1,
-
-    // Suggest using const
-    // This rule is aimed at flagging variables that are declared using let keyword, but never
-    // modified after the initial assignment. This helps v8 to better optimise code at runtime.
-    'prefer-const': 1,
-
     // Suggest using Reflect methods where applicable
     // Reflection API is still unsupported in Node.js (as of v5.5)
     'prefer-reflect': 0,
-
-    // Suggest using the spread operator instead of .apply()
-    // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
-    // spread operator.
-    'prefer-spread': 1,
-
-    // Suggest using template literals instead of string concatenation
-    // This rule is aimed to flag usage of + operators with strings.
-    'prefer-template': 1,
 
     // Disallow process.env
     // This rule is aimed at discouraging use of process.env to avoid global dependencies throughout
