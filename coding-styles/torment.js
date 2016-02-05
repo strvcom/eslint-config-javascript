@@ -14,7 +14,7 @@
 //
 // You have been warned.
 module.exports = {
-  extends: 'javascript/coding-styles/base',
+  extends: './base.js',
 
   rules: {
     // Enforce/Disallow Variable Initializations

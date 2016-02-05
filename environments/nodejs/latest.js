@@ -10,7 +10,7 @@
 
 module.exports = {
   // This file configures ESLint to work with the newest ES 2015 syntax and features
-  extends: 'javascript/environments/nodejs/known-errors',
+  extends: './known-errors.js',
 
   env: {
     node: true,

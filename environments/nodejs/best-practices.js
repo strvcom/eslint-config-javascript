@@ -10,7 +10,7 @@
 
 module.exports = {
   // These rules represent best practices for the Node.js community
-  extends: 'javascript/standard/best-practices',
+  extends: '../../standard/best-practices.js',
 
   rules: {
     // Strict Mode

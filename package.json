@@ -24,6 +24,9 @@
     "url": "git+https://github.com/strvcom/js-coding-standards.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint standard environments coding-styles unused.js"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0-rc.0"
   }
 }

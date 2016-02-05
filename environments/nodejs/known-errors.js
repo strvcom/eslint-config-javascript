@@ -9,7 +9,7 @@
 'use strict'
 
 module.exports = {
-  extends: 'javascript/standard/known-errors',
+  extends: '../../standard/known-errors.js',
 
   rules: {
     // Disallow new require
