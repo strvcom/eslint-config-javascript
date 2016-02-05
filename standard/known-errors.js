@@ -21,14 +21,14 @@ module.exports = {
     'no-constant-condition': 2,
 
     // Disallow Controls Characters in Regular Expressions
-    // Control characters are special, invisible characters in the ASCII range 0-31. These characters
-    // are rarely used in JavaScript strings so a regular expression containing these characters is
-    // most likely a mistake.
+    // Control characters are special, invisible characters in the ASCII range 0-31. These
+    // characters are rarely used in JavaScript strings so a regular expression containing these
+    // characters is most likely a mistake.
     'no-control-regex': 2,
 
     // Disallow debugger
-    // Production code should definitely not contain debugger, as it will cause the browser / Node to
-    // stop executing code.
+    // Production code should definitely not contain debugger, as it will cause the browser / Node
+    // to stop executing code.
     'no-debugger': 2,
 
     // No duplicate arguments
@@ -41,7 +41,8 @@ module.exports = {
     'no-dupe-keys': 2,
 
     // Rule to disallow a duplicate case label
-    // A switch statements with duplicate case labels is normally an indication of a programmer error.
+    // A switch statements with duplicate case labels is normally an indication of a programmer
+    // error.
     'no-duplicate-case': 2,
 
     // Disallow Empty Character Classes
@@ -50,8 +51,8 @@ module.exports = {
     'no-empty-character-class': 2,
 
     // Disallow Empty Block Statements
-    // Empty block statements are usually an indicator of an error, or at the very least, an indicator
-    // that some refactoring is likely needed
+    // Empty block statements are usually an indicator of an error, or at the very least, an
+    // indicator that some refactoring is likely needed.
     'no-empty': 2,
 
     // Disallow Assignment of the Exception Parameter
@@ -153,8 +154,8 @@ module.exports = {
     'use-isnan': 2,
 
     // Ensures that the results of typeof are compared against a valid string
-    // This rule aims to prevent errors from likely typos by ensuring that when the result of a typeof
-    // operation is compared against a string, that the string is a valid value.
+    // This rule aims to prevent errors from likely typos by ensuring that when the result of a
+    // typeof operation is compared against a string, that the string is a valid value.
     'valid-typeof': 2,
 
     // Verify calls of super() in constructors
@@ -166,7 +167,8 @@ module.exports = {
     'no-class-assign': 2,
 
     // Disallow modifying variables that are declared using `const`
-    // We cannot modify variables that are declared using const keyword. It will raise a runtime error.
+    // We cannot modify variables that are declared using const keyword. It will raise a runtime
+    // error.
     'no-const-assign': 2,
 
     // Disallow duplicate name in class members
@@ -180,20 +182,20 @@ module.exports = {
     'no-this-before-super': 2,
 
     // Disallow Variables Deletion
-    // The delete operator will only delete the properties of objects. It cannot "delete" variables or
-    // anything else. Using them on variables might lead to unexpected behavior.
+    // The delete operator will only delete the properties of objects. It cannot "delete" variables
+    // or anything else. Using them on variables might lead to unexpected behavior.
     'no-delete-var': 2,
 
     // Disallow Labels That Are Variable Names
-    // This rule aims to create clearer code by disallowing the bad practice of creating a label that
-    // shares a name with a variable that is in scope.
+    // This rule aims to create clearer code by disallowing the bad practice of creating a label
+    // that shares a name with a variable that is in scope.
     'no-label-var': 2,
 
     // Disallow Shadowing of Restricted Names
     // Value Properties of the Global Object (NaN, Infinity, undefined) as well as strict mode
-    // restricted identifiers eval and arguments are considered to be restricted names in JavaScript.
-    // Defining them to mean something else can have unintended consequences and confuse others reading
-    // the code.
+    // restricted identifiers eval and arguments are considered to be restricted names in
+    // JavaScript. Defining them to mean something else can have unintended consequences and confuse
+    // others reading the code.
     'no-shadow-restricted-names': 2,
 
     // Disallow Shadowing
@@ -201,8 +203,8 @@ module.exports = {
     'no-shadow': 2,
 
     // Disallow Undeclared Variables
-    // This rule can help you locate potential ReferenceErrors resulting from misspellings of variable
-    // and parameter names, or accidental implicit globals.
+    // This rule can help you locate potential ReferenceErrors resulting from misspellings of
+    // variable and parameter names, or accidental implicit globals.
     'no-undef': [2, {
       typeof: true
     }],
@@ -214,16 +216,16 @@ module.exports = {
     'accessor-pairs': 2,
 
     // Require Default Case in Switch Statements
-    // The thinking is that it's better to always explicitly state what the default behavior should be
-    // so that it's clear whether or not the developer forgot to include the default behavior by
-    // mistake. This rule aims to require default case in switch statements. You may optionally include
-    // a `// no default` after the last case if there is no default case.
+    // The thinking is that it's better to always explicitly state what the default behavior should
+    // be so that it's clear whether or not the developer forgot to include the default behavior by
+    // mistake. This rule aims to require default case in switch statements. You may optionally
+    // include a `// no default` after the last case if there is no default case.
     'default-case': 2,
 
     // Require === and !==
-    // The reason for this is that == and != do type coercion which follows the rather obscure Abstract
-    // Equality Comparison Algorithm. This rule is aimed at eliminating the type-unsafe equality
-    // operators.
+    // The reason for this is that == and != do type coercion which follows the rather obscure
+    // Abstract Equality Comparison Algorithm. This rule is aimed at eliminating the type-unsafe
+    // equality operators.
     //
     // @see  http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3
     eqeqeq: 2,
@@ -253,8 +255,8 @@ module.exports = {
     'no-native-reassign': 2,
 
     // Disallow Octal Escapes
-    // As of version 5 of the ECMAScript specification, octal escape sequences are a deprecated feature
-    // and should not be used. It is recommended that Unicode escapes be used instead.
+    // As of version 5 of the ECMAScript specification, octal escape sequences are a deprecated
+    // feature and should not be used. It is recommended that Unicode escapes be used instead.
     'no-octal-escape': 2,
 
     // Disallow Octal Literals
@@ -263,12 +265,13 @@ module.exports = {
     'no-octal': 2,
 
     // Disallow Use of __proto__
-    // __proto__ property has been deprecated as of ECMAScript 3.1 and shouldn't be used in the code.
-    // Use getPrototypeOf method instead.
+    // __proto__ property has been deprecated as of ECMAScript 3.1 and shouldn't be used in the
+    // code. Use getPrototypeOf method instead.
     'no-proto': 2,
 
     // Disallow Redeclaring Variables
-    // This rule is aimed at eliminating variables that have multiple declarations in the same scope.
+    // This rule is aimed at eliminating variables that have multiple declarations in the same
+    // scope.
     'no-redeclare': [2, {
       builtinGlobals: true
     }],
@@ -285,8 +288,8 @@ module.exports = {
 
     // Disallow Unused Expressions
     // This rule aims to eliminate unused expressions. The value of an expression should always be
-    // used, except in the case of expressions that side effect: function calls, assignments, and the
-    // `new` operator.
+    // used, except in the case of expressions that side effect: function calls, assignments, and
+    // the `new` operator.
     'no-unused-expressions': [2, {
       allowShortCircuit: true,
       allowTernary: true

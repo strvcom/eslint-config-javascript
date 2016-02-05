@@ -9,8 +9,8 @@
 'use strict'
 
 module.exports = {
-  // These rules are the baseline coding style that prevails in most JS projects in the wild. It's main
-  // purpose is to serve as a baseline for all other coding style guidelines.
+  // These rules are the baseline coding style that prevails in most JS projects in the wild. It's
+  // main purpose is to serve as a baseline for all other coding style guidelines.
   rules: {
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.
@@ -29,10 +29,10 @@ module.exports = {
     }],
 
     // Enforce spacing around the * in generator functions
-    // This rule enforces that the * is placed together with the `function` keyword. The reasoning is
-    // that a generator function is a special type of function, therefore it should come together with
-    // the `function` keyword. In contrast, it has nothing to do with the function's name, which may
-    // be missing completely.
+    // This rule enforces that the * is placed together with the `function` keyword. The reasoning
+    // is that a generator function is a special type of function, therefore it should come together
+    // with the `function` keyword. In contrast, it has nothing to do with the function's name,
+    // which may be missing completely.
     'generator-star-spacing': [1, {
       before: false,
       after: true
@@ -45,24 +45,25 @@ module.exports = {
     curly: [1, 'all'],
 
     // Enforce newline before and after dot
-    // This rule aims to enforce newline consistency in member expressions. This rule prevents the use
-    // of mixed newlines around the dot in a member expression.
+    // This rule aims to enforce newline consistency in member expressions. This rule prevents the
+    // use of mixed newlines around the dot in a member expression.
     // Require the dot to be placed together with the property identifier
     'dot-location': [1, 'property'],
 
     // Require Dot Notation
-    // This rule is aimed at maintaining code consistency and improving code readability by encouraging
-    // use of the dot notation style whenever possible.
+    // This rule is aimed at maintaining code consistency and improving code readability by
+    // encouraging use of the dot notation style whenever possible.
     'dot-notation': 1,
 
     // Disallow return in else
-    // If an if block contains a return statement, the else block becomes unnecessary. Its contents can
-    // be placed outside of the block.
+    // If an if block contains a return statement, the else block becomes unnecessary. Its contents
+    // can be placed outside of the block.
     'no-else-return': 1,
 
     // Disallow multiple spaces
     // This rule aims to disallow multiple whitespace around logical expressions, conditional
-    // expressions, declarations, array elements, object properties, sequences and function parameters.
+    // expressions, declarations, array elements, object properties, sequences and function
+    // parameters.
     'no-multi-spaces': 1,
 
     // Disallow or enforce spaces inside of brackets
@@ -82,9 +83,9 @@ module.exports = {
     }],
 
     // Require Camelcase
-    // This rule looks for any underscores (_) located within the source code. It ignores leading and
-    // trailing underscores and only checks those in the middle of a variable name. If ESLint decides
-    // that the variable is a constant (all uppercase), then no warning will be thrown.
+    // This rule looks for any underscores (_) located within the source code. It ignores leading
+    // and trailing underscores and only checks those in the middle of a variable name. If ESLint
+    // decides that the variable is a constant (all uppercase), then no warning will be thrown.
     camelcase: [1, {
       properties: 'always'
     }],
@@ -112,23 +113,23 @@ module.exports = {
     'consistent-this': [1, 'self'],
 
     // Require file to end with single newline
-    // Benefits of trailing newlines include the ability to concatenate or append to files as well as
-    // output files to the terminal without interfering with shell prompts.
+    // Benefits of trailing newlines include the ability to concatenate or append to files as well
+    // as output files to the terminal without interfering with shell prompts.
     'eol-last': [1, 'unix'],
 
     // Enforce Function Style
-    // Due to these different behaviors, it is common to have guidelines as to which style of function
-    // should be used. There is really no correct or incorrect choice here, it is just a preference.
-    // A good reason to use function declarations is that the function names then appear in stack
-    // traces which help during debugging.
+    // Due to these different behaviors, it is common to have guidelines as to which style of
+    // function should be used. There is really no correct or incorrect choice here, it is just a
+    // preference. A good reason to use function declarations is that the function names then appear
+    // in stack traces which help during debugging.
     // Allow arrow functions to be saved into variables
     'func-style': [1, 'declaration', {
       allowArrowFunctions: true
     }],
 
     // Limit minimum and maximum length for identifiers
-    // This rule is aimed at increasing code readability and maintainability by enforcing an identifier
-    // length convention.
+    // This rule is aimed at increasing code readability and maintainability by enforcing an
+    // identifier length convention.
     'id-length': [1, {
       min: 2,
       max: 25,
@@ -145,8 +146,8 @@ module.exports = {
     }],
 
     // Enforce Property Spacing
-    // This rule will warn when spacing in properties does not match the specified options. In the case
-    // of long lines, it is acceptable to add a new line wherever whitespace is allowed.
+    // This rule will warn when spacing in properties does not match the specified options. In the
+    // case of long lines, it is acceptable to add a new line wherever whitespace is allowed.
     'key-spacing': [1, {
       beforeColon: false,
       afterColon: true,
@@ -169,16 +170,16 @@ module.exports = {
 
     // Require Constructors to Use Initial Caps
     // This rule is aimed at helping to distinguish regular functions from constructor functions. As
-    // such, it warns whenever it sees new followed by an identifier that isn't capitalized or whenever
-    // it sees capitalized function called directly without new operator.
+    // such, it warns whenever it sees new followed by an identifier that isn't capitalized or
+    // whenever it sees capitalized function called directly without new operator.
     'new-cap': [1, {
       newIsCap: true,
       capIsNew: true
     }],
 
     // Require Parens for Constructors
-    // This rule is aimed at highlighting a lack of convention and increasing code clarity by requiring
-    // the use of parentheses when invoking a constructor via the new keyword.
+    // This rule is aimed at highlighting a lack of convention and increasing code clarity by
+    // requiring the use of parentheses when invoking a constructor via the new keyword.
     'new-parens': 1,
 
     // Require or disallow an empty newline after variable declarations
@@ -202,8 +203,8 @@ module.exports = {
     'no-lonely-if': 1,
 
     // Disallow mixed spaces and tabs for indentation
-    // The no-mixed-spaces-and-tabs rule is aimed at flagging any lines of code that are indented with
-    // a mixture of tabs and spaces.
+    // The no-mixed-spaces-and-tabs rule is aimed at flagging any lines of code that are indented
+    // with a mixture of tabs and spaces.
     'no-mixed-spaces-and-tabs': 1,
 
     // Disallows multiple blank lines
@@ -215,13 +216,13 @@ module.exports = {
     }],
 
     // Disallow Nested Ternaries
-    // The no-nested-ternary rule aims to increase the clarity and readability of code by disallowing
-    // the use of nested ternary expressions.
+    // The no-nested-ternary rule aims to increase the clarity and readability of code by
+    // disallowing the use of nested ternary expressions.
     'no-nested-ternary': 2,
 
     // Disallow Spaces in Function Calls
-    // While it's possible to have whitespace between the name of a function and the parentheses that
-    // execute it, such patterns tend to look more like errors.
+    // While it's possible to have whitespace between the name of a function and the parentheses
+    // that execute it, such patterns tend to look more like errors.
     'no-spaced-func': 1,
 
     // Disallow trailing spaces at the end of lines
@@ -257,8 +258,8 @@ module.exports = {
     'object-shorthand': [1, 'always'],
 
     // Require or Disallow One Variable Declaration per Scope
-    // This rule is aimed at enforcing the use of one variable declaration per function (for var) and
-    // multiple variable declaration per block (for let and const) scope.
+    // This rule is aimed at enforcing the use of one variable declaration per function (for var)
+    // and multiple variable declaration per block (for let and const) scope.
     'one-var': [1, {
       var: 'always',
       let: 'never',
@@ -272,13 +273,14 @@ module.exports = {
     'one-var-declaration-per-line': 1,
 
     // Operator Assignment Shorthand
-    // This rule enforces use of the shorthand assignment operators by requiring them where possible.
+    // This rule enforces use of the shorthand assignment operators by requiring them where
+    // possible.
     'operator-assignment': [1, 'always'],
 
     // Operator Linebreak
-    // When a statement is too long to fit on a single line, line breaks are generally inserted next to
-    // the operators separating expressions. This rule is aimed at enforcing a particular operator line
-    // break style.
+    // When a statement is too long to fit on a single line, line breaks are generally inserted next
+    // to the operators separating expressions. This rule is aimed at enforcing a particular
+    // operator line break style.
     'operator-linebreak': [1, 'before'],
 
     // Enforce padding within blocks
@@ -312,9 +314,9 @@ module.exports = {
     'space-before-function-paren': [1, 'never'],
 
     // Disallow or enforce spaces inside of parentheses
-    // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing or
-    // requiring one or more spaces to the right of ( and to the left of ). In either case, () will
-    // still be allowed.
+    // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing
+    // or requiring one or more spaces to the right of ( and to the left of ). In either case, ()
+    // will still be allowed.
     'space-in-parens': [1, 'never'],
 
     // Require Spaces Around Infix Operators
@@ -322,8 +324,8 @@ module.exports = {
     'space-infix-ops': 1,
 
     // Require or disallow spaces before/after unary operators
-    // This rule enforces consistency regarding the spaces after words unary operators and after/before
-    // nonwords unary operators.
+    // This rule enforces consistency regarding the spaces after words unary operators and
+    // after/before nonwords unary operators.
     'space-unary-ops': [1, {
       words: true,
       nonwords: false

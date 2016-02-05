@@ -68,10 +68,10 @@ module.exports = {
     // This rule is aimed at discouraging use of process.env to avoid global dependencies throughout
     // the project's codebase.
     //
-    // Note: Env vars are a great way of managing configuration options. This rule can be safely turned
-    // off for a particular file/folder where project configuration is gathered and stored in custom
-    // configuration objects which you then use throughout your app, but the use of process.env outside
-    // of preparing configuration data should be discouraged.
+    // Note: Env vars are a great way of managing configuration options. This rule can be safely
+    // turned off for a particular file/folder where project configuration is gathered and stored in
+    // custom configuration objects which you then use throughout your app, but the use of
+    // process.env outside of preparing configuration data should be discouraged.
     'no-process-env': 1
   }
 }

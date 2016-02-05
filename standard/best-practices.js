@@ -27,15 +27,15 @@ module.exports = {
 
     // Disallow lexical declarations in case/default clauses
     // This rule disallows lexical declarations (let, const, function and class) in case/default
-    // clauses. The reason is that the lexical declaration is visible in the entire switch block but it
-    // only gets initialized when it is assigned, which will only happen if the case where it is
+    // clauses. The reason is that the lexical declaration is visible in the entire switch block but
+    // it only gets initialized when it is assigned, which will only happen if the case where it is
     // defined is reached.
     'no-case-declarations': 1,
 
     // Disallow Use of console
-    // In general, you should use a logging library which offers more flexibility in terms of log level
-    // configuration and log destinations (i.e. sending logs to external storage/monitoring service),
-    // such as `debug` or `bunyan`.
+    // In general, you should use a logging library which offers more flexibility in terms of log
+    // level configuration and log destinations (i.e. sending logs to external storage/monitoring
+    // service), such as `debug` or `bunyan`.
     // Feel free to turn this rule off in your project-level ruleset if you are ok with logging to
     // console only.
     //
@@ -51,12 +51,13 @@ module.exports = {
     // no-extra-parens
     // This rule restricts the use of parentheses to only where they are necessary.
     //
-    // @see  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+    // @see  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/
+    //       Operator_Precedence
     'no-extra-parens': 1,
 
     // Disallow Initializing to undefined
-    // In JavaScript, a variable that is declared and not initialized to any value automatically gets
-    // the value of undefined.
+    // In JavaScript, a variable that is declared and not initialized to any value automatically
+    // gets the value of undefined.
     'no-undef-init': 1,
 
     // Disallow Use of `undefined` Variable
@@ -77,13 +78,13 @@ module.exports = {
     'no-use-before-define': [2, 'nofunc'],
 
     // Require Consistent Returns
-    // This rule is aimed at ensuring all return statements either specify a value or don't specify a
-    // value.
+    // This rule is aimed at ensuring all return statements either specify a value or don't specify
+    // a value.
     'consistent-return': 1,
 
     // Require Guarding for-in
-    // This rule is aimed at preventing unexpected behavior that could arise from using a for in loop
-    // without filtering the results in the loop.
+    // This rule is aimed at preventing unexpected behavior that could arise from using a for in
+    // loop without filtering the results in the loop.
     'guard-for-in': 1,
 
     // Disallow eval()
@@ -98,17 +99,18 @@ module.exports = {
 
     // Disallow Extending of Native Objects
     // In JavaScript, you can extend any object, including builtin or "native" objects. Sometimes
-    // people change the behavior of these native objects in ways that break the assumptions made about
-    // them in other parts of the code.
+    // people change the behavior of these native objects in ways that break the assumptions made
+    // about them in other parts of the code.
     'no-extend-native': 2,
 
     // Disallow unnecessary function binding
     'no-extra-bind': 2,
 
     // Disallow Floating Decimals
-    // Float values in JavaScript contain a decimal point, and there is no requirement that the decimal
-    // point be preceded or followed by a number. Although not a syntax error, this format for numbers
-    // can make it difficult to distinguish between true decimal numbers and the dot operator.
+    // Float values in JavaScript contain a decimal point, and there is no requirement that the
+    // decimal point be preceded or followed by a number. Although not a syntax error, this format
+    // for numbers can make it difficult to distinguish between true decimal numbers and the dot
+    // operator.
     'no-floating-decimal': 1,
 
     // Disallow the type conversion with shorter notations
@@ -117,19 +119,19 @@ module.exports = {
     'no-implicit-coercion': 1,
 
     // Disallow this keywords outside of classes or class-like objects
-    // Under the strict mode, this keywords outside of classes or class-like objects might be undefined
-    // and raise a TypeError. This rule aims to flag usage of this keywords outside of classes or
-    // class-like objects.
+    // Under the strict mode, this keywords outside of classes or class-like objects might be
+    // undefined and raise a TypeError. This rule aims to flag usage of this keywords outside of
+    // classes or class-like objects.
     'no-invalid-this': 1,
 
     // Disallow Labeled Statements
-    // While convenient in some cases, labels tend to be used only rarely and are frowned upon by some
-    // as a remedial form of flow control that is more error prone and harder to understand.
+    // While convenient in some cases, labels tend to be used only rarely and are frowned upon by
+    // some as a remedial form of flow control that is more error prone and harder to understand.
     'no-labels': 2,
 
     // Disallow Unnecessary Nested Blocks
-    // This rule aims to eliminate unnecessary and potentially confusing blocks at the top level of a
-    // script or within other blocks.
+    // This rule aims to eliminate unnecessary and potentially confusing blocks at the top level of
+    // a script or within other blocks.
     'no-lone-blocks': 2,
 
     // Disallow Functions in Loops
@@ -138,17 +140,17 @@ module.exports = {
     'no-loop-func': 1,
 
     // Disallow Function Constructor
-    // This error is raised to highlight the use of a bad practice. By passing a string to the Function
-    // constructor, you are requiring the engine to parse that string much in the way it has to when
-    // you call the eval function.
+    // This error is raised to highlight the use of a bad practice. By passing a string to the
+    // Function constructor, you are requiring the engine to parse that string much in the way it
+    // has to when you call the eval function.
     'no-new-func': 2,
 
     // Disallow Primitive Wrapper Instances
-    // Primitive wrapper objects are, in fact, objects. That means typeof will return "object" instead
-    // of "string", "number", or "boolean". The second problem comes with boolean objects. Every object
-    // is truthy, that means an instance of Boolean always resolves to true even when its actual value
-    // is false. This rule aims to eliminate the use of String, Number, and Boolean with the `new`
-    // operator.
+    // Primitive wrapper objects are, in fact, objects. That means typeof will return "object"
+    // instead of "string", "number", or "boolean". The second problem comes with boolean objects.
+    // Every object is truthy, that means an instance of Boolean always resolves to true even when
+    // its actual value is false. This rule aims to eliminate the use of String, Number, and Boolean
+    // with the `new` operator.
     'no-new-wrappers': 2,
 
     // Disallow new For Side Effects
@@ -161,9 +163,9 @@ module.exports = {
     'no-return-assign': 2,
 
     // Disallow Use of the Comma Operator
-    // The comma operator includes multiple expressions where only one is expected. It evaluates each
-    // operand from left to right and returns the value of the last operand. However, this frequently
-    // obscures side effects, and its use is often an accident.
+    // The comma operator includes multiple expressions where only one is expected. It evaluates
+    // each operand from left to right and returns the value of the last operand. However, this
+    // frequently obscures side effects, and its use is often an accident.
     'no-sequences': 2,
 
     // Disallow unmodified conditions of loops
@@ -177,22 +179,22 @@ module.exports = {
     'no-useless-call': 2,
 
     // Disallow unncessary concatenation of strings
-    // This rule aims to flag the concatenation of 2 literals when they could be combined into a single
-    // literal.
+    // This rule aims to flag the concatenation of 2 literals when they could be combined into a
+    // single literal.
     'no-useless-concat': 1,
 
     // No `with` Statements
     // The with statement is potentially problematic because it adds members of an object to the
-    // current scope, making it impossible to tell what a variable inside the block actually refers to.
-    // Additionally, the with statement cannot be used in strict mode.
+    // current scope, making it impossible to tell what a variable inside the block actually refers
+    // to. Additionally, the with statement cannot be used in strict mode.
     'no-with': 2,
 
     // Suggest using Reflect methods where applicable
     'prefer-reflect': 1,
 
     // Require Variable Declarations to be at the top of their scope
-    // This rule aims to keep all variable declarations in the leading series of statements. Allowing
-    // multiple declarations helps promote maintainability.
+    // This rule aims to keep all variable declarations in the leading series of statements.
+    // Allowing multiple declarations helps promote maintainability.
     'vars-on-top': 1,
 
     // Require or disallow Yoda Conditions

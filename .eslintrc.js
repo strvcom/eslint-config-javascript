@@ -4,7 +4,7 @@ module.exports = {
   extends: [
     './environments/nodejs/latest.js',
     './environments/nodejs/best-practices.js',
-    // './environments/nodejs/optional.js',
+    './environments/nodejs/optional.js',
     './coding-styles/base.js'
   ]
 }

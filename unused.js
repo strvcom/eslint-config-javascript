@@ -55,14 +55,15 @@ module.exports = {
     'no-param-reassign': 0,
 
     // Disallow Script URLs
-    // Using javascript: URLs is considered by some as a form of eval. Code passed in javascript: URLs
-    // has to be parsed and evaluated by the browser in the same way that eval is processed.
+    // Using javascript: URLs is considered by some as a form of eval. Code passed in javascript:
+    // URLs has to be parsed and evaluated by the browser in the same way that eval is processed.
     // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
     // exists.
     'no-script-url': 0,
 
     // Disallow ++ and --
-    // Unused, these operators are quite useful as long as whitespace is used responsibly around them.
+    // Unused, these operators are quite useful as long as whitespace is used responsibly around
+    // them.
     'no-plusplus': 0,
 
     // Disallow use of the void operator

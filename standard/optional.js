@@ -28,9 +28,9 @@ module.exports = {
     complexity: [1, 10],
 
     // Disallow Warning Comments
-    // These comments are a warning signal, that there is something not production ready in your code.
-    // Most likely you want to fix it or remove the comments before you roll out your code with a good
-    // feeling.
+    // These comments are a warning signal, that there is something not production ready in your
+    // code. Most likely you want to fix it or remove the comments before you roll out your code
+    // with a good feeling.
     'no-warning-comments': [1, {
       location: 'anywhere'
     }],
@@ -41,19 +41,20 @@ module.exports = {
     'max-depth': [1, 4],
 
     // Limit Maximum Length of Line
-    // Very long lines of code in any language can be difficult to read. In order to aid in readability
-    // and maintainability many coders have developed a convention to limit lines of code to a certain
-    // number of characters.
+    // Very long lines of code in any language can be difficult to read. In order to aid in
+    // readability and maintainability many coders have developed a convention to limit lines of
+    // code to a certain number of characters.
     'max-len': [1, 100, 2],
 
     // Limit Maximum Number of Parameters
-    // Functions that take numerous parameters can be difficult to read and write because it requires
-    // the memorization of what each parameter is, its type, and the order they should appear in.
+    // Functions that take numerous parameters can be difficult to read and write because it
+    // requires the memorization of what each parameter is, its type, and the order they should
+    // appear in.
     'max-params': [1, 3],
 
     // Disallow Bitwise Operators
-    // This rule is aimed at catching typos that end up as bitwise operators, but are meant to be the
-    // much more common &&, ||, <, > operators.
+    // This rule is aimed at catching typos that end up as bitwise operators, but are meant to be
+    // the much more common &&, ||, <, > operators.
     'no-bitwise': 1
   }
 }
