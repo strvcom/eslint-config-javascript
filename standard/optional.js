@@ -25,7 +25,7 @@ module.exports = {
     // Limit Cyclomatic Complexity
     // This rule is aimed at reducing code complexity by capping the amount of cyclomatic complexity
     // allowed in a program.
-    'complexity': [1, 10],
+    complexity: [1, 10],
 
     // Disallow Warning Comments
     // These comments are a warning signal, that there is something not production ready in your code.

@@ -226,7 +226,7 @@ module.exports = {
     // operators.
     //
     // @see  http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3
-    'eqeqeq': 2,
+    eqeqeq: 2,
 
     // Disallow Use of caller/callee
     // The use of arguments.caller and arguments.callee make several code optimizations impossible.

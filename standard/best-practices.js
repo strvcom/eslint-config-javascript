@@ -198,7 +198,7 @@ module.exports = {
     // Require or disallow Yoda Conditions
     // Yoda conditions are so named because the literal value of the condition comes first while the
     // variable comes second ("red" === color).
-    'yoda': 2,
+    yoda: 2,
 
     // Disallow creation of dense arrays using the Array constructor
     // Use of the Array constructor to construct a new array is generally discouraged in favour of

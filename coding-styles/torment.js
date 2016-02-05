@@ -45,7 +45,7 @@ module.exports = {
     'no-magic-numbers': 2,
 
     // Require Radix Parameter
-    'radix': 1,
+    radix: 1,
 
     // Require Regex Literals to be Wrapped
     'wrap-regex': 1

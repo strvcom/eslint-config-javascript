@@ -42,7 +42,7 @@ module.exports = {
     // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
     // statements are wrapped in curly braces.
     // All block statements must be wrapped in curly braces
-    'curly': [1, 'all'],
+    curly: [1, 'all'],
 
     // Enforce newline before and after dot
     // This rule aims to enforce newline consistency in member expressions. This rule prevents the use
@@ -85,7 +85,7 @@ module.exports = {
     // This rule looks for any underscores (_) located within the source code. It ignores leading and
     // trailing underscores and only checks those in the middle of a variable name. If ESLint decides
     // that the variable is a constant (all uppercase), then no warning will be thrown.
-    'camelcase': [1, {
+    camelcase: [1, {
       properties: 'always'
     }],
 
@@ -140,7 +140,7 @@ module.exports = {
 
     // Validate Indentation
     // This rule is aimed to enforce consistent indentation style.
-    'indent': [1, 2, {
+    indent: [1, 2, {
       SwitchCase: 1
     }],
 
@@ -292,7 +292,7 @@ module.exports = {
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.
-    'quotes': [1, 'single', 'avoid-escape'],
+    quotes: [1, 'single', 'avoid-escape'],
 
     // Enforce spacing before and after semicolons
     'semi-spacing': [1, {
@@ -302,7 +302,7 @@ module.exports = {
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
-    'semi': [1, 'never'],
+    semi: [1, 'never'],
 
     // Require Or Disallow Space Before Blocks
     // This rule will enforce consistency of spacing before blocks.
