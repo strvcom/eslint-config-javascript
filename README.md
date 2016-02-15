@@ -63,4 +63,4 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [eslint-url]: http://eslint.org
 [travis-badge]: https://travis-ci.org/strvcom/js-coding-standards.svg
 [travis-url]: https://travis-ci.org/strvcom/js-coding-standards
-[eslint-version]: https://img.shields.io/badge/ESLint-&gt;=2.1.0-brightgreen.svg
+[eslint-version]: https://img.shields.io/badge/ESLint->=2.1.0-brightgreen.svg
