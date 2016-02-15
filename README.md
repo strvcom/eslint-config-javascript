@@ -2,7 +2,9 @@
 
 > Write bulletproof JavaScript like a pro!
 
-**ESLint version required:** `>=2.1.0`
+[![Build Status][travis-badge]][travis-url]
+![ESLint version][eslint-version]
+
 
 ## About
 
@@ -59,3 +61,6 @@ Once the ruleset is installed, you must create your own *.eslintrc* configuratio
 This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](LICENSE) file for more information.
 
 [eslint-url]: http://eslint.org
+[travis-badge]: https://travis-ci.org/strvcom/js-coding-standards.svg
+[travis-url]: https://travis-ci.org/strvcom/js-coding-standards
+[eslint-version]: https://img.shields.io/badge/ESLint-2.1.0-brightgreen.svg
