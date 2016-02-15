@@ -6,5 +6,13 @@ module.exports = {
     './environments/nodejs/best-practices.js',
     './environments/nodejs/optional.js',
     './coding-styles/base.js'
-  ]
+  ],
+
+  parserOptions: {
+    ecmaVersion: 6
+  },
+
+  env: {
+    node: true
+  }
 }
