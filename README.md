@@ -2,7 +2,7 @@
 
 > Write bulletproof JavaScript like a pro!
 
-**ESLint version required:** `>=2.0.0`
+**ESLint version required:** `>=2.1.0`
 
 ## About
 
@@ -52,7 +52,7 @@ Once the ruleset is installed, you must create your own *.eslintrc* configuratio
   - nodejs: Finished
   - browser: Not started
   - babel: Not started
-- **coding-styles:** Feedback required
+- **coding-styles:** Finished
 
 ## License
 
