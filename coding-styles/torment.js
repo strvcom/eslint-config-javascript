@@ -29,6 +29,10 @@ module.exports = {
     // Hit this limit? You are doing it wrong -> refactor!
     'max-statements': [1, 15],
 
+    // Require newline before return statement
+    // Make your returns obvious!
+    'newline-before-return': 1,
+
     // Disallow use of negated expressions in conditions
     'no-negated-condition': 1,
 

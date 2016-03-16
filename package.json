@@ -17,7 +17,7 @@
   "license": "BSD-3-Clause",
   "main": "environments/nodejs/known-errors",
   "peerDependencies": {
-    "eslint": "^2.1.0"
+    "eslint": "^2.2.0"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
     "lint": "eslint standard environments coding-styles unused.js"
   },
   "devDependencies": {
-    "eslint": "^2.1.0"
+    "eslint": "^2.2.0"
   }
 }
