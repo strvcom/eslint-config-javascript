@@ -16,10 +16,10 @@ module.exports = {
     // overwriting some configuration options. Here, we are including the
     // base configuration for Node.js development and we opt-in to the
     // best-practices ruleset.
-    'javascript/environments/nodejs/latest',
-    'javascript/environments/nodejs/best-practices',
+    '@strv/javascript/environments/nodejs/latest',
+    '@strv/javascript/environments/nodejs/best-practices',
     // If you are brave enough, you can also extend the "optional" ruleset
-    'javascript/environments/nodejs/optional'
+    '@strv/javascript/environments/nodejs/optional'
   ],
 
   // If you need to override some rules specifically for this project,
