@@ -334,7 +334,10 @@ module.exports = {
     // after/before nonwords unary operators.
     'space-unary-ops': [1, {
       words: true,
-      nonwords: false
+      nonwords: false,
+      overrides: {
+        '!': true
+      }
     }],
 
     // Require or disallow a whitespace beginning a comment
