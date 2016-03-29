@@ -168,6 +168,12 @@ module.exports = {
     // This rule is aimed at increasing code clarity by discouraging deeply nesting callbacks.
     'max-nested-callbacks': [1, 4],
 
+    // Specify the Maximum Number of Statements Allowed per Line
+    // A line of code containing too many statements can be difficult to read. Code is generally
+    // read from the top down, especially when scanning, so limiting the number of statements
+    // allowed on a single line can be very beneficial for readability and maintainability.
+    'max-statements-per-line': 1,
+
     // Require Constructors to Use Initial Caps
     // This rule is aimed at helping to distinguish regular functions from constructor functions. As
     // such, it warns whenever it sees new followed by an identifier that isn't capitalized or

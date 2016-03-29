@@ -92,6 +92,14 @@ module.exports = {
     // loop without filtering the results in the loop.
     'guard-for-in': 1,
 
+    // Disallow duplicate exports/imports
+    // An ES6/ES2015 import can be spread over multiple lines, but this takes up unneeded
+    // whitespace. This rules validates that all imports from a single module exists in a single
+    // import statement.
+    'no-duplicate-imports': [1, {
+      includeExports: true
+    }],
+
     // Disallow eval()
     // This rule is aimed at preventing potentially dangerous, unnecessary, and slow code by
     // disallowing the use of the eval() function.

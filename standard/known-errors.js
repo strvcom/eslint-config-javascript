@@ -144,6 +144,11 @@ module.exports = {
     // class.
     'no-useless-constructor': 2,
 
+    // Disallow unnecessary escape usage
+    // Escaping non-special characters in strings and regular expressions doesn’t have any effects
+    // on results. This rule flags escapes that can be safely removed without changing behavior.
+    'no-useless-escape': 2,
+
     // Suggest using the rest parameters instead of `arguments`
     // This rule is aimed to flag usage of `arguments` variables.
     'prefer-rest-params': 2,
