@@ -50,8 +50,7 @@ These rules are intended to be used independently on platform. However, you shou
 - **standard:** Finished
 - **environments**
   - nodejs: Finished
-  - browser: Not started
-  - babel: Not started
+  - react: Basic support (not all rules covered yet)
 - **coding-styles:** Finished
 
 ## License
