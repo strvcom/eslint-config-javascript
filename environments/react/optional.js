@@ -9,5 +9,9 @@
 'use strict'
 
 module.exports = {
-  extends: '../../standard/optional.js'
+  extends: '../../standard/optional.js',
+
+  rules: {
+
+  }
 }

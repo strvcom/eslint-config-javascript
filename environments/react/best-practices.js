@@ -13,17 +13,29 @@ module.exports = {
   extends: '../../standard/best-practices.js',
 
   rules: {
+    // Enforce boolean attributes notation in JSX
+    // In JSX when using a boolean attribute you can set the attribute value to true or omit the
+    // value. This rule will enforce one or the other to keep consistency in your code.
+    'react/jsx-boolean-value': [1, 'never'],
+
+    // Prevent missing displayName in a React component definition
+    'react/display-name': 1,
+
     // Prevent multiple component definitions per file
-    'react/no-multi-comp': 1,
+    'react/no-multi-comp': [1, {
+      ignoreStateless: true
+    }],
 
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 1,
 
     // Enforce ES6 class for React Components
-    'react/prefer-es6-class': 1,
+    'react/prefer-es6-class': 2,
 
-    // Prevent missing displayName in a React component definition
-    'react/display-name': 1,
+    // Enforce stateless React Components to be written as a pure function
+    // Stateless functional components are more simple than class based components and will benefit
+    // from future React performance optimizations specific to these components.
+    'react/prefer-stateless-function': 1,
 
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 1,
@@ -31,7 +43,20 @@ module.exports = {
     // Prevent usage of deprecated methods
     'react/no-deprecated': 1,
 
-    // Prevent usage of unknown DOM property
-    'react/no-unknown-property': 1
+    // Restrict file extensions that may be required
+    // require() statements should generally not include a file extension as there is a well defined
+    // mechanism for resolving a module ID to a specific file. This rule inspects the module ID
+    // being required and creates a warning if the ID contains a '.jsx' file extension.
+    'react/require-extension': [1, {
+      extensions: ['.js', '.jsx']
+    }],
+
+    // Prevent missing parentheses around multiline JSX
+    // Wrapping multiline JSX in parentheses can improve readability and/or convenience.
+    'react/wrap-multilines': [1, {
+      declaration: true,
+      assignment: true,
+      return: true
+    }]
   }
 }
