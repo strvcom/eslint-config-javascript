@@ -12,6 +12,12 @@ module.exports = {
   extends: '../../standard/known-errors.js',
 
   rules: {
+    // Prevent React to be incorrectly marked as unused
+    'react/jsx-uses-react': 2,
+
+    // Prevent variables used in JSX to be incorrectly marked as unused
+    'react/jsx-uses-vars': 2,
+
     // Prevent usage of setState in componentDidMount
     'react/no-did-mount-set-state': 2,
 
