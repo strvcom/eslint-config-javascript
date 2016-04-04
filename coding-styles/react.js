@@ -24,7 +24,6 @@ module.exports = {
     // requiring or one or more spaces before and after =.
     'react/jsx-equals-spacing': [1, 'always'],
 
-
     // Validate props indentation in JSX
     'react/jsx-indent-props': [1, 2],
 
