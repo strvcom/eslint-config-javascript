@@ -22,7 +22,7 @@ module.exports = {
     // Enforce or disallow spaces around equal signs in JSX attributes
     // This rule will enforce consistency of spacing around equal signs in JSX attributes, by
     // requiring or one or more spaces before and after =.
-    'react/jsx-equals-spacing': [1, 'always'],
+    'react/jsx-equals-spacing': [1, 'never'],
 
     // Validate props indentation in JSX
     'react/jsx-indent-props': [1, 2],
