@@ -98,6 +98,37 @@ module.exports = {
 
     // Disallow Ternary Operators
     // You kidding me? Ternaries are great!
-    'no-ternary': 0
+    'no-ternary': 0,
+
+
+    // eslint-plugin-react
+
+    // Forbid certain propTypes
+    // This rule checks all JSX components and verifies that no forbidden propsTypes are used.
+    'react/forbid-prop-types': 0,
+
+    // Prevent usage of setState
+    'react/no-set-state': 0,
+
+    // Prevent using string references
+    'react/no-string-refs': 0,
+
+    // Enforce propTypes declarations alphabetical sorting
+    'react/sort-prop-types': 0,
+
+    // Enforce event handler naming conventions in JSX
+    'react/jsx-handler-names': 0,
+
+    // Detect missing key prop
+    'react/jsx-key': 0,
+
+    // Limit maximum of props on a single line in JSX
+    'react/max-props-per-line': 0,
+
+    // Prevent usage of unwrapped JSX strings
+    'react/jsx-no-literals': 0,
+
+    // Enforce props alphabetical sorting
+    'react/jsx-sort-props': 0
   }
 }
