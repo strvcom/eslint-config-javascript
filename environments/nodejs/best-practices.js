@@ -40,11 +40,6 @@ module.exports = {
     // specifically for the method suffix "Sync" (as is the convention with Node.js operations).
     'no-sync': 1,
 
-    // Suggest using Reflect methods where applicable
-    // This rule should be enabled per environment because not all environments might have support
-    // for the Reflect API.
-    'prefer-reflect': 0,
-
     // Disallow process.env
     // This rule is aimed at discouraging use of process.env to avoid global dependencies throughout
     // the project's codebase.
