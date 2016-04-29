@@ -41,7 +41,8 @@ module.exports = {
     'no-sync': 1,
 
     // Suggest using Reflect methods where applicable
-    // @TODO: Requires Node.js support
+    // This rule should be enabled per environment because not all environments might have support
+    // for the Reflect API.
     'prefer-reflect': 0,
 
     // Disallow process.env

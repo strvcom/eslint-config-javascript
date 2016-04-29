@@ -32,8 +32,7 @@ module.exports = {
     // trace.
     'no-process-exit': 2,
 
-    // Suggest using the rest parameters instead of `arguments`
-    // @TODO: Requires Node.js support
-    'prefer-rest-params': 0
+    // Enforce usage of the rest parameters instead of the weird `arguments`
+    'prefer-rest-params': 2
   }
 }

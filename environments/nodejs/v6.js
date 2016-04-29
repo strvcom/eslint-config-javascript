@@ -8,8 +8,10 @@
 
 'use strict'
 
+/**
+ * This file configures ESLint to work with the Node.js 6.0 release
+ */
 module.exports = {
-  // This file configures ESLint to work with the newest ES 2015 syntax and features
   extends: './known-errors.js',
 
   env: {
@@ -26,14 +28,11 @@ module.exports = {
     // this rule to disable that syntax
     'no-restricted-syntax': [
       2,
-      // Rest parameters (not to be confused with rest arguments)
-      'RestElement',
-      // Default function parameters
-      'AssignmentPattern',
-      // Destructuring assignment
-      'ObjectPattern',
-      // Experimental object/rest spread
+      // Experimental object/rest spread (not in ES 2015)
       'ExperimentalRestProperty'
-    ]
+    ],
+
+    // Suggest using Reflect API where applicable
+    'prefer-reflect': 1
   }
 }
