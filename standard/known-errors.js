@@ -133,6 +133,13 @@ module.exports = {
     // block exist after a `return`, `throw`, `break`, or `continue` statement.
     'no-unreachable': 2,
 
+    // Disallow control flow statements in finally blocks
+    // JavaScript suspends the control flow statements of `try` and `catch` blocks until the
+    // execution of `finally` block finishes. So, when `return`, `throw`, `break`, or `continue` is
+    // used in `finally`, control flow statements inside `try` and `catch` are overwritten, which is
+    // considered as unexpected behavior.
+    'no-unsafe-finally': 2,
+
     // Disallow Unused Labels
     // Labels that are declared and not used anywhere in the code are most likely an error due to
     // incomplete refactoring.

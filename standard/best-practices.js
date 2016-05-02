@@ -191,6 +191,10 @@ module.exports = {
     // that can be replaced with the normal function invocation.
     'no-useless-call': 2,
 
+    // Disallow unnecessary computed property keys on objects
+    // It’s unnecessary to use computed properties when the property name is a literal.
+    'no-useless-computed-key': 1,
+
     // Disallow unncessary concatenation of strings
     // This rule aims to flag the concatenation of 2 literals when they could be combined into a
     // single literal.
