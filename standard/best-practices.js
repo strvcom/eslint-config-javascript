@@ -211,8 +211,16 @@ module.exports = {
     // modified after the initial assignment. This helps v8 to better optimise code at runtime.
     'prefer-const': 1,
 
-    // Suggest using Reflect methods where applicable
-    'prefer-reflect': 1,
+    // Suggest using Reflect API where applicable
+    // Note that it's better to use `delete`, `call()` and `.apply()` directly because they will
+    // throw an exception if there's something wrong with them (especially in the case of `delete`)
+    'prefer-reflect': [1, {
+      exceptions: [
+        'apply',
+        'call',
+        'delete'
+      ]
+    }],
 
     // Suggest using the spread operator instead of .apply()
     // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the

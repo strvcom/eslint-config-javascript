@@ -30,9 +30,6 @@ module.exports = {
       2,
       // Experimental object/rest spread (not in ES 2015)
       'ExperimentalRestProperty'
-    ],
-
-    // Suggest using Reflect API where applicable
-    'prefer-reflect': 1
+    ]
   }
 }
