@@ -100,6 +100,9 @@ module.exports = {
     // You kidding me? Ternaries are great!
     'no-ternary': 0,
 
+    // Enforce placing object properties on separate lines
+    // Unused, too restrictive.
+    'object-property-newline': 0,
 
     // eslint-plugin-react
 
