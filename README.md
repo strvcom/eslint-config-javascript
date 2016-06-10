@@ -27,7 +27,7 @@ This package can be installed via npm:
 
 ### Configuration
 
-Once the ruleset is installed, you must create your own *.eslintrc* configuration file in your project's root and include those rulesets that you want to use. See the [examples](examples) directory for, well... examples.
+Once the ruleset is installed, you must create your own *.eslintrc.{js,json,yml}* configuration file in your project's root and include those rulesets that you want to use. See the [examples](examples) directory for, well... examples.
 
 ## Structure
 
@@ -35,7 +35,7 @@ The ESLint rules are semantically grouped into various categories for easy compo
 
 ### [Environments](environments)
 
-These rules are the ones you should be including in your *.eslintrc* configuration. They are separated into categories based on the environment for which the code is being developed. Additionally, each environment provides several levels of "strictness" which the developer can choose from. This level of separation is meant as a means to gradual adoption of **all the rulesets**.
+These rules are the ones you should be including in your *.eslintrc.{js,json,yml}* configuration. They are separated into categories based on the environment for which the code is being developed. Additionally, each environment provides several levels of "strictness" which the developer can choose from. This level of separation is meant as a means to gradual adoption of **all the rulesets**.
 
 > It is recommended for new projects to include all levels.
 
@@ -61,4 +61,4 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [eslint-url]: http://eslint.org
 [travis-badge]: https://travis-ci.org/strvcom/js-coding-standards.svg
 [travis-url]: https://travis-ci.org/strvcom/js-coding-standards
-[eslint-version]: https://img.shields.io/badge/ESLint->=2.2.0-brightgreen.svg
+[eslint-version]: https://img.shields.io/badge/ESLint->=2.9.0-brightgreen.svg
