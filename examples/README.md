@@ -1,10 +1,10 @@
 # Project configuration examples
 
-To use these rulesets, you must have an *.eslintrc* configuration file present in your project root. In this file, you then include those rulesets which you would like to use in your project.
+To use these rulesets, you must have an *.eslintrc.{js,json,yml}* configuration file present in your project root. In this file, you then include those rulesets which you would like to use in your project.
 
-The path to the ruleset must start with `eslint-config-javascript` (this ruleset's package name). Optionally, ESLint allows to drop the `eslint-config` to keep it short. The rest of the path is an actual folder/file in this repository. Extensions can be omitted. For detailed explanation, see ESLint's [shareable configs][shareable-configs].
+Your `extends` entry must always start with `@strv/javascript`. The rest of the path is an actual folder/file in this repository. Extensions **should** be omitted. For detailed explanation, see ESLint's [shareable configs][shareable-configs].
 
-Your configuration file can either be json, classic Node.js module, or YAML file.
+Your configuration file can either be json, classic Node.js module, or YAML file. It is recommended **not** to use json, because sometimes you might want to include some comment as to why you are doing this or that, which is not possible with json.
 
 ```js
 // .eslintrc.js

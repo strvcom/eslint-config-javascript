@@ -29,6 +29,13 @@ This package can be installed via npm:
 
 Once the ruleset is installed, you must create your own *.eslintrc.{js,json,yml}* configuration file in your project's root and include those rulesets that you want to use. See the [examples](examples) directory for, well... examples.
 
+> **WARNING:** The order in which various configuration files are loaded **DOES MATTER**. The recommended load order is the following:
+>
+> - One of the versioned configurations for the chosen environment, ie. *environments/nodejs/v6*
+> - The best practices configuration file (if it exists), ie. *environments/nodejs/best-practices*
+> - The optional configuration file (if it exists), ie. *environments/nodejs/optional*
+> - Coding style ruleset, ie. *coding-styles/base*
+
 ## Structure
 
 The ESLint rules are semantically grouped into various categories for easy composition.
