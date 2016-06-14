@@ -104,6 +104,10 @@ module.exports = {
     // Unused, too restrictive.
     'object-property-newline': 0,
 
+    // Require or disallow line breaks inside braces
+    // Unused, too restrictive.
+    'object-curly-newline': 0,
+
     // eslint-plugin-react
 
     // Forbid certain propTypes

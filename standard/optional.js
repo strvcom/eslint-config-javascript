@@ -46,6 +46,15 @@ module.exports = {
     // code to a certain number of characters.
     'max-len': [1, 100, 2],
 
+    // Enforce a maximum file length
+    // This rule enforces a maximum number of lines per file, in order to aid in maintainability and
+    // reduce complexity.
+    'max-lines': [1, {
+      max: 600,
+      skipBlankLines: true,
+      skipComments: true
+    }],
+
     // Limit Maximum Number of Parameters
     // Functions that take numerous parameters can be difficult to read and write because it
     // requires the memorization of what each parameter is, its type, and the order they should

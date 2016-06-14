@@ -53,7 +53,15 @@ module.exports = {
     //
     // @see  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/
     //       Operator_Precedence
-    'no-extra-parens': 1,
+    'no-extra-parens': [1, 'all', {
+      nestedBinaryExpressions: false
+    }],
+
+    // Disallow mixes of different operators
+    // Enclosing complex expressions by parentheses clarifies the developer’s intention, which makes
+    // the code more readable. This rule warns when different operators are used consecutively
+    // without parentheses in an expression.
+    'no-mixed-operators': 1,
 
     // Disallow Initializing to undefined
     // In JavaScript, a variable that is declared and not initialized to any value automatically

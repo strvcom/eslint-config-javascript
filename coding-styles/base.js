@@ -302,6 +302,11 @@ module.exports = {
     // This rule is aimed at ensuring consistency of string quotes.
     quotes: [1, 'single', 'avoid-escape'],
 
+    // Enforce spacing between rest and spread operators and their expressions
+    // This rule aims to enforce consistent spacing between rest and spread operators and their
+    // expressions.
+    'rest-spread-spacing': [1, 'never'],
+
     // Enforce spacing before and after semicolons
     'semi-spacing': [1, {
       before: false,
