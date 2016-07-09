@@ -25,6 +25,11 @@ module.exports = {
     // instead.
     'func-names': 1,
 
+    // Disallow Use of Alert
+    // This rule is aimed at catching debugging code that should be removed and popup UI elements
+    // that should be replaced with less obtrusive, custom UIs.
+    'no-alert': 1,
+
     // Disallow lexical declarations in case/default clauses
     // This rule disallows lexical declarations (let, const, function and class) in case/default
     // clauses. The reason is that the lexical declaration is visible in the entire switch block but

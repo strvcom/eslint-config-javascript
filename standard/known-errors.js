@@ -97,6 +97,11 @@ module.exports = {
     // character for example.
     'no-irregular-whitespace': 2,
 
+    // Disallow Iterator (__iterator__)
+    // This rule is aimed at preventing errors that may arise from using the __iterator__ property,
+    // which is not implemented in several browsers.
+    'no-iterator': 2,
+
     // Disallow negated left operand of `in` operator
     'no-negated-in-lhs': 2,
 
@@ -111,6 +116,11 @@ module.exports = {
     // Disallow Spaces in Regular Expressions
     // This rule aims to eliminate errors due to multiple spaces inside of a regular expression.
     'no-regex-spaces': 2,
+
+    // Disallow Script URLs
+    // Using javascript: URLs is considered by some as a form of eval. Code passed in javascript:
+    // URLs has to be parsed and evaluated by the browser in the same way that eval is processed.
+    'no-script-url': 2,
 
     // Disallow Self Assignment
     // Self assignments have no effect, so probably those are an error due to incomplete

@@ -18,11 +18,6 @@ module.exports = {
     // Unused, too restrictive.
     'id-blacklist': 0,
 
-    // Disallow Use of Alert
-    // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
-    // exists.
-    'no-alert': 0,
-
     // Disallow arrow functions where they could be confused with comparisons
     'no-confusing-arrow': 0,
 
@@ -40,11 +35,6 @@ module.exports = {
     // Unused, front-end specific.
     'no-implicit-globals': 0,
 
-    // Disallow Iterator (__iterator__)
-    // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
-    // exists.
-    'no-iterator': 0,
-
     // Disallow Multiline Strings
     // Unused, seems handy. This rule should be enabled when pre-ES5 compatibility is required.
     'no-multi-str': 0,
@@ -53,13 +43,6 @@ module.exports = {
     // Unused, too restrictive. This is used frequently to "normalise" a function input and define
     // default values (if ES6's function parameter defaults are not available).
     'no-param-reassign': 0,
-
-    // Disallow Script URLs
-    // Using javascript: URLs is considered by some as a form of eval. Code passed in javascript:
-    // URLs has to be parsed and evaluated by the browser in the same way that eval is processed.
-    // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
-    // exists.
-    'no-script-url': 0,
 
     // Disallow ++ and --
     // Unused, these operators are quite useful as long as whitespace is used responsibly around
