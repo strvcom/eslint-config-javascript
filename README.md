@@ -57,7 +57,7 @@ These rules are intended to be used independently on platform. However, you shou
 - **standard:** Finished
 - **environments**
   - nodejs: Finished
-  - react: Basic support (not all rules covered yet)
+  - react: Finished
 - **coding-styles:** Finished
 
 ## License
@@ -68,4 +68,4 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [eslint-url]: http://eslint.org
 [travis-badge]: https://travis-ci.org/strvcom/js-coding-standards.svg
 [travis-url]: https://travis-ci.org/strvcom/js-coding-standards
-[eslint-version]: https://img.shields.io/badge/ESLint->=2.9.0-brightgreen.svg
+[eslint-version]: https://img.shields.io/badge/ESLint->=3.0.0-brightgreen.svg
