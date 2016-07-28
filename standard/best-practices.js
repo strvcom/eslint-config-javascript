@@ -15,8 +15,9 @@ module.exports = {
     'array-callback-return': 1,
 
     // This rule enforces consistent use of trailing commas in object and array literals
-    // Never allow trailing commas
-    'comma-dangle': [2, 'never'],
+    // Allow trailing commas for func parameters, array and object literals spread across
+    // multiple lines
+    'comma-dangle': [2, 'only-multiline'],
 
     // Require Function Expressions to have a Name
     // If you provide the optional name for a function expression then you will get the name of the
