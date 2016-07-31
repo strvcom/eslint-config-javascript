@@ -213,6 +213,12 @@ module.exports = {
     // with a mixture of tabs and spaces.
     'no-mixed-spaces-and-tabs': 1,
 
+    // Disallow tabs
+    // Use of tabs is discouraged in favour of spaces because there is no "standard" width for a tab
+    // character and many viewers/editors use their own tab width, which could cause code to be
+    // misaligned and not formatted as intended/indented.
+    'no-tabs': 1,
+
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
