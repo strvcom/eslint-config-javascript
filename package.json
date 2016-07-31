@@ -17,7 +17,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^3.0.0"
+    "eslint": "^3.2.0"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
     "lint": "eslint standard environments coding-styles unused.js default.js"
   },
   "devDependencies": {
-    "eslint": "^3.0.0"
+    "eslint": "^3.2.0"
   }
 }
