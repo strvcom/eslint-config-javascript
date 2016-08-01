@@ -72,14 +72,6 @@ These rules help developers adhere to a certain coding style. They do not provid
 
 These rules are intended to be used independently on platform. However, you should still consider including rules for your environment if you really care about high-quality JavaScript.
 
-## Status
-
-- **standard:** Finished
-- **environments**
-  - nodejs: Finished
-  - react: Finished
-- **coding-styles:** Finished
-
 ## License
 
 This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](LICENSE) file for more information.
