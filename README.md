@@ -36,6 +36,26 @@ Once the ruleset is installed, you must create your own *.eslintrc.{js,json,yml}
 > - The optional configuration file (if it exists), ie. *environments/nodejs/optional*
 > - Coding style ruleset, ie. *coding-styles/base*
 
+### Example configuration file
+
+Here is an example *.eslintrc.js* configuration file. You can copy/paste it into your project, if you like.
+
+```js
+'use strict'
+
+module.exports = {
+  extends: [
+    // Include configuration for working with Node.js source code
+    '@strv/javascript/environments/nodejs/v6',
+    '@strv/javascript/environments/nodejs/best-practices',
+    '@strv/javascript/environments/nodejs/optional',
+    // Include coding style configuration. This does not depend on
+    // any of the above and should be included last.
+    '@strv/javascript/coding-styles/base'
+  ]
+}
+```
+
 ## Structure
 
 The ESLint rules are semantically grouped into various categories for easy composition.
