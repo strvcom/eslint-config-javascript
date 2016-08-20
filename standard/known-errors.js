@@ -102,8 +102,10 @@ module.exports = {
     // which is not implemented in several browsers.
     'no-iterator': 2,
 
-    // Disallow negated left operand of `in` operator
-    'no-negated-in-lhs': 2,
+    // Disallow negating the left operand of relational operators
+    // This rule disallows negating the left operand of Relational Operators
+    // See MDN: https://goo.gl/nFA3Mk
+    'no-unsafe-negation': 2,
 
     // Disallow Symbol Constructor
     // This rule is aimed at preventing the accidental calling of Symbol with the `new` operator.
@@ -132,6 +134,11 @@ module.exports = {
     // array literal. The confusion around sparse arrays defined in this manner is enough that it's
     // recommended to avoid using them.
     'no-sparse-arrays': 2,
+
+    // Disallow template literal placeholder syntax in regular strings
+    // This rule aims to warn when a regular string contains what looks like a template literal
+    // placeholder.
+    'no-template-curly-in-string': 1,
 
     // Avoid unexpected multiline expressions
     // This particular rule aims to spot scenarios where a newline looks like it is ending a
@@ -272,9 +279,11 @@ module.exports = {
     // This rule is aimed at eliminating unintentional fallthrough of one case to the other.
     'no-fallthrough': 2,
 
-    // Disallow Reassignment of Native Objects
-    // Reports an error when they encounter an attempt to assign a value to built-in native object.
-    'no-native-reassign': 2,
+    // Disallow assignment to native objects or read-only global variables
+    // This rule disallows modifications to read-only global variables.
+    'no-global-assign': [2, {
+      exceptions: ['Promise']
+    }],
 
     // Disallow Octal Escapes
     // As of version 5 of the ECMAScript specification, octal escape sequences are a deprecated

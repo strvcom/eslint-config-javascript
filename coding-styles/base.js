@@ -232,10 +232,10 @@ module.exports = {
     // disallowing the use of nested ternary expressions.
     'no-nested-ternary': 2,
 
-    // Disallow Spaces in Function Calls
-    // While it's possible to have whitespace between the name of a function and the parentheses
-    // that execute it, such patterns tend to look more like errors.
-    'no-spaced-func': 1,
+    // Require or disallow spacing between function identifiers and their invocations
+    // This rule disallows spaces between the function name and the opening parenthesis that calls
+    // it.
+    'func-call-spacing': 1,
 
     // Disallow trailing spaces at the end of lines
     // Sometimes in the course of editing files, you can end up with extra whitespace at the end of

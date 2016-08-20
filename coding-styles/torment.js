@@ -40,6 +40,10 @@ module.exports = {
     // Of course you should sort your imports! It makes your code look more like poetry!
     'sort-imports': 1,
 
+    // Object key sorting
+    // And of course you should sort your keys, who wants to look at such ugly, unsorted objects?
+    'sort-keys': 1,
+
     // Variable Sorting
     // Sort all the things!
     'sort-vars': 1,
