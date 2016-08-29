@@ -14,6 +14,10 @@ module.exports = {
     // This rule enforces usage of return statement in callbacks of array's methods.
     'array-callback-return': 1,
 
+    // Enforce that class methods utilize this
+    // If a class method does not use `this`, it can safely be made a static function.
+    'class-methods-use-this': 1,
+
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
@@ -248,6 +252,11 @@ module.exports = {
     // Suggest using template literals instead of string concatenation
     // This rule is aimed to flag usage of + operators with strings.
     'prefer-template': 1,
+
+    // Require symbol description
+    // This rule requires a description when creating symbols. Using description promotes easier
+    // debugging - when a symbol is logged the description is used.
+    'symbol-description': 1,
 
     // Require Variable Declarations to be at the top of their scope
     // This rule aims to keep all variable declarations in the leading series of statements.
