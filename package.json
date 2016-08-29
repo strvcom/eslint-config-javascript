@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-javascript",
   "description": "Write bulletproof JavaScript like a pro!",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",
   "bugs": {
     "url": "https://github.com/strvcom/js-coding-standards/issues"
@@ -17,7 +17,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^3.3.0"
+    "eslint": "^3.4.0"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
     "lint": "eslint standard environments coding-styles unused.js default.js"
   },
   "devDependencies": {
-    "eslint": "^3.3.0"
+    "eslint": "^3.4.0"
   }
 }
