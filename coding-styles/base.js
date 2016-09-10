@@ -160,6 +160,23 @@ module.exports = {
       after: true
     }],
 
+    // Enforce position of line comments
+    // This rule enforces consistent position of line comments. Block comments are not affected by
+    // this rule.
+    'line-comment-position': [1, {
+      position: 'above'
+    }],
+
+    // Require or disallow newlines around directives
+    // This rule requires or disallows blank newlines around directive prologues. This rule does not
+    // enforce any conventions about blank newlines between the individual directives. In addition,
+    // it does not require blank newlines before directive prologues unless they are preceded by a
+    // comment.
+    'lines-around-directive': [1, {
+      before: 'always',
+      after: 'always'
+    }],
+
     // Disallow mixing CRLF and LF linebreaks
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': [2, 'unix'],

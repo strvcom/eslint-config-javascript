@@ -233,6 +233,11 @@ module.exports = {
     // modified after the initial assignment. This helps v8 to better optimise code at runtime.
     'prefer-const': 1,
 
+    // Disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    // This rule disallows parseInt() if it is called with two arguments: a string and a radix
+    // option of 2 (binary), 8 (octal), or 16 (hexadecimal).
+    'prefer-numeric-literals': 1,
+
     // Suggest using Reflect API where applicable
     // Note that it's better to use `delete`, `call()` and `.apply()` directly because they will
     // throw an exception if there's something wrong with them (especially in the case of `delete`)
