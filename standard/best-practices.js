@@ -14,10 +14,6 @@ module.exports = {
     // This rule enforces usage of return statement in callbacks of array's methods.
     'array-callback-return': 1,
 
-    // Enforce that class methods utilize this
-    // If a class method does not use `this`, it can safely be made a static function.
-    'class-methods-use-this': 1,
-
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines

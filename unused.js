@@ -14,6 +14,11 @@ module.exports = {
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,
 
+    // Enforce that class methods utilize `this`
+    // Unused, many a time you need to add a method on a class just to make it adhere to a
+    // prescribed API (ie. React components).
+    'class-methods-use-this': 0,
+
     // Blacklist certain identifiers
     // Unused, too restrictive.
     'id-blacklist': 0,
