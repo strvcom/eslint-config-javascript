@@ -11,6 +11,9 @@
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-react": "^6.3.0"
   },
+  "devDependencies": {
+    "eslint": "^3.5.0"
+  },
   "engines": {},
   "homepage": "https://github.com/strvcom/js-coding-standards",
   "keywords": [
@@ -28,8 +31,5 @@
   },
   "scripts": {
     "lint": "eslint standard environments coding-styles unused.js default.js"
-  },
-  "devDependencies": {
-    "eslint": "^3.5.0"
   }
 }
