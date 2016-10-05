@@ -43,17 +43,9 @@ module.exports = {
     // Prevent usage of deprecated methods
     'react/no-deprecated': 1,
 
-    // Restrict file extensions that may be required
-    // require() statements should generally not include a file extension as there is a well defined
-    // mechanism for resolving a module ID to a specific file. This rule inspects the module ID
-    // being required and creates a warning if the ID contains a '.jsx' file extension.
-    'react/require-extension': [1, {
-      extensions: ['.js', '.jsx']
-    }],
-
     // Prevent missing parentheses around multiline JSX
     // Wrapping multiline JSX in parentheses can improve readability and/or convenience.
-    'react/wrap-multilines': [1, {
+    'react/jsx-wrap-multilines': [2, {
       declaration: true,
       assignment: true,
       return: true
