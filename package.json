@@ -7,7 +7,9 @@
     "url": "https://github.com/strvcom/js-coding-standards/issues"
   },
   "contributors": [],
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-react": "^6.3.0"
+  },
   "engines": {},
   "homepage": "https://github.com/strvcom/js-coding-standards",
   "keywords": [
