@@ -9,6 +9,14 @@
 'use strict'
 
 module.exports = {
+  plugins: [
+    'import'
+  ],
+
+  settings: {
+    'import/extensions': ['.js', 'jsx', '.es']
+  },
+
   rules: {
     // Disallow Assignment in Conditional Statements
     // This rule is aimed at eliminating ambiguous assignments in for, if, while, and do...while
@@ -327,6 +335,36 @@ module.exports = {
     }],
 
     // Disallow generator functions that do not have yield
-    'require-yield': 2
+    'require-yield': 2,
+
+    // Ensure an imported module can be resolved to a module on the local filesystem
+    'import/no-unresolved': [2, {
+      commonjs: true
+    }],
+
+    // Verifies that all named imports are part of the set of named exports in the referenced module
+    'import/named': 2,
+
+    // If a default import is requested, this rule will report if there is no default export in the
+    // imported module
+    'import/default': 2,
+
+    // Enforces names exist at the time they are dereferenced, when imported as a full namespace
+    'import/namespace': 2,
+
+    // Forbid import of modules using absolute paths
+    // Node.js allows the import of modules using an absolute path such as */home/xyz/file.js*. That
+    // is a bad practice as it ties the code using it to your computer.
+    'import/no-absolute-path': 2,
+
+    // Reports funny business with exports, like repeated exports of names or defaults
+    'import/export': 2,
+
+    // Forbid the use of extraneous packages
+    // Forbid the import of external modules that are not declared in package.json.
+    'import/no-extraneous-dependencies': 2,
+
+    // Forbid the use of mutable exports with var or let
+    'import/no-mutable-exports': 2
   }
 }

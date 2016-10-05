@@ -377,6 +377,9 @@ module.exports = {
     'wrap-iife': [1, 'inside'],
 
     // Enforce spacing around the * in `yield*` expressions
-    'yield-star-spacing': [1, 'after']
+    'yield-star-spacing': [1, 'after'],
+
+    // Enforces having an empty line after the last top-level import statement or require call
+    'import/newline-after-import': 1
   }
 }

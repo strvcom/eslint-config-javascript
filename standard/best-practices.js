@@ -278,6 +278,23 @@ module.exports = {
     // While there are no performance differences between the two approaches, the byte savings and
     // conciseness of the object literal form is what has made it the de facto way of creating new
     // objects.
-    'no-new-object': 1
+    'no-new-object': 1,
+
+    // Reports use of an exported name as the locally imported name of a default export
+    'import/no-named-as-default': 1,
+
+    // Reports use of an exported name as a property on the default export
+    // Accessing a property that has a name that is shared by an exported name from the same module
+    // is likely to be a mistake.
+    'import/no-named-as-default-member': 1,
+
+    // This rule reports any imports that come after non-import statements
+    'import/first': 1,
+
+    // Reports if a resolved path is imported more than once
+    'import/no-duplicates': 1,
+
+    // Ensure consistent use of file extension within the import path
+    'import/extensions': [1, 'never']
   }
 }

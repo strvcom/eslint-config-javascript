@@ -8,6 +8,7 @@
   },
   "contributors": [],
   "dependencies": {
+    "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-react": "^6.3.0"
   },
   "engines": {},

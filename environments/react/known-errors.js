@@ -61,6 +61,11 @@ module.exports = {
     // Prevent missing React when using JSX
     // When using JSX, <a /> expands to React.createElement("a"). Therefore the React variable must
     // be in scope.
-    'react/react-in-jsx-scope': 2
+    'react/react-in-jsx-scope': 2,
+
+    // Forbid Webpack loader syntax in imports
+    // This syntax is non-standard, so it couples the code to Webpack. The recommended way to
+    // specify Webpack loader configuration is in a Webpack configuration file.
+    'import/no-webpack-loader-syntax': 2
   }
 }
