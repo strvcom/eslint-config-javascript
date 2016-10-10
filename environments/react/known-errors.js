@@ -105,7 +105,7 @@ module.exports = {
 
     // Enforce ES6 class for React Components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
-    'react/prefer-es6-class': [2, 'always']
+    'react/prefer-es6-class': [2, 'always'],
 
     // Prevent missing props validation in a React component definition
     // PropTypes improve the reusability of your component by validating the received data. It can
