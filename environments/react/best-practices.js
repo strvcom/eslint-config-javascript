@@ -16,39 +16,37 @@ module.exports = {
     // Enforce boolean attributes notation in JSX
     // In JSX when using a boolean attribute you can set the attribute value to true or omit the
     // value. This rule will enforce one or the other to keep consistency in your code.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': [1, 'never'],
 
-    // Prevent missing displayName in a React component definition
-    'react/display-name': 1,
+    // Restrict file extensions that may contain JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': [1, { extensions: ['.jsx'] }],
 
-    // Prevent multiple component definitions per file
-    'react/no-multi-comp': [1, {
-      ignoreStateless: true
-    }],
+    // Detect missing key prop
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
+    'react/jsx-key': 1,
 
-    // Prevent extra closing tags for components without children
-    'react/self-closing-comp': 1,
+    // Prevent comments from being inserted as text nodes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
+    'react/jsx-no-comment-textnodes': 1,
 
-    // Enforce ES6 class for React Components
-    'react/prefer-es6-class': 2,
+    // Prevent usage of dangerous JSX properties
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
+    'react/no-danger': 1,
 
     // Enforce stateless React Components to be written as a pure function
     // Stateless functional components are more simple than class based components and will benefit
     // from future React performance optimizations specific to these components.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
     'react/prefer-stateless-function': 1,
 
-    // Prevent usage of dangerous JSX properties
-    'react/no-danger': 1,
-
-    // Prevent usage of deprecated methods
-    'react/no-deprecated': 1,
-
-    // Prevent missing parentheses around multiline JSX
-    // Wrapping multiline JSX in parentheses can improve readability and/or convenience.
-    'react/jsx-wrap-multilines': [2, {
-      declaration: true,
-      assignment: true,
-      return: true
+    // Enforce propTypes declarations alphabetical sorting
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
+    'react/sort-prop-types': [1, {
+      ignoreCase: true,
+      callbacksLast: false,
+      requiredFirst: false,
     }]
   }
 }
