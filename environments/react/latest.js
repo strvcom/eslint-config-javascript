@@ -22,6 +22,11 @@ module.exports = {
     }
   },
 
+  rules: {
+    'operator-linebreak': 0,
+    'require-jsdoc': 0,
+  },
+
   plugins: [
     'react'
   ],

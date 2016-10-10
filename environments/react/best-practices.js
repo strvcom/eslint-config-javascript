@@ -47,6 +47,10 @@ module.exports = {
       ignoreCase: true,
       callbacksLast: false,
       requiredFirst: false,
-    }]
+    }],
+
+    // Disallow Use of console
+    // Turned off for React apps
+    'no-console': 0
   }
 }
