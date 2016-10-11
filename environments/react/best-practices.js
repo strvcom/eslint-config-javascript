@@ -21,7 +21,9 @@ module.exports = {
 
     // Restrict file extensions that may contain JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-filename-extension': [1, { extensions: ['.jsx'] }],
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.jsx']
+    }],
 
     // Detect missing key prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -50,7 +52,7 @@ module.exports = {
     }],
 
     // Disallow Use of console
-    // Turned off for React apps
+    // Turned off for React apps, console is quite useful in browsers
     'no-console': 0
   }
 }

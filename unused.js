@@ -103,37 +103,28 @@ module.exports = {
     // This rule checks all JSX components and verifies that no forbidden propsTypes are used.
     'react/forbid-prop-types': 0,
 
+    // eslint-plugin-react
+
     // Prevent usage of setState
     'react/no-set-state': 0,
-
-    // Limit maximum of props on a single line in JSX
-    'react/max-props-per-line': 0,
 
     // Prevent usage of unwrapped JSX strings
     'react/jsx-no-literals': 0,
 
     // Enforce props alphabetical sorting
-    'react/jsx-sort-props': [0, {
-      ignoreCase: true,
-      callbacksLast: false,
-      shorthandFirst: false,
-      shorthandLast: false,
-    }],
+    'react/jsx-sort-props': 0,
 
     // Limit maximum of props on a single line in JSX
-    'react/jsx-max-props-per-line': [0, { maximum: 1 }],
+    'react/jsx-max-props-per-line': 0,
 
     // Enforce event handler naming conventions in JSX
-    'react/jsx-handler-names': [0, {
-      eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
-    }],
+    'react/jsx-handler-names': 0,
 
     // Prevent missing displayName in a React component definition
-    'react/display-name': [0, { ignoreTranspilerName: false }],
+    'react/display-name': 0,
 
     // Forbid certain props on Components
-    'react/forbid-component-props': [0, { forbid: [] }],
+    'react/forbid-component-props': 0,
 
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0

@@ -17,13 +17,15 @@ module.exports = {
     'react/jsx-no-bind': [2, {
       ignoreRefs: true,
       allowArrowFunctions: true,
-      allowBind: false,
+      allowBind: false
     }],
 
     // Prevent duplicate properties in JSX
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
-    'react/jsx-no-duplicate-props': [2, { ignoreCase: true }],
+    'react/jsx-no-duplicate-props': [2, {
+      ignoreCase: true
+    }],
 
     // Prevent usage of unsafe target='_blank'
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
@@ -79,7 +81,9 @@ module.exports = {
 
     // Prevent multiple component definitions per file
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-    'react/no-multi-comp': [2, { ignoreStateless: true }],
+    'react/no-multi-comp': [2, {
+      ignoreStateless: true
+    }],
 
     // Prevent usage of the return value of React.render
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
@@ -100,7 +104,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
     'react/no-unused-prop-types': [2, {
       customValidators: [],
-      skipShapeProps: false,
+      skipShapeProps: false
     }],
 
     // Enforce ES6 class for React Components
@@ -112,7 +116,10 @@ module.exports = {
     // warn other developers if they make a mistake while reusing the component with improper data
     // type.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [2, { ignore: [], customValidators: [] }],
+    'react/prop-types': [2, {
+      ignore: [],
+      customValidators: []
+    }],
 
     // Prevent missing React when using JSX
     // When using JSX, <a /> expands to React.createElement("a"). Therefore the React variable must
