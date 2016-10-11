@@ -99,8 +99,6 @@ module.exports = {
     // Unused, too restrictive.
     'object-curly-newline': 0,
 
-    // eslint-plugin-react
-
     // Forbid certain propTypes
     // This rule checks all JSX components and verifies that no forbidden propsTypes are used.
     'react/forbid-prop-types': 0,
@@ -136,12 +134,6 @@ module.exports = {
 
     // Forbid certain props on Components
     'react/forbid-component-props': [0, { forbid: [] }],
-
-    // Forbid certain propTypes
-    'react/forbid-prop-types': 0,
-
-    // Prevent usage of setState
-    'react/no-set-state': 0,
 
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0
