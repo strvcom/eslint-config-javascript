@@ -19,10 +19,6 @@ module.exports = {
     es6: true
   },
 
-  parserOptions: {
-    ecmaVersion: 6
-  },
-
   rules: {
     // ESLint no longer supports disabling some still unsuported ES 2015 features, so we need to use
     // this rule to disable that syntax
