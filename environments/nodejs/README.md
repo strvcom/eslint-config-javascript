@@ -8,10 +8,6 @@ These configuration files are suitable to lint code which will run on Node.js.
 
 Suitable for projects running on Node.js v6. Also includes Node-specific ruleset for known errors.
 
-### @strv/javascript/environments/nodejs/v5
-
-Suitable for projects running on Node.js v5. It configures ESLint to allow known ES 2015 features and disallow those still missing. Also includes Node-specific rulesets for known errors.
-
 ### @strv/javascript/environments/nodejs/best-practices
 
 Use this ruleset in conjunction with one of the version-specific configuration files. Provides additional safety checks to flag potentially unsafe code.
