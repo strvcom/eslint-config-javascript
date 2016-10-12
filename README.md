@@ -37,7 +37,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
   > These are for browser-specific code which uses React.
 
 - @strv/javascript/coding-styles/recommended
-  > These rules include rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
+  > This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
 
 - @strv/javascript/coding-styles/fixable
   > This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
