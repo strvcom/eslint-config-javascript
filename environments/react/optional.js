@@ -10,7 +10,7 @@
 
 module.exports = {
 
-  extends: '../../standard/optional.js',
+  extends: '../shared/optional.js',
 
   rules: {
     // Disallow Use of Alert

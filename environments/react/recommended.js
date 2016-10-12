@@ -10,7 +10,7 @@
 
 module.exports = {
 
-  extends: '../../standard/recommended.js',
+  extends: '../shared/recommended.js',
 
   rules: {
     // Enforce JSX Quote Style

@@ -10,7 +10,7 @@
 
 module.exports = {
 
-  extends: '../../standard/recommended.js',
+  extends: '../shared/recommended.js',
 
   rules: {
     // Enforce `require()` on the top-level module scope
