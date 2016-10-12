@@ -126,6 +126,25 @@ module.exports = {
     // requiring the use of parentheses when invoking a constructor via the new keyword.
     'new-parens': 1,
 
+    // Disallow unnecessary parentheses
+    // This rule restricts the use of parentheses to only where they are necessary.
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+    'no-extra-parens': [1, 'all', {
+      nestedBinaryExpressions: false
+    }],
+
+    // Disallow Floating Decimals
+    // Float values in JavaScript contain a decimal point, and there is no requirement that the
+    // decimal point be preceded or followed by a number. Although not a syntax error, this format
+    // for numbers can make it difficult to distinguish between true decimal numbers and the dot
+    // operator.
+    'no-floating-decimal': 1,
+
+    // Disallow the type conversion with shorter notations
+    // This rule is aimed to flag shorter notations for the type conversion, then suggest a more
+    // self-explanatory notation.
+    'no-implicit-coercion': 1,
+
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
@@ -146,6 +165,10 @@ module.exports = {
     // issues, many code conventions require that trailing spaces be removed before checkin.
     'no-trailing-spaces': 1,
 
+    // Disallow unnecessary computed property keys on objects
+    // It’s unnecessary to use computed properties when the property name is a literal.
+    'no-useless-computed-key': 1,
+
     // Disallow whitespace before properties
     // This rule alerts for whitespace around the dot or brackets before properties of objects if
     // they are on the same line. It does not alert for whitespace when the object and property are
@@ -165,6 +188,24 @@ module.exports = {
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.
     'padded-blocks': [1, 'never'],
+
+    // Suggest using arrow functions as callbacks
+    // This rule is aimed to flag usage of function expressions in an argument list.
+    'prefer-arrow-callback': 1,
+
+    // Suggest using const
+    // This rule is aimed at flagging variables that are declared using let keyword, but never
+    // modified after the initial assignment. This helps v8 to better optimise code at runtime.
+    'prefer-const': 1,
+
+    // Disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    // This rule disallows parseInt() if it is called with two arguments: a string and a radix
+    // option of 2 (binary), 8 (octal), or 16 (hexadecimal).
+    'prefer-numeric-literals': 1,
+
+    // Suggest using template literals instead of string concatenation
+    // This rule is aimed to flag usage of + operators with strings.
+    'prefer-template': 1,
 
     // Quoting Style for Property Names
     // This rule aims to enforce use of quotes in property names.
@@ -227,6 +268,11 @@ module.exports = {
     'wrap-iife': [1, 'inside'],
 
     // Enforce spacing around the * in `yield*` expressions
-    'yield-star-spacing': [1, 'after']
+    'yield-star-spacing': [1, 'after'],
+
+    // Require or disallow Yoda Conditions
+    // Yoda conditions are so named because the literal value of the condition comes first while the
+    // variable comes second ("red" === color).
+    yoda: 1,
   }
 }

@@ -14,6 +14,7 @@
 //
 // You have been warned.
 module.exports = {
+
   extends: './base.js',
 
   rules: {

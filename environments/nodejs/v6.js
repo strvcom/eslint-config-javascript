@@ -12,7 +12,8 @@
  * This file configures ESLint to work with the Node.js 6.0 release
  */
 module.exports = {
-  extends: './known-errors.js',
+
+  extends: './recommended.js',
 
   env: {
     node: true,

@@ -19,16 +19,16 @@ module.exports = {
     // This rule can enforce the use of braces around arrow function body.
     'arrow-body-style': [1, 'as-needed'],
 
+    // This rule enforces consistent use of trailing commas in object and array literals
+    // Allow trailing commas for func parameters, array and object literals spread across
+    // multiple lines
+    'comma-dangle': [1, 'only-multiline'],
+
     // Require Following Curly Brace Conventions
     // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
     // statements are wrapped in curly braces.
     // All block statements must be wrapped in curly braces
     curly: [1, 'all'],
-
-    // Disallow return in else
-    // If an if block contains a return statement, the else block becomes unnecessary. Its contents
-    // can be placed outside of the block.
-    'no-else-return': 1,
 
     // Require Brace Style
     // The one true brace style is one of the most common brace styles in JavaScript, in which the
@@ -79,6 +79,18 @@ module.exports = {
       position: 'above'
     }],
 
+    // Limit Maximum Length of Line
+    // Very long lines of code in any language can be difficult to read. In order to aid in
+    // readability and maintainability many coders have developed a convention to limit lines of
+    // code to a certain number of characters.
+    'max-len': [1, 100, 2],
+
+    // Limit Maximum Number of Parameters
+    // Functions that take numerous parameters can be difficult to read and write because it
+    // requires the memorization of what each parameter is, its type, and the order they should
+    // appear in.
+    'max-params': [1, 4],
+
     // Set Maximum Depth of Nested Callbacks
     // This rule is aimed at increasing code clarity by discouraging deeply nesting callbacks.
     'max-nested-callbacks': [1, 4],
@@ -110,6 +122,24 @@ module.exports = {
       ignoreChainWithDepth: 3
     }],
 
+    // Disallow duplicate exports/imports
+    // An ES6/ES2015 import can be spread over multiple lines, but this takes up unneeded
+    // whitespace. This rules validates that all imports from a single module exists in a single
+    // import statement.
+    'no-duplicate-imports': [1, {
+      includeExports: true
+    }],
+
+    // Disallow return in else
+    // If an if block contains a return statement, the else block becomes unnecessary. Its contents
+    // can be placed outside of the block.
+    'no-else-return': 1,
+
+    // Disallow Extra Boolean Casts
+    // In contexts such as an if statement's test where the result of the expression will already be
+    // coerced to a Boolean, casting to a Boolean via double negation (!!) is unnecessary.
+    'no-extra-boolean-cast': 1,
+
     // Disallows comments after code
     // This rule will disallow comments on the same line as code.
     'no-inline-comments': 1,
@@ -117,6 +147,12 @@ module.exports = {
     // Disallow if as the Only Statement in an else Block
     // This rule warns when an if statement's else block contains only another if statement.
     'no-lonely-if': 1,
+
+    // Disallow mixes of different operators
+    // Enclosing complex expressions by parentheses clarifies the developer’s intention, which makes
+    // the code more readable. This rule warns when different operators are used consecutively
+    // without parentheses in an expression.
+    'no-mixed-operators': 1,
 
     // Disallow mixed spaces and tabs for indentation
     // The no-mixed-spaces-and-tabs rule is aimed at flagging any lines of code that are indented
@@ -141,6 +177,14 @@ module.exports = {
     // Use || instead of ternary in default assignments
     'no-unneeded-ternary': [1, {
       defaultAssignment: false
+    }],
+
+    // Disallow Warning Comments
+    // These comments are a warning signal, that there is something not production ready in your
+    // code. Most likely you want to fix it or remove the comments before you roll out your code
+    // with a good feeling.
+    'no-warning-comments': [1, {
+      location: 'anywhere'
     }],
 
     // Require or Disallow One Variable Declaration per Scope

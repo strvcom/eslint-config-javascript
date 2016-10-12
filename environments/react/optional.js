@@ -9,5 +9,21 @@
 'use strict'
 
 module.exports = {
-  extends: '../../standard/optional.js'
+
+  extends: '../../standard/optional.js',
+
+  rules: {
+    // Disallow Use of Alert
+    // This rule is aimed at catching debugging code that should be removed and popup UI elements
+    // that should be replaced with less obtrusive, custom UIs.
+    'no-alert': 1,
+
+    // Enforce propTypes declarations alphabetical sorting
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
+    'react/sort-prop-types': [1, {
+      ignoreCase: true,
+      callbacksLast: false,
+      requiredFirst: false,
+    }],
+  }
 }

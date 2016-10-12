@@ -9,10 +9,12 @@
 'use strict'
 
 module.exports = {
-  extends: './known-errors.js',
+
+  extends: './recommended.js',
 
   env: {
-    es6: true
+    es6: true,
+    browser: true
   },
 
   parserOptions: {
@@ -25,6 +27,9 @@ module.exports = {
   rules: {
     'operator-linebreak': 0,
     'require-jsdoc': 0,
+    // Disallow Use of console
+    // Turned off for React apps, console is quite useful in browsers
+    'no-console': 0,
   },
 
   plugins: [

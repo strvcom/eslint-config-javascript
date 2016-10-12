@@ -9,6 +9,7 @@
 'use strict'
 
 module.exports = {
+
   plugins: [
     'import'
   ],
@@ -18,6 +19,38 @@ module.exports = {
   },
 
   rules: {
+    // Enforce return statements in callbacks of array's methods
+    // This rule enforces usage of return statement in callbacks of array's methods.
+    'array-callback-return': 2,
+
+    // Enforce Return After Callback
+    // This rule is aimed at ensuring that callbacks used outside of the main function block are
+    // always part of or immediately preceding a return statement.
+    'callback-return': [2, [
+      // The following variables will be considered callbacks. More can be added as necessary.
+      'cb',
+      'callback',
+      'next',
+      'done'
+    ]],
+
+    // Require Guarding for-in
+    // This rule is aimed at preventing unexpected behavior that could arise from using a for-in
+    // loop without filtering the results in the loop.
+    'guard-for-in': 2,
+
+    // Enforce Callback Error Handling
+    // This rule expects that when you're using the callback pattern in node you'll handle the
+    // error. Matches: err, Err, error, someErr, someError, any_error, ...
+    'handle-callback-err': [2, '^.*(e|E)rr(or)?'],
+
+    // Disallow lexical declarations in case/default clauses
+    // This rule disallows lexical declarations (let, const, function and class) in case/default
+    // clauses. The reason is that the lexical declaration is visible in the entire switch block but
+    // it only gets initialized when it is assigned, which will only happen if the case where it is
+    // defined is reached.
+    'no-case-declarations': 2,
+
     // Disallow Assignment in Conditional Statements
     // This rule is aimed at eliminating ambiguous assignments in for, if, while, and do...while
     // conditional statements.
@@ -35,8 +68,7 @@ module.exports = {
     'no-control-regex': 2,
 
     // Disallow debugger
-    // Production code should definitely not contain debugger, as it will cause the browser / Node
-    // to stop executing code.
+    // Production code should definitely not contain debugger.
     'no-debugger': 2,
 
     // No duplicate arguments
@@ -63,11 +95,25 @@ module.exports = {
     // indicator that some refactoring is likely needed.
     'no-empty': 2,
 
+    // Disallow eval()
+    // This rule is aimed at preventing potentially dangerous, unnecessary, and slow code by
+    // disallowing the use of the eval() function.
+    'no-eval': 2,
+
     // Disallow Assignment of the Exception Parameter
     // When an error is caught using a catch block, it's possible to accidentally (or purposely)
     // overwrite the reference to the error. This makes it impossible to track the error from that
     // point on.
     'no-ex-assign': 2,
+
+    // Disallow Extending of Native Objects
+    // In JavaScript, you can extend any object, including builtin or "native" objects. Sometimes
+    // people change the behavior of these native objects in ways that break the assumptions made
+    // about them in other parts of the code.
+    'no-extend-native': 2,
+
+    // Disallow unnecessary function binding
+    'no-extra-bind': 2,
 
     // Disallow Unnecessary Labels
     // If a loop contains no nested loops or switches, labeling the loop is unnecessary.
@@ -85,6 +131,11 @@ module.exports = {
     // tolerate it, overwriting/reassigning a function written as a FunctionDeclaration is often
     // indicative of a mistake or issue.
     'no-func-assign': 2,
+
+    // Disallow Implied eval()
+    // This rule aims to eliminate implied eval() through the use of setTimeout(), setInterval() or
+    // execScript().
+    'no-implied-eval': 2,
 
     // Declarations in Program or Function Body
     // In JavaScript, prior to ES6, a function declaration is only allowed in the first level of a
@@ -110,14 +161,66 @@ module.exports = {
     // which is not implemented in several browsers.
     'no-iterator': 2,
 
+    // Disallow Unnecessary Nested Blocks
+    // This rule aims to eliminate unnecessary and potentially confusing blocks at the top level of
+    // a script or within other blocks.
+    'no-lone-blocks': 2,
+
+    // Disallow Functions in Loops
+    // This error is raised to highlight a piece of code that may not work as you expect it to and
+    // could also indicate a misunderstanding of how the language works.
+    'no-loop-func': 1,
+
+    // Disallow Initializing to undefined
+    // In JavaScript, a variable that is declared and not initialized to any value automatically
+    // gets the value of undefined.
+    'no-undef-init': 2,
+
     // Disallow negating the left operand of relational operators
     // This rule disallows negating the left operand of Relational Operators
     // See MDN: https://goo.gl/nFA3Mk
     'no-unsafe-negation': 2,
 
+    // Disallow Unused Variables
+    // This rule is aimed at eliminating unused variables, functions and variables in parameters of
+    // functions.
+    'no-unused-vars': 2,
+
+    // Disallow Early Use
+    // This rule will warn when it encounters a reference to an identifier that has not been yet
+    // declared (but is declared later)
+    // Function declarations are exempted from the rule, so it is allowed to use a function name
+    // before its declaration
+    'no-use-before-define': [2, 'nofunc'],
+
+    // Disallow new For Side Effects
+    // This rule is aimed at maintaining consistency and convention by disallowing constructor calls
+    // using the new keyword that do not assign the resulting object to a variable.
+    'no-new': 2,
+
+    // Disallow Function Constructor
+    // This error is raised to highlight the use of a bad practice. By passing a string to the
+    // Function constructor, you are requiring the engine to parse that string much in the way it
+    // has to when you call the eval function.
+    'no-new-func': 2,
+
+    // Disallow the use of the Object constructor
+    // While there are no performance differences between the two approaches, the byte savings and
+    // conciseness of the object literal form is what has made it the de facto way of creating new
+    // objects.
+    'no-new-object': 1,
+
     // Disallow Symbol Constructor
     // This rule is aimed at preventing the accidental calling of Symbol with the `new` operator.
     'no-new-symbol': 2,
+
+    // Disallow Primitive Wrapper Instances
+    // Primitive wrapper objects are, in fact, objects. That means typeof will return "object"
+    // instead of "string", "number", or "boolean". The second problem comes with boolean objects.
+    // Every object is truthy, that means an instance of Boolean always resolves to true even when
+    // its actual value is false. This rule aims to eliminate the use of String, Number, and Boolean
+    // with the `new` operator.
+    'no-new-wrappers': 2,
 
     // Disallow Global Object Function Calls
     // This rule is aimed at preventing the accidental calling of global objects as functions.
@@ -126,6 +229,10 @@ module.exports = {
     // Disallow Spaces in Regular Expressions
     // This rule aims to eliminate errors due to multiple spaces inside of a regular expression.
     'no-regex-spaces': 2,
+
+    // Disallow Assignment in return Statement
+    // This rule aims to eliminate assignments from return statements.
+    'no-return-assign': 2,
 
     // Disallow Script URLs
     // Using javascript: URLs is considered by some as a form of eval. Code passed in javascript:
@@ -136,6 +243,12 @@ module.exports = {
     // Self assignments have no effect, so probably those are an error due to incomplete
     // refactoring. Those indicate that what you should do is still remaining.
     'no-self-assign': 2,
+
+    // Disallow Use of the Comma Operator
+    // The comma operator includes multiple expressions where only one is expected. It evaluates
+    // each operand from left to right and returns the value of the last operand. However, this
+    // frequently obscures side effects, and its use is often an accident.
+    'no-sequences': 2,
 
     // Disallow Sparse Arrays
     // Sparse arrays contain empty slots, most frequently due to multiple commas being used in an
@@ -152,6 +265,11 @@ module.exports = {
     // This particular rule aims to spot scenarios where a newline looks like it is ending a
     // statement, but is not.
     'no-unexpected-multiline': 2,
+
+    // Disallow unmodified conditions of loops
+    // This rule finds references which are inside of loop conditions, then checks the variables of
+    // those references are modified in the loop.
+    'no-unmodified-loop-condition': 1,
 
     // Disallow Unreachable Code
     // This rule is aimed at detecting unreachable code. It produces an error when a statements in a
@@ -170,6 +288,16 @@ module.exports = {
     // incomplete refactoring.
     'no-unused-labels': 2,
 
+    // Disallow unnecessary .call() and .apply()
+    // This rule is aimed to flag usage of Function.prototype.call() and Function.prototype.apply()
+    // that can be replaced with the normal function invocation.
+    'no-useless-call': 2,
+
+    // Disallow unncessary concatenation of strings
+    // This rule aims to flag the concatenation of 2 literals when they could be combined into a
+    // single literal.
+    'no-useless-concat': 1,
+
     // Disallow unnecessary constructor
     // ES2015 provides a default class constructor if one is not specified. As such, it is
     // unnecessary to provide an empty constructor or one that simply delegates into its parent
@@ -180,6 +308,11 @@ module.exports = {
     // Escaping non-special characters in strings and regular expressions doesn’t have any effects
     // on results. This rule flags escapes that can be safely removed without changing behavior.
     'no-useless-escape': 2,
+
+    // Require let or const instead of var
+    // This rule is aimed at discouraging the use of var and encouraging the use of const or let
+    // instead.
+    'no-var': 2,
 
     // Suggest using the rest parameters instead of `arguments`
     // This rule is aimed to flag usage of `arguments` variables.
@@ -267,6 +400,11 @@ module.exports = {
     // @see  http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3
     eqeqeq: 2,
 
+    // Disallow creation of dense arrays using the Array constructor
+    // Use of the Array constructor to construct a new array is generally discouraged in favour of
+    // array literal notation because of the single-argument pitfall.
+    'no-array-constructor': 2,
+
     // Disallow Use of caller/callee
     // The use of arguments.caller and arguments.callee make several code optimizations impossible.
     // They have been deprecated in future versions of JavaScript and their use is forbidden in
@@ -334,8 +472,29 @@ module.exports = {
       allowTernary: true
     }],
 
+    // No `with` Statements
+    // The with statement is potentially problematic because it adds members of an object to the
+    // current scope, making it impossible to tell what a variable inside the block actually refers
+    // to. Additionally, the with statement cannot be used in strict mode.
+    'no-with': 2,
+
+    // Suggest using the spread operator instead of .apply()
+    // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
+    // spread operator.
+    'prefer-spread': 1,
+
     // Disallow generator functions that do not have yield
     'require-yield': 2,
+
+    // Strict Mode
+    // This rule is aimed at controlling how Use Strict Directives are used in code.
+    // Require 'use strict' to be present at module-level scope
+    strict: [2, 'global'],
+
+    // Require Variable Declarations to be at the top of their scope
+    // This rule aims to keep all variable declarations in the leading series of statements.
+    // Allowing multiple declarations helps promote maintainability.
+    'vars-on-top': 1,
 
     // Ensure an imported module can be resolved to a module on the local filesystem
     'import/no-unresolved': [2, {
@@ -349,6 +508,9 @@ module.exports = {
     // imported module
     'import/default': 2,
 
+    // This rule reports any imports that come after non-import statements
+    'import/first': 2,
+
     // Enforces names exist at the time they are dereferenced, when imported as a full namespace
     'import/namespace': 2,
 
@@ -360,11 +522,22 @@ module.exports = {
     // Reports funny business with exports, like repeated exports of names or defaults
     'import/export': 2,
 
+    // Ensure consistent use of file extension within the import path
+    'import/extensions': [1, 'never'],
+
     // Forbid the use of extraneous packages
     // Forbid the import of external modules that are not declared in package.json.
     'import/no-extraneous-dependencies': 2,
 
     // Forbid the use of mutable exports with var or let
-    'import/no-mutable-exports': 2
+    'import/no-mutable-exports': 2,
+
+    // Reports use of an exported name as the locally imported name of a default export
+    'import/no-named-as-default': 1,
+
+    // Reports use of an exported name as a property on the default export
+    // Accessing a property that has a name that is shared by an exported name from the same module
+    // is likely to be a mistake.
+    'import/no-named-as-default-member': 1,
   }
 }

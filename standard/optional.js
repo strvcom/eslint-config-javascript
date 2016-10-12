@@ -9,11 +9,12 @@
 'use strict'
 
 module.exports = {
+
   rules: {
-    // Require JSDoc comment
-    // This rule generates warnings for nodes that do not have JSDoc comments when they should.
-    // Currently only function declarations are checked.
-    'require-jsdoc': 1,
+    // Require Consistent Returns
+    // This rule is aimed at ensuring all return statements either specify a value or don't specify
+    // a value.
+    'consistent-return': 1,
 
     // Validates JSDoc comments are syntactically correct
     // This rule aims to prevent invalid and incomplete JSDoc comments.
@@ -22,48 +23,40 @@ module.exports = {
       requireReturnDescription: false
     }],
 
-    // Limit Cyclomatic Complexity
-    // This rule is aimed at reducing code complexity by capping the amount of cyclomatic complexity
-    // allowed in a program.
-    complexity: [1, 10],
-
-    // Disallow Warning Comments
-    // These comments are a warning signal, that there is something not production ready in your
-    // code. Most likely you want to fix it or remove the comments before you roll out your code
-    // with a good feeling.
-    'no-warning-comments': [1, {
-      location: 'anywhere'
-    }],
-
     // Limit Maximum Depth
     // This rule aims to reduce the complexity of your code by allowing you to configure the maximum
     // depth blocks can be nested in a function.
-    'max-depth': [1, 4],
+    'max-depth': [1, 5],
 
-    // Limit Maximum Length of Line
-    // Very long lines of code in any language can be difficult to read. In order to aid in
-    // readability and maintainability many coders have developed a convention to limit lines of
-    // code to a certain number of characters.
-    'max-len': [1, 100, 2],
+    // Require Function Expressions to have a Name
+    // If you provide the optional name for a function expression then you will get the name of the
+    // function expression in the stack trace.
+    // If you are tempted to create anonymous function expression, consider using arrow function
+    // instead.
+    'func-names': 1,
 
-    // Enforce a maximum file length
-    // This rule enforces a maximum number of lines per file, in order to aid in maintainability and
-    // reduce complexity.
-    'max-lines': [1, {
-      max: 600,
-      skipBlankLines: true,
-      skipComments: true
+    // Disallow Use of `undefined` Variable
+    // In ECMAScript 3 it was possible to overwrite the value of undefined. While ECMAScript 5
+    // disallows overwriting undefined, it's still possible to shadow `undefined`.
+    'no-undefined': 1,
+
+    // Suggest using Reflect API where applicable
+    // Note that it's better to use `delete`, `call()` and `.apply()` directly because they will
+    // throw an exception if there's something wrong with them (especially in the case of `delete`)
+    'prefer-reflect': [1, {
+      exceptions: [
+        'apply',
+        'call',
+        'delete'
+      ]
     }],
 
-    // Limit Maximum Number of Parameters
-    // Functions that take numerous parameters can be difficult to read and write because it
-    // requires the memorization of what each parameter is, its type, and the order they should
-    // appear in.
-    'max-params': [1, 3],
+    // Require symbol description
+    // This rule requires a description when creating symbols. Using description promotes easier
+    // debugging - when a symbol is logged the description is used.
+    'symbol-description': 1,
 
-    // Disallow Bitwise Operators
-    // This rule is aimed at catching typos that end up as bitwise operators, but are meant to be
-    // the much more common &&, ||, <, > operators.
-    'no-bitwise': 1
+    // Reports if a resolved path is imported more than once
+    'import/no-duplicates': 1,
   }
 }

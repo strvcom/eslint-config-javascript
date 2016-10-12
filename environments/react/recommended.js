@@ -9,9 +9,30 @@
 'use strict'
 
 module.exports = {
-  extends: '../../standard/known-errors.js',
+
+  extends: '../../standard/recommended.js',
 
   rules: {
+    // Enforce JSX Quote Style
+    // This rule enforces the consistent use of either double or single quotes in JSX attributes.
+    'jsx-quotes': [1, 'prefer-double'],
+
+    // Enforce boolean attributes notation in JSX
+    // In JSX when using a boolean attribute you can set the attribute value to true or omit the
+    // value. This rule will enforce one or the other to keep consistency in your code.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
+    'react/jsx-boolean-value': [1, 'never'],
+
+    // Restrict file extensions that may contain JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.jsx']
+    }],
+
+    // Detect missing key prop
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
+    'react/jsx-key': 1,
+
     // No .bind() or Arrow Functions in JSX Props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': [2, {
@@ -19,6 +40,14 @@ module.exports = {
       allowArrowFunctions: true,
       allowBind: false
     }],
+
+    // Prevent comments from being inserted as text nodes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
+    'react/jsx-no-comment-textnodes': 1,
+
+    // Prevent usage of dangerous JSX properties
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
+    'react/no-danger': 1,
 
     // Prevent duplicate properties in JSX
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application.
@@ -110,6 +139,12 @@ module.exports = {
     // Enforce ES6 class for React Components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     'react/prefer-es6-class': [2, 'always'],
+
+    // Enforce stateless React Components to be written as a pure function
+    // Stateless functional components are more simple than class based components and will benefit
+    // from future React performance optimizations specific to these components.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
+    'react/prefer-stateless-function': 1,
 
     // Prevent missing props validation in a React component definition
     // PropTypes improve the reusability of your component by validating the received data. It can

@@ -14,9 +14,22 @@ module.exports = {
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,
 
+    // Limit Cyclomatic Complexity
+    // Let the developer decide if what they write expresses their intent well enough, while
+    // maintaining readability.
+    complexity: 0,
+
     // Blacklist certain identifiers
     // Unused, too restrictive.
     'id-blacklist': 0,
+
+    // Enforce a maximum file length
+    // Unused, no one cares.
+    'max-lines': 0,
+
+    // Disallow Bitwise Operators
+    // Unused, too restrictive.
+    'no-bitwise': 0,
 
     // Disallow arrow functions where they could be confused with comparisons
     'no-confusing-arrow': 0,
@@ -34,6 +47,10 @@ module.exports = {
     // does not apply to ES and CommonJS modules since they have a module scope.
     // Unused, front-end specific.
     'no-implicit-globals': 0,
+
+    // Disallow this keywords outside of classes or class-like objects
+    // Unused, too restrictive.
+    'no-invalid-this': 0,
 
     // Disallow Multiline Strings
     // Unused, seems handy. This rule should be enabled when pre-ES5 compatibility is required.
@@ -57,11 +74,6 @@ module.exports = {
     // Require IDs to match a pattern
     // Unused, too restrictive.
     'id-match': 0,
-
-    // Enforce JSX Quote Style
-    // Unused, front-end specific. Should be moved to appropriate front-end config as soon as it
-    // exists.
-    'jsx-quotes': 0,
 
     // Enforce empty lines around comments
     // Unused, too restrictive.
@@ -99,11 +111,16 @@ module.exports = {
     // Unused, too restrictive.
     'object-curly-newline': 0,
 
+    // Require JSDoc comment
+    // Unused, not as useful. It's the developers' responsibility to write JSDoc comments when they
+    // are relevant/needed. Many times they are not.
+    'require-jsdoc': 0,
+
+    // eslint-plugin-react
+
     // Forbid certain propTypes
     // This rule checks all JSX components and verifies that no forbidden propsTypes are used.
     'react/forbid-prop-types': 0,
-
-    // eslint-plugin-react
 
     // Prevent usage of setState
     'react/no-set-state': 0,
