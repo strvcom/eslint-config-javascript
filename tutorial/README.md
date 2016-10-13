@@ -21,6 +21,9 @@ When configuring js-coding-standards, please keep the following in mind:
 - Some rules are **meant** to be disabled, but only for some folders/files
   > For example, the rule `no-process-env` is enabled by default because accessing any property on `process.env` object causes an expensive C-level function call. However, using `process.env` is the recommended way to manage application configuration. Therefore, it is OK to turn this rule off for a single folder/file where you gather all the required configuration options from `process.env` and export them in a module. The rest of your application no longer needs to access `process.env` directly and instead reads the configuration from the module.
 
+- Always consider re-configuring a rule rather than disabling it completely
+  > If a rule does not quite fit your exiting codebase and fixing the issues would take considerable amount of time/energy, please consider first if the rule could be re-configured to suit your project's current style, rather than disabling it right away.
+
 # Example configuration files
 
 Some example configuration files have been prepared for you to look at / add to your project right away. Look for them in this directory!
