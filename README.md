@@ -22,6 +22,10 @@ This package can be installed via npm (make sure you also install the latest ver
 
 Once the ruleset is installed, you must create your own *.eslintrc.{js,json,yml}* configuration file in your project's root (or in some of the subfolders, if you want to apply different rules to different parts of your code) and include those rulesets that you want to use. See the [tutorial](tutorial) directory for, well... tutorial.
 
+### Integrating ESLint with your IDE/editor
+
+See the [editor-integrations](tutorial/editor-integrations.md) document for tips.
+
 ### Example configuration files
 
 See the [tutorial](tutorial) directory for lots of example config files.
