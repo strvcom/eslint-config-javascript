@@ -22,6 +22,6 @@ module.exports = {
     //
     // @see  https://www.npmjs.com/package/debug
     // @see  https://www.npmjs.com/package/bunyan
-    'no-console': 1
-  }
+    'no-console': 1,
+  },
 }

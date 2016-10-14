@@ -25,5 +25,5 @@ module.exports = {
       callbacksLast: false,
       requiredFirst: false,
     }],
-  }
+  },
 }

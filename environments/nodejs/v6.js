@@ -17,7 +17,7 @@ module.exports = {
 
   env: {
     node: true,
-    es6: true
+    es6: true,
   },
 
   rules: {
@@ -26,7 +26,7 @@ module.exports = {
     'no-restricted-syntax': [
       2,
       // Experimental object/rest spread (not in ES 2015)
-      'ExperimentalRestProperty'
-    ]
-  }
+      'ExperimentalRestProperty',
+    ],
+  },
 }

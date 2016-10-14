@@ -22,7 +22,7 @@ module.exports = {
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
-    'comma-dangle': [1, 'only-multiline'],
+    'comma-dangle': [1, 'always-multiline'],
 
     // Require Following Curly Brace Conventions
     // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
@@ -35,7 +35,7 @@ module.exports = {
     // opening curly brace of a block is placed on the same line as its corresponding statement or
     // declaration.
     'brace-style': [1, '1tbs', {
-      allowSingleLine: true
+      allowSingleLine: true,
     }],
 
     // Require Camelcase
@@ -43,7 +43,7 @@ module.exports = {
     // and trailing underscores and only checks those in the middle of a variable name. If ESLint
     // decides that the variable is a constant (all uppercase), then no warning will be thrown.
     camelcase: [1, {
-      properties: 'always'
+      properties: 'always',
     }],
 
     // Require Consistent This
@@ -57,7 +57,7 @@ module.exports = {
     // in stack traces which help during debugging.
     // Allow arrow functions to be saved into variables
     'func-style': [1, 'declaration', {
-      allowArrowFunctions: true
+      allowArrowFunctions: true,
     }],
 
     // Limit minimum and maximum length for identifiers
@@ -68,15 +68,15 @@ module.exports = {
       max: 25,
       exceptions: [
         'i',
-        '_'
-      ]
+        '_',
+      ],
     }],
 
     // Enforce position of line comments
     // This rule enforces consistent position of line comments. Block comments are not affected by
     // this rule.
     'line-comment-position': [1, {
-      position: 'above'
+      position: 'above',
     }],
 
     // Limit Maximum Length of Line
@@ -107,7 +107,7 @@ module.exports = {
     // whenever it sees capitalized function called directly without new operator.
     'new-cap': [1, {
       newIsCap: true,
-      capIsNew: true
+      capIsNew: true,
     }],
 
     // Require or disallow an empty newline after variable declarations
@@ -119,7 +119,7 @@ module.exports = {
     // This rule checks and reports the chained calls if there are no new lines after each call or
     // deep member access.
     'newline-per-chained-call': [1, {
-      ignoreChainWithDepth: 3
+      ignoreChainWithDepth: 3,
     }],
 
     // Disallow duplicate exports/imports
@@ -127,7 +127,7 @@ module.exports = {
     // whitespace. This rules validates that all imports from a single module exists in a single
     // import statement.
     'no-duplicate-imports': [1, {
-      includeExports: true
+      includeExports: true,
     }],
 
     // Disallow return in else
@@ -176,7 +176,7 @@ module.exports = {
     // Disallow conditional expressions that can be expressed with simpler constructs
     // Use || instead of ternary in default assignments
     'no-unneeded-ternary': [1, {
-      defaultAssignment: false
+      defaultAssignment: false,
     }],
 
     // Disallow Warning Comments
@@ -184,7 +184,7 @@ module.exports = {
     // code. Most likely you want to fix it or remove the comments before you roll out your code
     // with a good feeling.
     'no-warning-comments': [1, {
-      location: 'anywhere'
+      location: 'anywhere',
     }],
 
     // Require or Disallow One Variable Declaration per Scope
@@ -193,7 +193,7 @@ module.exports = {
     'one-var': [1, {
       var: 'always',
       let: 'never',
-      const: 'never'
+      const: 'never',
     }],
 
     // Require a newline around variable declarations
@@ -214,6 +214,6 @@ module.exports = {
     'operator-linebreak': [1, 'before'],
 
     // Enforces having an empty line after the last top-level import statement or require call
-    'import/newline-after-import': 1
-  }
+    'import/newline-after-import': 1,
+  },
 }

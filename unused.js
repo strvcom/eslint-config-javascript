@@ -144,6 +144,6 @@ module.exports = {
     'react/forbid-component-props': 0,
 
     // Enforce React components to have a shouldComponentUpdate method
-    'react/require-optimization': 0
-  }
+    'react/require-optimization': 0,
+  },
 }

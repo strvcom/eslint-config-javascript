@@ -25,7 +25,7 @@ module.exports = {
     // Require space before/after arrow function's arrow
     'arrow-spacing': [1, {
       before: true,
-      after: true
+      after: true,
     }],
 
     // Enforce spacing around the * in generator functions
@@ -35,7 +35,7 @@ module.exports = {
     // which may be missing completely.
     'generator-star-spacing': [1, {
       before: false,
-      after: true
+      after: true,
     }],
 
     // Enforce newline before and after dot
@@ -68,7 +68,7 @@ module.exports = {
     // A space must be only after comma, i.e. `var a, b`
     'comma-spacing': [1, {
       before: false,
-      after: true
+      after: true,
     }],
 
     // Comma style
@@ -89,7 +89,7 @@ module.exports = {
     // Validate Indentation
     // This rule is aimed to enforce consistent indentation style.
     indent: [1, 2, {
-      SwitchCase: 1
+      SwitchCase: 1,
     }],
 
     // Enforce Property Spacing
@@ -98,13 +98,13 @@ module.exports = {
     'key-spacing': [1, {
       beforeColon: false,
       afterColon: true,
-      mode: 'strict'
+      mode: 'strict',
     }],
 
     // This rule will enforce consistency of spacing around keywords and keyword-like tokens
     'keyword-spacing': [1, {
       before: true,
-      after: true
+      after: true,
     }],
 
     // Disallow mixing CRLF and LF linebreaks
@@ -118,7 +118,7 @@ module.exports = {
     // comment.
     'lines-around-directive': [1, {
       before: 'always',
-      after: 'always'
+      after: 'always',
     }],
 
     // Require Parens for Constructors
@@ -130,7 +130,7 @@ module.exports = {
     // This rule restricts the use of parentheses to only where they are necessary.
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
     'no-extra-parens': [1, 'all', {
-      nestedBinaryExpressions: false
+      nestedBinaryExpressions: false,
     }],
 
     // Disallow Floating Decimals
@@ -150,7 +150,7 @@ module.exports = {
     // more of the screen.
     'no-multiple-empty-lines': [1, {
       max: 2,
-      maxEOF: 1
+      maxEOF: 1,
     }],
 
     // Require or disallow spacing between function identifiers and their invocations
@@ -224,7 +224,7 @@ module.exports = {
     // Enforce spacing before and after semicolons
     'semi-spacing': [1, {
       before: false,
-      after: true
+      after: true,
     }],
 
     // Enforce or Disallow Semicolons
@@ -253,7 +253,7 @@ module.exports = {
     // after/before nonwords unary operators.
     'space-unary-ops': [1, {
       words: true,
-      nonwords: false
+      nonwords: false,
     }],
 
     // Require or disallow a whitespace beginning a comment
@@ -274,5 +274,5 @@ module.exports = {
     // Yoda conditions are so named because the literal value of the condition comes first while the
     // variable comes second ("red" === color).
     yoda: 1,
-  }
+  },
 }

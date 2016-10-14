@@ -20,7 +20,7 @@ module.exports = {
     // Disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-curly-spacing': [1, 'never', {
-      allowMultiline: true
+      allowMultiline: true,
     }],
 
     // Enforce or disallow spaces around equal signs in JSX attributes
@@ -72,8 +72,8 @@ module.exports = {
         '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
         'everything-else',
         '/^render.+$/',
-        'render'
-      ]
-    }]
-  }
+        'render',
+      ],
+    }],
+  },
 }

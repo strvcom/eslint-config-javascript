@@ -26,7 +26,7 @@ module.exports = {
     // Restrict file extensions that may contain JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': [1, {
-      extensions: ['.jsx']
+      extensions: ['.jsx'],
     }],
 
     // Detect missing key prop
@@ -38,7 +38,7 @@ module.exports = {
     'react/jsx-no-bind': [2, {
       ignoreRefs: true,
       allowArrowFunctions: true,
-      allowBind: false
+      allowBind: false,
     }],
 
     // Prevent comments from being inserted as text nodes
@@ -53,7 +53,7 @@ module.exports = {
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': [2, {
-      ignoreCase: true
+      ignoreCase: true,
     }],
 
     // Prevent usage of unsafe target='_blank'
@@ -79,7 +79,7 @@ module.exports = {
     'react/jsx-wrap-multilines': [2, {
       declaration: true,
       assignment: true,
-      return: true
+      return: true,
     }],
 
     // Prevent usage of deprecated methods
@@ -111,7 +111,7 @@ module.exports = {
     // Prevent multiple component definitions per file
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
     'react/no-multi-comp': [2, {
-      ignoreStateless: true
+      ignoreStateless: true,
     }],
 
     // Prevent usage of the return value of React.render
@@ -133,7 +133,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
     'react/no-unused-prop-types': [2, {
       customValidators: [],
-      skipShapeProps: false
+      skipShapeProps: false,
     }],
 
     // Enforce ES6 class for React Components
@@ -153,7 +153,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': [2, {
       ignore: [],
-      customValidators: []
+      customValidators: [],
     }],
 
     // Prevent missing React when using JSX
@@ -168,6 +168,6 @@ module.exports = {
 
     // Enforce style prop value being an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
-    'react/style-prop-object': 2
-  }
+    'react/style-prop-object': 2,
+  },
 }

@@ -20,7 +20,7 @@ module.exports = {
     // This rule aims to prevent invalid and incomplete JSDoc comments.
     'valid-jsdoc': [1, {
       requireReturn: true,
-      requireReturnDescription: false
+      requireReturnDescription: false,
     }],
 
     // Limit Maximum Depth
@@ -47,8 +47,8 @@ module.exports = {
       exceptions: [
         'apply',
         'call',
-        'delete'
-      ]
+        'delete',
+      ],
     }],
 
     // Require symbol description
@@ -58,5 +58,5 @@ module.exports = {
 
     // Reports if a resolved path is imported more than once
     'import/no-duplicates': 1,
-  }
+  },
 }

@@ -57,6 +57,6 @@ module.exports = {
     radix: 1,
 
     // Require Regex Literals to be Wrapped
-    'wrap-regex': 1
-  }
+    'wrap-regex': 1,
+  },
 }

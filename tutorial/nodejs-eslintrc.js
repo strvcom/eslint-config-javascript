@@ -6,6 +6,6 @@ module.exports = {
   extends: [
     '@strv/javascript/environments/nodejs/v6',
     '@strv/javascript/environments/nodejs/optional',
-    '@strv/javascript/coding-styles/recommended'
-  ]
+    '@strv/javascript/coding-styles/recommended',
+  ],
 }

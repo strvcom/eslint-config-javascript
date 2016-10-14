@@ -11,11 +11,11 @@
 module.exports = {
 
   plugins: [
-    'import'
+    'import',
   ],
 
   settings: {
-    'import/extensions': ['.js', 'jsx', '.es']
+    'import/extensions': ['.js', 'jsx', '.es'],
   },
 
   rules: {
@@ -31,7 +31,7 @@ module.exports = {
       'cb',
       'callback',
       'next',
-      'done'
+      'done',
     ]],
 
     // Require Guarding for-in
@@ -376,7 +376,7 @@ module.exports = {
     // This rule can help you locate potential ReferenceErrors resulting from misspellings of
     // variable and parameter names, or accidental implicit globals.
     'no-undef': [2, {
-      typeof: true
+      typeof: true,
     }],
 
     // Enforces getter/setter pairs in objects
@@ -428,7 +428,7 @@ module.exports = {
     // Disallow assignment to native objects or read-only global variables
     // This rule disallows modifications to read-only global variables.
     'no-global-assign': [2, {
-      exceptions: ['Promise']
+      exceptions: ['Promise'],
     }],
 
     // Disallow Octal Escapes
@@ -450,7 +450,7 @@ module.exports = {
     // This rule is aimed at eliminating variables that have multiple declarations in the same
     // scope.
     'no-redeclare': [2, {
-      builtinGlobals: true
+      builtinGlobals: true,
     }],
 
     // Disallow Comparisons to Itself
@@ -469,7 +469,7 @@ module.exports = {
     // the `new` operator.
     'no-unused-expressions': [2, {
       allowShortCircuit: true,
-      allowTernary: true
+      allowTernary: true,
     }],
 
     // No `with` Statements
@@ -498,7 +498,7 @@ module.exports = {
 
     // Ensure an imported module can be resolved to a module on the local filesystem
     'import/no-unresolved': [2, {
-      commonjs: true
+      commonjs: true,
     }],
 
     // Verifies that all named imports are part of the set of named exports in the referenced module
@@ -539,5 +539,5 @@ module.exports = {
     // Accessing a property that has a name that is shared by an exported name from the same module
     // is likely to be a mistake.
     'import/no-named-as-default-member': 1,
-  }
+  },
 }

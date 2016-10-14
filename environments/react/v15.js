@@ -14,14 +14,14 @@ module.exports = {
 
   env: {
     es6: true,
-    browser: true
+    browser: true,
   },
 
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
 
   rules: {
@@ -33,13 +33,13 @@ module.exports = {
   },
 
   plugins: [
-    'react'
+    'react',
   ],
 
   // Configures the react plugin to treat some rules with regard to this specific React.js version
   settings: {
     react: {
-      version: '15.0'
-    }
-  }
+      version: '15.0',
+    },
+  },
 }
