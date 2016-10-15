@@ -30,6 +30,6 @@
     "url": "git+https://github.com/strvcom/js-coding-standards.git"
   },
   "scripts": {
-    "lint": "eslint standard environments coding-styles unused.js default.js"
+    "lint": "eslint environments coding-styles unused.js default.js"
   }
 }
