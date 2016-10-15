@@ -38,6 +38,12 @@ module.exports = {
       after: true,
     }],
 
+    // Require Following Curly Brace Conventions
+    // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
+    // statements are wrapped in curly braces.
+    // All block statements must be wrapped in curly braces
+    curly: [1, 'all'],
+
     // Enforce newline before and after dot
     // This rule aims to enforce newline consistency in member expressions. This rule prevents the
     // use of mixed newlines around the dot in a member expression.
@@ -145,6 +151,10 @@ module.exports = {
     // self-explanatory notation.
     'no-implicit-coercion': 1,
 
+    // Disallow if as the Only Statement in an else Block
+    // This rule warns when an if statement's else block contains only another if statement.
+    'no-lonely-if': 1,
+
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
@@ -184,6 +194,12 @@ module.exports = {
     // EcmaScript 6 provides a concise form for defining object literal methods and properties. This
     // syntax can make defining complex object literals much cleaner.
     'object-shorthand': [1, 'always'],
+
+    // Require a newline around variable declarations
+    // This rule enforces a consistent coding style where newlines are required after each var
+    // declaration or just when there is a variable initialization. It ignores var declarations
+    // inside for loop conditionals.
+    'one-var-declaration-per-line': 1,
 
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.
@@ -236,7 +252,11 @@ module.exports = {
     'space-before-blocks': [1, 'always'],
 
     // Require or disallow a space before function parenthesis
-    'space-before-function-paren': [1, 'never'],
+    'space-before-function-paren': [1, {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
 
     // Disallow or enforce spaces inside of parentheses
     // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing

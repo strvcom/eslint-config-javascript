@@ -24,12 +24,6 @@ module.exports = {
     // multiple lines
     'comma-dangle': [1, 'always-multiline'],
 
-    // Require Following Curly Brace Conventions
-    // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
-    // statements are wrapped in curly braces.
-    // All block statements must be wrapped in curly braces
-    curly: [1, 'all'],
-
     // Require Brace Style
     // The one true brace style is one of the most common brace styles in JavaScript, in which the
     // opening curly brace of a block is placed on the same line as its corresponding statement or
@@ -59,6 +53,9 @@ module.exports = {
     'func-style': [1, 'declaration', {
       allowArrowFunctions: true,
     }],
+
+    // Require function names to match the name of the variable to which they are assigned
+    'func-name-matching': 1,
 
     // Limit minimum and maximum length for identifiers
     // This rule is aimed at increasing code readability and maintainability by enforcing an
@@ -144,10 +141,6 @@ module.exports = {
     // This rule will disallow comments on the same line as code.
     'no-inline-comments': 1,
 
-    // Disallow if as the Only Statement in an else Block
-    // This rule warns when an if statement's else block contains only another if statement.
-    'no-lonely-if': 1,
-
     // Disallow mixes of different operators
     // Enclosing complex expressions by parentheses clarifies the developer’s intention, which makes
     // the code more readable. This rule warns when different operators are used consecutively
@@ -195,12 +188,6 @@ module.exports = {
       let: 'never',
       const: 'never',
     }],
-
-    // Require a newline around variable declarations
-    // This rule enforces a consistent coding style where newlines are required after each var
-    // declaration or just when there is a variable initialization. It ignores var declarations
-    // inside for loop conditionals.
-    'one-var-declaration-per-line': 1,
 
     // Operator Assignment Shorthand
     // This rule enforces use of the shorthand assignment operators by requiring them where
