@@ -40,17 +40,6 @@ module.exports = {
     // disallows overwriting undefined, it's still possible to shadow `undefined`.
     'no-undefined': 1,
 
-    // Suggest using Reflect API where applicable
-    // Note that it's better to use `delete`, `call()` and `.apply()` directly because they will
-    // throw an exception if there's something wrong with them (especially in the case of `delete`)
-    'prefer-reflect': [1, {
-      exceptions: [
-        'apply',
-        'call',
-        'delete',
-      ],
-    }],
-
     // Require symbol description
     // This rule requires a description when creating symbols. Using description promotes easier
     // debugging - when a symbol is logged the description is used.

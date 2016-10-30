@@ -111,6 +111,10 @@ module.exports = {
     // Unused, too restrictive.
     'object-curly-newline': 0,
 
+    // Suggest using Reflect methods where applicable
+    // Deprecated, will be removed from ESLint soon
+    'prefer-reflect': 0,
+
     // Require JSDoc comment
     // Unused, not as useful. It's the developers' responsibility to write JSDoc comments when they
     // are relevant/needed. Many times they are not.

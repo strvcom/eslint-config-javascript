@@ -15,22 +15,10 @@ module.exports = {
   extends: './fixable.js',
 
   rules: {
-    // Require braces in arrow function body
-    // This rule can enforce the use of braces around arrow function body.
-    'arrow-body-style': [1, 'as-needed'],
-
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
     'comma-dangle': [1, 'always-multiline'],
-
-    // Require Brace Style
-    // The one true brace style is one of the most common brace styles in JavaScript, in which the
-    // opening curly brace of a block is placed on the same line as its corresponding statement or
-    // declaration.
-    'brace-style': [1, '1tbs', {
-      allowSingleLine: true,
-    }],
 
     // Require Camelcase
     // This rule looks for any underscores (_) located within the source code. It ignores leading
@@ -106,11 +94,6 @@ module.exports = {
       newIsCap: true,
       capIsNew: true,
     }],
-
-    // Require or disallow an empty newline after variable declarations
-    // This rule enforces a coding style where empty newlines are required after var, let, or const
-    // statements to achieve a consistent coding style across the project.
-    'newline-after-var': 1,
 
     // Newline Per Chained Method Call
     // This rule checks and reports the chained calls if there are no new lines after each call or

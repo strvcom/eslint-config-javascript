@@ -309,6 +309,12 @@ module.exports = {
     // on results. This rule flags escapes that can be safely removed without changing behavior.
     'no-useless-escape': 2,
 
+    // Disallow redundant return statements
+    // A `return` statement with nothing after it is redundant, and has no effect on the runtime
+    // behavior of a function. This can be confusing, so it’s better to disallow these redundant
+    // statements.
+    'no-useless-return': 1,
+
     // Require let or const instead of var
     // This rule is aimed at discouraging the use of var and encouraging the use of const or let
     // instead.

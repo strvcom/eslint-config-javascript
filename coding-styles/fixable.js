@@ -16,6 +16,10 @@
 module.exports = {
 
   rules: {
+    // Require braces in arrow function body
+    // This rule can enforce the use of braces around arrow function body.
+    'arrow-body-style': [1, 'as-needed'],
+
     // Require parens in arrow function arguments
     // Arrow functions can omit parentheses when they have exactly one parameter. Since their main
     // strength lies in being short and concise, parens around arguments should be omitted when they
@@ -26,6 +30,14 @@ module.exports = {
     'arrow-spacing': [1, {
       before: true,
       after: true,
+    }],
+
+    // Require Brace Style
+    // The one true brace style is one of the most common brace styles in JavaScript, in which the
+    // opening curly brace of a block is placed on the same line as its corresponding statement or
+    // declaration.
+    'brace-style': [1, '1tbs', {
+      allowSingleLine: true,
     }],
 
     // Enforce spacing around the * in generator functions
@@ -131,6 +143,11 @@ module.exports = {
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.
     'new-parens': 1,
+
+    // Require or disallow an empty newline after variable declarations
+    // This rule enforces a coding style where empty newlines are required after var, let, or const
+    // statements to achieve a consistent coding style across the project.
+    'newline-after-var': 1,
 
     // Disallow unnecessary parentheses
     // This rule restricts the use of parentheses to only where they are necessary.
