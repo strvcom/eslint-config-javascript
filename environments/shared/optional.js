@@ -14,7 +14,10 @@ module.exports = {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
-    'consistent-return': 1,
+    'consistent-return': [1, {
+      // eslint-disable-next-line id-length
+      treatUndefinedAsUnspecified: true,
+    }],
 
     // Validates JSDoc comments are syntactically correct
     // This rule aims to prevent invalid and incomplete JSDoc comments.
