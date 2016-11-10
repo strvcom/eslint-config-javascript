@@ -37,7 +37,7 @@ Put the following configuration options into your _settings.json_ file:
 
 ## Sublime Text
 
-For best results, make sure you have Package Control installed in your Sublime Text. Issue reports and autofix on save are handled by two different packages, so you will need to configure both for best developer experience.
+For best results, make sure you have [Package Control][subl-packagecontrol] installed in your Sublime Text. Issue reports and autofix on save are handled by two different packages, so you will need to configure both for best developer experience.
 
 Install the following packages:
 
@@ -70,6 +70,7 @@ Enable autofix on save (`Preferences` -> `Package Settings` -> `ESLint Formatter
 [atom-linter]: https://atom.io/packages/linter
 [atom-linter-eslint]: https://atom.io/packages/linter-eslint
 [vscode-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[subl-packagecontrol]: https://packagecontrol.io
 [subl-linter]: https://packagecontrol.io/packages/SublimeLinter
 [subl-linter-eslint]: https://packagecontrol.io/packages/SublimeLinter-contrib-eslint
 [subl-eslint-formatter]: https://packagecontrol.io/packages/ESLint-Formatter
