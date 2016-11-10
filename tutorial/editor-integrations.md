@@ -5,7 +5,7 @@ To make the whole developer experience more pleasant and convenient, it is impor
 - Show errors/warnings inline with your code, as you type/on save
 - Fix some issues immediately after saving the file so you do not have to do it manually
 
-Letting your editor to fix some issues will increase your productivity and code quality dramatically.
+Letting your editor fix some issues will increase your productivity and code quality dramatically.
 
 ## Atom
 
