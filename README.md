@@ -32,6 +32,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 ### Available rulesets
 
+- @strv/javascript/environments/nodejs/v7
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
   > These are for Node.js code.
