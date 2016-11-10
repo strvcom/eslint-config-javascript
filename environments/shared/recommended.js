@@ -171,6 +171,27 @@ module.exports = {
     // could also indicate a misunderstanding of how the language works.
     'no-loop-func': 1,
 
+    // Disallow certain object properties
+    // Currently configured for the following (more can be added as necessary):
+    // - Mocha test isolation features (skipping tests, running only certain tests)
+    'no-restricted-properties': [1, {
+      object: 'describe',
+      property: 'only',
+      message: 'Isolated test suite',
+    }, {
+      object: 'describe',
+      property: 'skip',
+      message: 'Skipped test suite',
+    }, {
+      object: 'it',
+      property: 'only',
+      message: 'Isolated test case',
+    }, {
+      object: 'it',
+      property: 'skip',
+      message: 'Skipped test case',
+    }],
+
     // Disallow Initializing to undefined
     // In JavaScript, a variable that is declared and not initialized to any value automatically
     // gets the value of undefined.

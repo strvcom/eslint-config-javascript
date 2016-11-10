@@ -95,10 +95,6 @@ module.exports = {
     // Unused, no use case.
     'no-restricted-modules': 0,
 
-    // Disallow certain object properties
-    // @TODO: Configure this properly! At least for mocha stuff.
-    'no-restricted-properties': 0,
-
     // Disallow Ternary Operators
     // You kidding me? Ternaries are great!
     'no-ternary': 0,
