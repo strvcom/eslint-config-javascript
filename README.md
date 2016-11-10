@@ -32,20 +32,24 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 ### Available rulesets
 
+> These are for Node.js code.
+
 - @strv/javascript/environments/nodejs/v7
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
-  > These are for Node.js code.
+
+> These are for browser-specific code which uses React.
 
 - @strv/javascript/environments/react/v15
 - @strv/javascript/environments/react/optional
-  > These are for browser-specific code which uses React.
+
+> This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
 
 - @strv/javascript/coding-styles/recommended
-  > This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
+
+> This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
 
 - @strv/javascript/coding-styles/fixable
-  > This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
 
 ## License
 
