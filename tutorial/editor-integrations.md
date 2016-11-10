@@ -66,6 +66,15 @@ Enable autofix on save (`Preferences` -> `Package Settings` -> `ESLint Formatter
 }
 ```
 
+## WebStorm
+
+WebStorm has built-in support for ESLint issue reporting. Auto fixing is only supported in versions 2016.3 and newer.
+
+To enable ESLint reporter, [follow the guide][webstorm-eslint] on WebStorm's support page.
+To use the new autofix feature, [read their blog post][webstorm-eslint-autofix] on the topic.
+
+> The autofix feature must be manually triggered, ie. no autofix-on-save. However, this is still much better than fixing all the issues by hand... ✍️
+
 
 [atom-linter]: https://atom.io/packages/linter
 [atom-linter-eslint]: https://atom.io/packages/linter-eslint
@@ -74,3 +83,5 @@ Enable autofix on save (`Preferences` -> `Package Settings` -> `ESLint Formatter
 [subl-linter]: https://packagecontrol.io/packages/SublimeLinter
 [subl-linter-eslint]: https://packagecontrol.io/packages/SublimeLinter-contrib-eslint
 [subl-eslint-formatter]: https://packagecontrol.io/packages/ESLint-Formatter
+[webstorm-eslint]: https://www.jetbrains.com/help/webstorm/2016.3/using-javascript-code-quality-tools.html#ESLint
+[webstorm-eslint-autofix]: https://blog.jetbrains.com/webstorm/2016/09/webstorm-2016-3-eap-163-3983
