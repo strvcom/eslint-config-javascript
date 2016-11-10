@@ -151,7 +151,7 @@ module.exports = {
 
     // Disallow unnecessary parentheses
     // This rule restricts the use of parentheses to only where they are necessary.
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+    // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
     'no-extra-parens': [1, 'all', {
       nestedBinaryExpressions: false,
     }],

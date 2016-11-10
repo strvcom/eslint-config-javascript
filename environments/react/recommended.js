@@ -20,21 +20,19 @@ module.exports = {
     // Enforce boolean attributes notation in JSX
     // In JSX when using a boolean attribute you can set the attribute value to true or omit the
     // value. This rule will enforce one or the other to keep consistency in your code.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': [1, 'never'],
 
     // Restrict file extensions that may contain JSX
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': [1, {
       extensions: ['.jsx'],
     }],
 
     // Detect missing key prop
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
+    // Warn if an element that likely requires a key prop--namely, one present in an array literal
+    // or an arrow function expression.
     'react/jsx-key': 1,
 
     // No .bind() or Arrow Functions in JSX Props
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': [2, {
       ignoreRefs: true,
       allowArrowFunctions: true,
@@ -42,40 +40,38 @@ module.exports = {
     }],
 
     // Prevent comments from being inserted as text nodes
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
+    // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally
+    // injected as a text node in JSX statements.
     'react/jsx-no-comment-textnodes': 1,
 
     // Prevent usage of dangerous JSX properties
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
     'react/no-danger': 1,
 
     // Prevent duplicate properties in JSX
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': [2, {
       ignoreCase: true,
     }],
 
-    // Prevent usage of unsafe target='_blank'
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+    // Prevent usage of unsafe target='_blank' When creating a JSX element that has an a tag, it is
+    // often desired to have the link open in a new tab using the target='_blank' attribute. Using
+    // this attribute unaccompanied by rel='noreferrer noopener', however, is a severe security
+    // vulnerability.
     'react/jsx-no-target-blank': 2,
 
     // Disallow undeclared variables in JSX
     // This rules can help you locate potential ReferenceErrors resulting from misspellings or
     // missing components.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 2,
 
     // Prevent React to be incorrectly marked as unused
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
     'react/jsx-uses-react': 2,
 
     // Prevent variables used in JSX to be incorrectly marked as unused
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
     'react/jsx-uses-vars': 2,
 
     // Prevent missing parentheses around multiline
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    // Wrapping multiline JSX in parentheses can improve readability and/or convenience.
     'react/jsx-wrap-multilines': [2, {
       declaration: true,
       assignment: true,
@@ -83,74 +79,76 @@ module.exports = {
     }],
 
     // Prevent usage of deprecated methods
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
     'react/no-deprecated': 2,
 
     // Prevent usage of setState in componentDidMount
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
+    // Updating the state after a component mount will trigger a second render() call and can lead
+    // to property/layout thrashing.
     'react/no-did-mount-set-state': 2,
 
     // Prevent usage of setState in componentDidUpdate
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
+    // Updating the state after a component update will trigger a second render() call and can lead
+    // to property/layout thrashing.
     'react/no-did-update-set-state': 2,
 
     // Prevent direct mutation of this.state
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
+    // Never mutate this.state directly, as calling setState() afterwards may replace the mutation
+    // you made. Treat this.state as if it were immutable.
     'react/no-direct-mutation-state': 2,
 
     // Error when using findDOMNode()
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
+    // Facebook will eventually deprecate findDOMNode as it blocks certain improvements in React in
+    // the future. It is recommended to use callback refs instead
     'react/no-find-dom-node': 2,
 
     // Prevent usage of isMounted
     // isMounted is an anti-pattern, is not available when using ES6 classes, and it is on its way
     // to being officially deprecated.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
     'react/no-is-mounted': 2,
 
     // Prevent multiple component definitions per file
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
+    // Declaring only one component per file improves readability and reusability of components.
     'react/no-multi-comp': [2, {
       ignoreStateless: true,
     }],
 
     // Prevent usage of the return value of React.render
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+    // ReactDOM.render() currently returns a reference to the root ReactComponent instance. However,
+    // using this return value is legacy and should be avoided because future versions of React may
+    // render components asynchronously in some cases.
     'react/no-render-return-value': 2,
 
     // Prevent using string references
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
+    // Currently, two ways are supported by React to refer to components. The first one, providing a
+    // string identifier is considered legacy in the official documentation. Referring to components
+    // by setting a property on the this object in the reference callback is preferred.
     'react/no-string-refs': 2,
 
     // Prevent usage of unknown DOM property
     // In JSX all DOM properties and attributes should be camelCased to be consistent with standard
     // JavaScript style. This can be a possible source of error if you are used to writing plain
     // HTML.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     'react/no-unknown-property': 2,
 
     // Prevent definitions of unused prop types
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+    // Warns you if you have defined a prop type but it is never being used anywhere.
     'react/no-unused-prop-types': [2, {
       customValidators: [],
       skipShapeProps: false,
     }],
 
     // Enforce ES6 class for React Components
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     'react/prefer-es6-class': [2, 'always'],
 
     // Enforce stateless React Components to be written as a pure function
     // Stateless functional components are more simple than class based components and will benefit
     // from future React performance optimizations specific to these components.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
     'react/prefer-stateless-function': 1,
 
     // Prevent missing props validation in a React component definition
     // PropTypes improve the reusability of your component by validating the received data. It can
     // warn other developers if they make a mistake while reusing the component with improper data
     // type.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': [2, {
       ignore: [],
       customValidators: [],
@@ -159,15 +157,15 @@ module.exports = {
     // Prevent missing React when using JSX
     // When using JSX, <a /> expands to React.createElement("a"). Therefore the React variable must
     // be in scope.
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/react-in-jsx-scope': 2,
 
     // Enforce ES5 or ES6 class for returning value in render function
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
+    // When writing the render method in a component it is easy to forget to return the JSX content.
+    // This rule will warn if the return statement is missing.
     'react/require-render-return': 2,
 
     // Enforce style prop value being an object
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
+    // Require that the value of the prop style be an object or a variable that is an object.
     'react/style-prop-object': 2,
   },
 }
