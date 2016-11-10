@@ -562,6 +562,9 @@ module.exports = {
     // Reports use of an exported name as the locally imported name of a default export
     'import/no-named-as-default': 1,
 
+    // Reports use of a default export as a locally named import
+    'import/no-named-default': 1,
+
     // Reports use of an exported name as a property on the default export
     // Accessing a property that has a name that is shared by an exported name from the same module
     // is likely to be a mistake.

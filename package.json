@@ -8,8 +8,8 @@
   },
   "contributors": [],
   "dependencies": {
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-react": "^6.3.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.6.0"
   },
   "devDependencies": {
     "eslint": "^3.9.0"
@@ -23,7 +23,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^3.9.0"
+    "eslint": "^3.9.1"
   },
   "repository": {
     "type": "git",
