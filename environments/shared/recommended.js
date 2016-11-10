@@ -15,7 +15,22 @@ module.exports = {
   ],
 
   settings: {
-    'import/extensions': ['.js', 'jsx', '.es'],
+    'import/extensions': [
+      '.js',
+      '.jsx',
+      '.mjs',
+    ],
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.mjs',
+          '.jsx',
+          '.json',
+          '.node',
+        ],
+      },
+    },
   },
 
   rules: {
