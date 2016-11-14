@@ -36,7 +36,7 @@ module.exports = {
     // function expression in the stack trace.
     // If you are tempted to create anonymous function expression, consider using arrow function
     // instead.
-    'func-names': 1,
+    'func-names': [1, 'as-needed'],
 
     // Disallow Use of `undefined` Variable
     // In ECMAScript 3 it was possible to overwrite the value of undefined. While ECMAScript 5

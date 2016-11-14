@@ -149,6 +149,11 @@ module.exports = {
     // statements to achieve a consistent coding style across the project.
     'newline-after-var': 1,
 
+    // Disallow Extra Boolean Casts
+    // In contexts such as an if statement's test where the result of the expression will already be
+    // coerced to a Boolean, casting to a Boolean via double negation (!!) is unnecessary.
+    'no-extra-boolean-cast': 1,
+
     // Disallow unnecessary parentheses
     // This rule restricts the use of parentheses to only where they are necessary.
     // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence

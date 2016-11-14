@@ -207,6 +207,13 @@ module.exports = {
       message: 'Skipped test case',
     }],
 
+    // Disallow unnecessary `return await`
+    // Inside an async function, return await is useless. Since the return value of an async
+    // function is always wrapped in Promise.resolve, return await doesn’t actually do anything
+    // except add extra time before the overarching Promise resolves or rejects. This pattern is
+    // almost certainly due to programmer ignorance of the return semantics of async functions.
+    'no-return-await': 1,
+
     // Disallow Initializing to undefined
     // In JavaScript, a variable that is declared and not initialized to any value automatically
     // gets the value of undefined.

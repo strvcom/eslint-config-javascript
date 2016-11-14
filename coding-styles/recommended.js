@@ -115,11 +115,6 @@ module.exports = {
     // can be placed outside of the block.
     'no-else-return': 1,
 
-    // Disallow Extra Boolean Casts
-    // In contexts such as an if statement's test where the result of the expression will already be
-    // coerced to a Boolean, casting to a Boolean via double negation (!!) is unnecessary.
-    'no-extra-boolean-cast': 1,
-
     // Disallows comments after code
     // This rule will disallow comments on the same line as code.
     'no-inline-comments': 1,
