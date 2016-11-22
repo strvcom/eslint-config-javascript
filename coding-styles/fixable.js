@@ -144,11 +144,6 @@ module.exports = {
     // requiring the use of parentheses when invoking a constructor via the new keyword.
     'new-parens': 1,
 
-    // Require or disallow an empty newline after variable declarations
-    // This rule enforces a coding style where empty newlines are required after var, let, or const
-    // statements to achieve a consistent coding style across the project.
-    'newline-after-var': 1,
-
     // Disallow Extra Boolean Casts
     // In contexts such as an if statement's test where the result of the expression will already be
     // coerced to a Boolean, casting to a Boolean via double negation (!!) is unnecessary.
