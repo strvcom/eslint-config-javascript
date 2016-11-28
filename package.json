@@ -12,7 +12,7 @@
     "eslint-plugin-react": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^3.10.0"
+    "eslint": "^3.11.0"
   },
   "engines": {},
   "homepage": "https://github.com/strvcom/js-coding-standards",
@@ -23,7 +23,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^3.10.0"
+    "eslint": "^3.11.0"
   },
   "repository": {
     "type": "git",

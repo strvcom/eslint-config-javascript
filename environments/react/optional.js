@@ -1,5 +1,5 @@
 /**
- * js-coding-standards
+ * Js-coding-standards
  *
  * @author      Robert Rossmann <rr.rossmann@me.com>
  * @copyright   2016 STRV

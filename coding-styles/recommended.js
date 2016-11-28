@@ -1,5 +1,5 @@
 /**
- * js-coding-standards
+ * Js-coding-standards
  *
  * @author      Robert Rossmann <rr.rossmann@me.com>
  * @copyright   2016 STRV
@@ -15,6 +15,11 @@ module.exports = {
   extends: './fixable.js',
 
   rules: {
+    'capitalized-comments': [1, 'always', {
+      ignoreInlineComments: true,
+      ignoreConsecutiveComments: true,
+    }],
+
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
@@ -166,11 +171,6 @@ module.exports = {
       let: 'never',
       const: 'never',
     }],
-
-    // Operator Assignment Shorthand
-    // This rule enforces use of the shorthand assignment operators by requiring them where
-    // possible.
-    'operator-assignment': [1, 'always'],
 
     // Operator Linebreak
     // When a statement is too long to fit on a single line, line breaks are generally inserted next

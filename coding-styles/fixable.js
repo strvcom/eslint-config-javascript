@@ -1,5 +1,5 @@
 /**
- * js-coding-standards
+ * Js-coding-standards
  *
  * @author      Robert Rossmann <rr.rossmann@me.com>
  * @copyright   2016 STRV
@@ -217,6 +217,11 @@ module.exports = {
     // declaration or just when there is a variable initialization. It ignores var declarations
     // inside for loop conditionals.
     'one-var-declaration-per-line': 1,
+
+    // Operator Assignment Shorthand
+    // This rule enforces use of the shorthand assignment operators by requiring them where
+    // possible.
+    'operator-assignment': [1, 'always'],
 
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.

@@ -1,5 +1,5 @@
 /**
- * js-coding-standards
+ * Js-coding-standards
  *
  * @author      Robert Rossmann <rr.rossmann@me.com>
  * @copyright   2016 STRV
@@ -531,6 +531,11 @@ module.exports = {
     // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
     // spread operator.
     'prefer-spread': 1,
+
+    // Disallow async functions which have no await expression
+    // Async functions which have no await expression may be the unintentional result of
+    // refactoring.
+    'require-await': 1,
 
     // Disallow generator functions that do not have yield
     'require-yield': 2,
