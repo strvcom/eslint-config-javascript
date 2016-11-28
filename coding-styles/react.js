@@ -48,6 +48,10 @@ module.exports = {
     // JSX elements.
     'react/jsx-space-before-closing': [1, 'always'],
 
+    // Validate whitespace in and around the JSX opening and closing brackets
+    // This rule checks the whitespace inside and surrounding the JSX syntactic elements.
+    'react/jsx-tag-spacing': 1,
+
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 1,
 
