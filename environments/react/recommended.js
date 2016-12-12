@@ -78,6 +78,13 @@ module.exports = {
       return: true,
     }],
 
+    // Prevent usage of array index in keys
+    // It's a bad idea to use the array index since it doesn't uniquely identify your elements. In
+    // cases where the array is sorted or an element is added to the beginning of the array, the
+    // index will be changed even though the element representing that index may be the same. This
+    // results in in unnecessary renders.
+    'react/no-array-index-key': 1,
+
     // Prevent usage of deprecated methods
     'react/no-deprecated': 2,
 
@@ -158,6 +165,11 @@ module.exports = {
     // When using JSX, <a /> expands to React.createElement("a"). Therefore the React variable must
     // be in scope.
     'react/react-in-jsx-scope': 2,
+
+    // Enforce a `defaultProps` definition for every prop that is not a required prop
+    // This rule aims to ensure that any non-required PropType declaration of a component has a
+    // corresponding `defaultProps` value.
+    'react/require-default-props': 2,
 
     // Enforce ES5 or ES6 class for returning value in render function
     // When writing the render method in a component it is easy to forget to return the JSX content.
