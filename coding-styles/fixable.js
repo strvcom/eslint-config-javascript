@@ -50,6 +50,12 @@ module.exports = {
       after: true,
     }],
 
+    // Enforce or disallow capitalization of the first letter of a comment
+    'capitalized-comments': [1, 'always', {
+      ignoreInlineComments: true,
+      ignoreConsecutiveComments: true,
+    }],
+
     // Require Following Curly Brace Conventions
     // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
     // statements are wrapped in curly braces.

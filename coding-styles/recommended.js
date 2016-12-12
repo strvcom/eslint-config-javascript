@@ -15,11 +15,6 @@ module.exports = {
   extends: './fixable.js',
 
   rules: {
-    'capitalized-comments': [1, 'always', {
-      ignoreInlineComments: true,
-      ignoreConsecutiveComments: true,
-    }],
-
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines

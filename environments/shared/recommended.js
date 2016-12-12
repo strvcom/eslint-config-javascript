@@ -59,6 +59,12 @@ module.exports = {
     // error. Matches: err, Err, error, someErr, someError, any_error, ...
     'handle-callback-err': [2, '^.*(e|E)rr(or)?'],
 
+    // Disallow await inside of loops
+    // Performing an operation on each element of an iterable is a common task. However, performing
+    // an await as part of each operation is an indication that the program is not taking full
+    // advantage of the parallelization benefits of async/await.
+    'no-await-in-loop': 1,
+
     // Disallow lexical declarations in case/default clauses
     // This rule disallows lexical declarations (let, const, function and class) in case/default
     // clauses. The reason is that the lexical declaration is visible in the entire switch block but
