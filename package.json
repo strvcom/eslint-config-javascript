@@ -4,7 +4,7 @@
   "version": "6.2.1",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",
   "bugs": {
-    "url": "https://github.com/strvcom/js-coding-standards/issues"
+    "url": "https://github.com/strvcom/eslint-config-javascript/issues"
   },
   "contributors": [],
   "dependencies": {
@@ -15,7 +15,7 @@
     "eslint": "^3.12.0"
   },
   "engines": {},
-  "homepage": "https://github.com/strvcom/js-coding-standards",
+  "homepage": "https://github.com/strvcom/eslint-config-javascript",
   "keywords": [
     "eslint",
     "eslintconfig"
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strvcom/js-coding-standards.git"
+    "url": "git+https://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
     "lint": "eslint environments coding-styles unused.js default.js"
