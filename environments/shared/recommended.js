@@ -19,12 +19,14 @@ module.exports = {
       '.js',
       '.jsx',
       '.mjs',
+      '.es',
     ],
     'import/resolver': {
       node: {
         extensions: [
           '.js',
           '.mjs',
+          '.es',
           '.jsx',
           '.json',
           '.node',
