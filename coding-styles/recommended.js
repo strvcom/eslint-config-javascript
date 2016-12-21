@@ -57,13 +57,6 @@ module.exports = {
       ],
     }],
 
-    // Enforce position of line comments
-    // This rule enforces consistent position of line comments. Block comments are not affected by
-    // this rule.
-    'line-comment-position': [1, {
-      position: 'above',
-    }],
-
     // Limit Maximum Length of Line
     // Very long lines of code in any language can be difficult to read. In order to aid in
     // readability and maintainability many coders have developed a convention to limit lines of

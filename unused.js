@@ -87,6 +87,10 @@ module.exports = {
     // Unused, too restrictive.
     'lines-around-comment': 0,
 
+    // Enforce position of line comments
+    // Unused, too restrictive.
+    'line-comment-position': 0,
+
     // Enforce newlines between operands of ternary expressions
     // Unused, ternaries are usually simple enough that they are OK to be written on a single line.
     'multiline-ternary': 0,
