@@ -14,6 +14,10 @@ module.exports = {
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,
 
+    // Enforce or disallow capitalization of the first letter of a comment
+    // Unused, too restrictive.
+    'capitalized-comments': 0,
+
     // Limit Cyclomatic Complexity
     // Let the developer decide if what they write expresses their intent well enough, while
     // maintaining readability.
