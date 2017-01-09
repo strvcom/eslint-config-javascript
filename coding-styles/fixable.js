@@ -180,6 +180,12 @@ module.exports = {
       maxEOF: 1,
     }],
 
+    // Disallow conditional expressions that can be expressed with simpler constructs
+    // Use || instead of ternary in default assignments
+    'no-unneeded-ternary': [1, {
+      defaultAssignment: false,
+    }],
+
     // Require or disallow spacing between function identifiers and their invocations
     // This rule disallows spaces between the function name and the opening parenthesis that calls
     // it.
@@ -222,6 +228,12 @@ module.exports = {
     // This rule enforces use of the shorthand assignment operators by requiring them where
     // possible.
     'operator-assignment': [1, 'always'],
+
+    // Operator Linebreak
+    // When a statement is too long to fit on a single line, line breaks are generally inserted next
+    // to the operators separating expressions. This rule is aimed at enforcing a particular
+    // operator line break style.
+    'operator-linebreak': [1, 'before'],
 
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.

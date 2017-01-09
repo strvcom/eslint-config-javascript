@@ -119,6 +119,10 @@ module.exports = {
     // Unused, too restrictive.
     'object-curly-newline': 0,
 
+    // Prefer destructuring from arrays and objects
+    // Unused, too restrictive.
+    'prefer-destructuring': 0,
+
     // Suggest using Reflect methods where applicable
     // Deprecated, will be removed from ESLint soon
     'prefer-reflect': 0,

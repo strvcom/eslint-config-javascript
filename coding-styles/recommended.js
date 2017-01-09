@@ -137,12 +137,6 @@ module.exports = {
     // Disallow Dangling Underscores in Identifiers
     'no-underscore-dangle': 1,
 
-    // Disallow conditional expressions that can be expressed with simpler constructs
-    // Use || instead of ternary in default assignments
-    'no-unneeded-ternary': [1, {
-      defaultAssignment: false,
-    }],
-
     // Disallow Warning Comments
     // These comments are a warning signal, that there is something not production ready in your
     // code. Most likely you want to fix it or remove the comments before you roll out your code
@@ -159,12 +153,6 @@ module.exports = {
       let: 'never',
       const: 'never',
     }],
-
-    // Operator Linebreak
-    // When a statement is too long to fit on a single line, line breaks are generally inserted next
-    // to the operators separating expressions. This rule is aimed at enforcing a particular
-    // operator line break style.
-    'operator-linebreak': [1, 'before'],
 
     // Enforces having an empty line after the last top-level import statement or require call
     'import/newline-after-import': 1,
