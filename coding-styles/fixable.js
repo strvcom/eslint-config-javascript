@@ -154,6 +154,7 @@ module.exports = {
     // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
     'no-extra-parens': [1, 'all', {
       nestedBinaryExpressions: false,
+      ignoreJSX: 'multi-line',
     }],
 
     // Disallow Floating Decimals
