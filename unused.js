@@ -60,6 +60,10 @@ module.exports = {
     // Unused, too restrictive.
     'no-invalid-this': 0,
 
+    // Disallow Use of Chained Assignment Expressions
+    // Unused, seems handy.
+    'no-multi-assign': 0,
+
     // Disallow Multiline Strings
     // Unused, seems handy. This rule should be enabled when pre-ES5 compatibility is required.
     'no-multi-str': 0,

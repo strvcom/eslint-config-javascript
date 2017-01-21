@@ -535,6 +535,13 @@ module.exports = {
     // to. Additionally, the with statement cannot be used in strict mode.
     'no-with': 2,
 
+    // Require using Error objects as Promise rejection reasons
+    // It is considered good practice to only instances of the built-in Error object for
+    // user-defined errors in Promises. Error objects automatically store a stack trace, which can
+    // be used to debug an error by determining where it came from. If a Promise is rejected with a
+    // non-Error value, it can be difficult to determine where the rejection occurred.
+    'prefer-promise-reject-errors': 2,
+
     // Suggest using the spread operator instead of .apply()
     // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
     // spread operator.

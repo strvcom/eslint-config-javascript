@@ -103,11 +103,6 @@ module.exports = {
       includeExports: true,
     }],
 
-    // Disallow return in else
-    // If an if block contains a return statement, the else block becomes unnecessary. Its contents
-    // can be placed outside of the block.
-    'no-else-return': 1,
-
     // Disallows comments after code
     // This rule will disallow comments on the same line as code.
     'no-inline-comments': 1,
