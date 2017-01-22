@@ -24,7 +24,7 @@ module.exports = {
 
     // Restrict file extensions that may contain JSX
     'react/jsx-filename-extension': [1, {
-      extensions: ['.jsx'],
+      extensions: ['.js', '.jsx'],
     }],
 
     // Detect missing key prop
