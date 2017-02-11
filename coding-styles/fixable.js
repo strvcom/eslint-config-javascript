@@ -324,6 +324,11 @@ module.exports = {
     // This rule aims to maintain consistency around the spacing inside of template literals.
     'template-curly-spacing': 1,
 
+    // Require or disallow spacing between template tags and their literals
+    // This rule aims to maintain consistency around the spacing between template tag functions and
+    // their template literals.
+    'template-tag-spacing': [1, 'always'],
+
     // Require IIFEs to be Wrapped
     'wrap-iife': [1, 'inside'],
 
