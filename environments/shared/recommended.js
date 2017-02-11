@@ -242,7 +242,10 @@ module.exports = {
     // declared (but is declared later)
     // Function declarations are exempted from the rule, so it is allowed to use a function name
     // before its declaration
-    'no-use-before-define': [2, 'nofunc'],
+    'no-use-before-define': [2, {
+      functions: false,
+      classes: false,
+    }],
 
     // Disallow new For Side Effects
     // This rule is aimed at maintaining consistency and convention by disallowing constructor calls
