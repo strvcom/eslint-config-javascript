@@ -179,5 +179,13 @@ module.exports = {
     // Enforce style prop value being an object
     // Require that the value of the prop style be an object or a variable that is an object.
     'react/style-prop-object': 2,
+
+    // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
+    // There are some HTML elements that are only self-closing (e.g. img, br, hr). These are
+    // collectively known as void DOM elements. If you try to give these children, React will give
+    // you a warning:
+    // Invariant Violation: img is a void element tag and must neither have children nor use
+    // dangerouslySetInnerHTML
+    'react/void-dom-elements-no-children': 2,
   },
 }

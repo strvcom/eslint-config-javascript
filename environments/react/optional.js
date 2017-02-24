@@ -24,5 +24,12 @@ module.exports = {
       callbacksLast: false,
       requiredFirst: false,
     }],
+
+    // Forbid foreign propTypes
+    // This rule forbids using another component's prop types unless they are explicitly
+    // imported/exported. This allows people who want to use
+    // babel-plugin-transform-react-remove-prop-types to remove propTypes from their components in
+    // production builds, to do so safely
+    'react/forbid-foreign-prop-types': 1,
   },
 }

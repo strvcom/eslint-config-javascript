@@ -138,6 +138,9 @@ module.exports = {
 
     // eslint-plugin-react
 
+    // Forbid certain elements
+    'react/forbid-elements': 0,
+
     // Forbid certain propTypes
     // This rule checks all JSX components and verifies that no forbidden propsTypes are used.
     'react/forbid-prop-types': 0,
