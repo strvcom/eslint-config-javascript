@@ -186,6 +186,17 @@ module.exports = {
       maxEOF: 1,
     }],
 
+    // Enforce the location of single-line statements
+    // When writing if, else, while, do-while, and for statements, the body can be a single
+    // statement instead of a block. It can be useful to enforce a consistent location for these
+    // single statements.
+    'nonblock-statement-body-position': [1, 'below', {
+      overrides: {
+        if: 'beside',
+        else: 'beside',
+      },
+    }],
+
     // Disallow conditional expressions that can be expressed with simpler constructs
     // Use || instead of ternary in default assignments
     'no-unneeded-ternary': [1, {

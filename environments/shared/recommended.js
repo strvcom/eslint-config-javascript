@@ -74,6 +74,11 @@ module.exports = {
     // defined is reached.
     'no-case-declarations': 2,
 
+    // Disallow comparing against -0
+    // The rule should warn against code that tries to compare against -0, since that will not work
+    // as intended. That is, code like x === -0 will pass for both +0 and -0.
+    'no-compare-neg-zero': 2,
+
     // Disallow Assignment in Conditional Statements
     // This rule is aimed at eliminating ambiguous assignments in for, if, while, and do...while
     // conditional statements.
