@@ -59,5 +59,5 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [eslint-url]: http://eslint.org
 [travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
 [travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
-[eslint-version]: https://img.shields.io/badge/ESLint->=3.17.0-brightgreen.svg
+[eslint-version]: https://img.shields.io/badge/ESLint->=3.19.0-brightgreen.svg
 [eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
