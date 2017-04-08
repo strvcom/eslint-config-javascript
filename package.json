@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-javascript",
   "description": "Write bulletproof JavaScript like a pro!",
-  "version": "6.5.0",
+  "version": "7.0.0-alpha.0",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",
   "bugs": {
     "url": "https://github.com/strvcom/eslint-config-javascript/issues"
@@ -12,7 +12,7 @@
     "eslint-plugin-react": "^6.10.3"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^4.0.0-alpha.0"
   },
   "engines": {},
   "homepage": "https://github.com/strvcom/eslint-config-javascript",
@@ -23,7 +23,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^4.0.0-alpha.0"
   },
   "repository": {
     "type": "git",

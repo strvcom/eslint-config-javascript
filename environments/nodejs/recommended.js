@@ -19,6 +19,12 @@ module.exports = {
     // problems when used in other locations.
     'global-require': 'warn',
 
+    // Disallow use of the deprecated Buffer() constructor
+    // In Node.js, the behavior of the Buffer constructor is different depending on the type of its
+    // argument. Passing an argument from user input to Buffer() without validating its type can
+    // lead to security vulnerabilities such as remote memory disclosure and denial of service.
+    'no-buffer-constructor': 2,
+
     // Disallow new require
     // This rule aims to eliminate use of the `new require` expression.
     'no-new-require': 'error',
