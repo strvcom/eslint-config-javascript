@@ -225,6 +225,11 @@ module.exports = {
     // on separate lines.
     'no-whitespace-before-property': 'warn',
 
+    // Enforce consistent line breaks inside braces
+    'object-curly-newline': ['warn', {
+      consistent: true,
+    }],
+
     // Enforce spaces inside of curly braces in objects
     // This rule aims to maintain consistency around the spacing inside of object literals. It also
     // applies to EcmaScript 6 destructured assignment and import/export specifiers.

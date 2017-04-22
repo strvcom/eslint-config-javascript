@@ -123,10 +123,6 @@ module.exports = {
     // Unused, too restrictive.
     'object-property-newline': 0,
 
-    // Require or disallow line breaks inside braces
-    // Unused, too restrictive.
-    'object-curly-newline': 0,
-
     // Prefer destructuring from arrays and objects
     // Unused, too restrictive.
     'prefer-destructuring': 0,
