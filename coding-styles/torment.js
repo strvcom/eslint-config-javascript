@@ -20,43 +20,43 @@ module.exports = {
   rules: {
     // Enforce/Disallow Variable Initializations
     // You think you can get away with uninitialised variables? Hah! Forget it, dude!
-    'init-declarations': 1,
+    'init-declarations': 'warn',
 
     // Disallow Shadowing of Variables Inside of catch
     // No. Make up a new variable name.
-    'no-catch-shadow': 1,
+    'no-catch-shadow': 'warn',
 
     // Limit Maximum Number of Statements
     // Hit this limit? You are doing it wrong -> refactor!
-    'max-statements': [1, 15],
+    'max-statements': ['warn', 15],
 
     // Require newline before return statement
     // Make your returns obvious!
-    'newline-before-return': 1,
+    'newline-before-return': 'warn',
 
     // Disallow use of negated expressions in conditions
-    'no-negated-condition': 1,
+    'no-negated-condition': 'warn',
 
     // Import Sorting
     // Of course you should sort your imports! It makes your code look more like poetry!
-    'sort-imports': 1,
+    'sort-imports': 'warn',
 
     // Object key sorting
     // And of course you should sort your keys, who wants to look at such ugly, unsorted objects?
-    'sort-keys': 1,
+    'sort-keys': 'warn',
 
     // Variable Sorting
     // Sort all the things!
-    'sort-vars': 1,
+    'sort-vars': 'warn',
 
     // Disallow Magic Numbers
     // Nope. Define them as constants. Or something.
-    'no-magic-numbers': 2,
+    'no-magic-numbers': 'error',
 
     // Require Radix Parameter
-    radix: 1,
+    radix: 'warn',
 
     // Require Regex Literals to be Wrapped
-    'wrap-regex': 1,
+    'wrap-regex': 'warn',
   },
 }

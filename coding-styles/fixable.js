@@ -18,16 +18,16 @@ module.exports = {
   rules: {
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.
-    'arrow-body-style': [1, 'as-needed'],
+    'arrow-body-style': ['warn', 'as-needed'],
 
     // Require parens in arrow function arguments
     // Arrow functions can omit parentheses when they have exactly one parameter. Since their main
     // strength lies in being short and concise, parens around arguments should be omitted when they
     // are not needed.
-    'arrow-parens': [1, 'as-needed'],
+    'arrow-parens': ['warn', 'as-needed'],
 
     // Require space before/after arrow function's arrow
-    'arrow-spacing': [1, {
+    'arrow-spacing': ['warn', {
       before: true,
       after: true,
     }],
@@ -36,7 +36,7 @@ module.exports = {
     // The one true brace style is one of the most common brace styles in JavaScript, in which the
     // opening curly brace of a block is placed on the same line as its corresponding statement or
     // declaration.
-    'brace-style': [1, '1tbs', {
+    'brace-style': ['warn', '1tbs', {
       allowSingleLine: true,
     }],
 
@@ -45,7 +45,7 @@ module.exports = {
     // is that a generator function is a special type of function, therefore it should come together
     // with the `function` keyword. In contrast, it has nothing to do with the function's name,
     // which may be missing completely.
-    'generator-star-spacing': [1, {
+    'generator-star-spacing': ['warn', {
       before: false,
       after: true,
     }],
@@ -54,37 +54,37 @@ module.exports = {
     // This rule is aimed at preventing bugs and increasing code clarity by ensuring that block
     // statements are wrapped in curly braces.
     // All block statements must be wrapped in curly braces
-    curly: [1, 'all'],
+    curly: ['warn', 'all'],
 
     // Enforce newline before and after dot
     // This rule aims to enforce newline consistency in member expressions. This rule prevents the
     // use of mixed newlines around the dot in a member expression.
     // Require the dot to be placed together with the property identifier
-    'dot-location': [1, 'property'],
+    'dot-location': ['warn', 'property'],
 
     // Require Dot Notation
     // This rule is aimed at maintaining code consistency and improving code readability by
     // encouraging use of the dot notation style whenever possible.
-    'dot-notation': 1,
+    'dot-notation': 'warn',
 
     // Disallow multiple spaces
     // This rule aims to disallow multiple whitespace around logical expressions, conditional
     // expressions, declarations, array elements, object properties, sequences and function
     // parameters.
-    'no-multi-spaces': 1,
+    'no-multi-spaces': 'warn',
 
     // Disallow or enforce spaces inside of brackets
     // Disallow
-    'array-bracket-spacing': [1, 'never'],
+    'array-bracket-spacing': ['warn', 'never'],
 
     // Disallow or enforce spaces inside of single line blocks
     // Enforce
-    'block-spacing': [1, 'always'],
+    'block-spacing': ['warn', 'always'],
 
     // Enforces spacing around commas
     // This rule aims to enforce spacing around a comma.
     // A space must be only after comma, i.e. `var a, b`
-    'comma-spacing': [1, {
+    'comma-spacing': ['warn', {
       before: false,
       after: true,
     }],
@@ -92,49 +92,49 @@ module.exports = {
     // Comma style
     // This rule is aimed at enforcing a particular comma style in JavaScript.
     // Commas should be placed at the end of line, not at the beginning
-    'comma-style': [1, 'last'],
+    'comma-style': ['warn', 'last'],
 
     // Disallow or enforce spaces inside of computed properties
     // This rule aims to maintain consistency around the spacing inside of computed properties.
     // No spaces allowed
-    'computed-property-spacing': [1, 'never'],
+    'computed-property-spacing': ['warn', 'never'],
 
     // Require file to end with single newline
     // Benefits of trailing newlines include the ability to concatenate or append to files as well
     // as output files to the terminal without interfering with shell prompts.
-    'eol-last': [1, 'unix'],
+    'eol-last': ['warn', 'unix'],
 
     // Validate Indentation
     // This rule is aimed to enforce consistent indentation style.
-    indent: [1, 2, {
+    indent: ['warn', 2, {
       SwitchCase: 1,
     }],
 
     // Enforce Property Spacing
     // This rule will warn when spacing in properties does not match the specified options. In the
     // case of long lines, it is acceptable to add a new line wherever whitespace is allowed.
-    'key-spacing': [1, {
+    'key-spacing': ['warn', {
       beforeColon: false,
       afterColon: true,
       mode: 'strict',
     }],
 
     // This rule will enforce consistency of spacing around keywords and keyword-like tokens
-    'keyword-spacing': [1, {
+    'keyword-spacing': ['warn', {
       before: true,
       after: true,
     }],
 
     // Disallow mixing CRLF and LF linebreaks
     // This rule aims to ensure having consistent line endings independent of operating system.
-    'linebreak-style': [2, 'unix'],
+    'linebreak-style': ['error', 'unix'],
 
     // Require or disallow newlines around directives
     // This rule requires or disallows blank newlines around directive prologues. This rule does not
     // enforce any conventions about blank newlines between the individual directives. In addition,
     // it does not require blank newlines before directive prologues unless they are preceded by a
     // comment.
-    'lines-around-directive': [1, {
+    'lines-around-directive': ['warn', {
       before: 'always',
       after: 'always',
     }],
@@ -142,22 +142,22 @@ module.exports = {
     // Require Parens for Constructors
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.
-    'new-parens': 1,
+    'new-parens': 'warn',
 
     // Disallow return in else
     // If an if block contains a return statement, the else block becomes unnecessary. Its contents
     // can be placed outside of the block.
-    'no-else-return': 1,
+    'no-else-return': 'warn',
 
     // Disallow Extra Boolean Casts
     // In contexts such as an if statement's test where the result of the expression will already be
     // coerced to a Boolean, casting to a Boolean via double negation (!!) is unnecessary.
-    'no-extra-boolean-cast': 1,
+    'no-extra-boolean-cast': 'warn',
 
     // Disallow unnecessary parentheses
     // This rule restricts the use of parentheses to only where they are necessary.
     // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-    'no-extra-parens': [1, 'all', {
+    'no-extra-parens': ['warn', 'all', {
       nestedBinaryExpressions: false,
       ignoreJSX: 'multi-line',
     }],
@@ -167,21 +167,21 @@ module.exports = {
     // decimal point be preceded or followed by a number. Although not a syntax error, this format
     // for numbers can make it difficult to distinguish between true decimal numbers and the dot
     // operator.
-    'no-floating-decimal': 1,
+    'no-floating-decimal': 'warn',
 
     // Disallow the type conversion with shorter notations
     // This rule is aimed to flag shorter notations for the type conversion, then suggest a more
     // self-explanatory notation.
-    'no-implicit-coercion': 1,
+    'no-implicit-coercion': 'warn',
 
     // Disallow if as the Only Statement in an else Block
     // This rule warns when an if statement's else block contains only another if statement.
-    'no-lonely-if': 1,
+    'no-lonely-if': 'warn',
 
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
-    'no-multiple-empty-lines': [1, {
+    'no-multiple-empty-lines': ['warn', {
       max: 2,
       maxEOF: 1,
     }],
@@ -190,7 +190,7 @@ module.exports = {
     // When writing if, else, while, do-while, and for statements, the body can be a single
     // statement instead of a block. It can be useful to enforce a consistent location for these
     // single statements.
-    'nonblock-statement-body-position': [1, 'below', {
+    'nonblock-statement-body-position': ['warn', 'below', {
       overrides: {
         if: 'beside',
         else: 'beside',
@@ -199,111 +199,111 @@ module.exports = {
 
     // Disallow conditional expressions that can be expressed with simpler constructs
     // Use || instead of ternary in default assignments
-    'no-unneeded-ternary': [1, {
+    'no-unneeded-ternary': ['warn', {
       defaultAssignment: false,
     }],
 
     // Require or disallow spacing between function identifiers and their invocations
     // This rule disallows spaces between the function name and the opening parenthesis that calls
     // it.
-    'func-call-spacing': 1,
+    'func-call-spacing': 'warn',
 
     // Disallow trailing spaces at the end of lines
     // Sometimes in the course of editing files, you can end up with extra whitespace at the end of
     // lines. These whitespace differences can be picked up by source control systems and flagged as
     // diffs, causing frustration for developers. While this extra whitespace causes no functional
     // issues, many code conventions require that trailing spaces be removed before checkin.
-    'no-trailing-spaces': 1,
+    'no-trailing-spaces': 'warn',
 
     // Disallow unnecessary computed property keys on objects
     // It’s unnecessary to use computed properties when the property name is a literal.
-    'no-useless-computed-key': 1,
+    'no-useless-computed-key': 'warn',
 
     // Disallow whitespace before properties
     // This rule alerts for whitespace around the dot or brackets before properties of objects if
     // they are on the same line. It does not alert for whitespace when the object and property are
     // on separate lines.
-    'no-whitespace-before-property': 1,
+    'no-whitespace-before-property': 'warn',
 
     // Enforce spaces inside of curly braces in objects
     // This rule aims to maintain consistency around the spacing inside of object literals. It also
     // applies to EcmaScript 6 destructured assignment and import/export specifiers.
-    'object-curly-spacing': [1, 'always'],
+    'object-curly-spacing': ['warn', 'always'],
 
     // Require Object Literal Shorthand Syntax
     // EcmaScript 6 provides a concise form for defining object literal methods and properties. This
     // syntax can make defining complex object literals much cleaner.
-    'object-shorthand': [1, 'always'],
+    'object-shorthand': ['warn', 'always'],
 
     // Require a newline around variable declarations
     // This rule enforces a consistent coding style where newlines are required after each var
     // declaration or just when there is a variable initialization. It ignores var declarations
     // inside for loop conditionals.
-    'one-var-declaration-per-line': 1,
+    'one-var-declaration-per-line': 'warn',
 
     // Operator Assignment Shorthand
     // This rule enforces use of the shorthand assignment operators by requiring them where
     // possible.
-    'operator-assignment': [1, 'always'],
+    'operator-assignment': ['warn', 'always'],
 
     // Operator Linebreak
     // When a statement is too long to fit on a single line, line breaks are generally inserted next
     // to the operators separating expressions. This rule is aimed at enforcing a particular
     // operator line break style.
-    'operator-linebreak': [1, 'before'],
+    'operator-linebreak': ['warn', 'before'],
 
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.
-    'padded-blocks': [1, 'never'],
+    'padded-blocks': ['warn', 'never'],
 
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
-    'prefer-arrow-callback': 1,
+    'prefer-arrow-callback': 'warn',
 
     // Suggest using const
     // This rule is aimed at flagging variables that are declared using let keyword, but never
     // modified after the initial assignment. This helps v8 to better optimise code at runtime.
-    'prefer-const': 1,
+    'prefer-const': 'warn',
 
     // Disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // This rule disallows parseInt() if it is called with two arguments: a string and a radix
     // option of 2 (binary), 8 (octal), or 16 (hexadecimal).
-    'prefer-numeric-literals': 1,
+    'prefer-numeric-literals': 'warn',
 
     // Suggest using template literals instead of string concatenation
     // This rule is aimed to flag usage of + operators with strings.
-    'prefer-template': 1,
+    'prefer-template': 'warn',
 
     // Quoting Style for Property Names
     // This rule aims to enforce use of quotes in property names.
     // Require quotes where necessary, disallow where unnecessary
-    'quote-props': [1, 'as-needed'],
+    'quote-props': ['warn', 'as-needed'],
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.
-    quotes: [1, 'single', 'avoid-escape'],
+    quotes: ['warn', 'single', 'avoid-escape'],
 
     // Enforce spacing between rest and spread operators and their expressions
     // This rule aims to enforce consistent spacing between rest and spread operators and their
     // expressions.
-    'rest-spread-spacing': [1, 'never'],
+    'rest-spread-spacing': ['warn', 'never'],
 
     // Enforce spacing before and after semicolons
-    'semi-spacing': [1, {
+    'semi-spacing': ['warn', {
       before: false,
       after: true,
     }],
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
-    semi: [1, 'never'],
+    semi: ['warn', 'never'],
 
     // Require Or Disallow Space Before Blocks
     // This rule will enforce consistency of spacing before blocks.
-    'space-before-blocks': [1, 'always'],
+    'space-before-blocks': ['warn', 'always'],
 
     // Require or disallow a space before function parenthesis
-    'space-before-function-paren': [1, {
+    'space-before-function-paren': ['warn', {
       anonymous: 'never',
       named: 'never',
       asyncArrow: 'always',
@@ -313,42 +313,42 @@ module.exports = {
     // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing
     // or requiring one or more spaces to the right of ( and to the left of ). In either case, ()
     // will still be allowed.
-    'space-in-parens': [1, 'never'],
+    'space-in-parens': ['warn', 'never'],
 
     // Require Spaces Around Infix Operators
     // This rule is aimed at ensuring there are spaces around infix operators.
-    'space-infix-ops': 1,
+    'space-infix-ops': 'warn',
 
     // Require or disallow spaces before/after unary operators
     // This rule enforces consistency regarding the spaces after words unary operators and
     // after/before nonwords unary operators.
-    'space-unary-ops': [1, {
+    'space-unary-ops': ['warn', {
       words: true,
       nonwords: false,
     }],
 
     // Require or disallow a whitespace beginning a comment
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
-    'spaced-comment': 1,
+    'spaced-comment': 'warn',
 
     // Enforce Usage of Spacing in Template Strings
     // This rule aims to maintain consistency around the spacing inside of template literals.
-    'template-curly-spacing': 1,
+    'template-curly-spacing': 'warn',
 
     // Require or disallow spacing between template tags and their literals
     // This rule aims to maintain consistency around the spacing between template tag functions and
     // their template literals.
-    'template-tag-spacing': [1, 'always'],
+    'template-tag-spacing': ['warn', 'always'],
 
     // Require IIFEs to be Wrapped
-    'wrap-iife': [1, 'inside'],
+    'wrap-iife': ['warn', 'inside'],
 
     // Enforce spacing around the * in `yield*` expressions
-    'yield-star-spacing': [1, 'after'],
+    'yield-star-spacing': ['warn', 'after'],
 
     // Require or disallow Yoda Conditions
     // Yoda conditions are so named because the literal value of the condition comes first while the
     // variable comes second ("red" === color).
-    yoda: 1,
+    yoda: 'warn',
   },
 }

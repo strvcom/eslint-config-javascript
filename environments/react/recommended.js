@@ -15,25 +15,25 @@ module.exports = {
   rules: {
     // Enforce JSX Quote Style
     // This rule enforces the consistent use of either double or single quotes in JSX attributes.
-    'jsx-quotes': [1, 'prefer-double'],
+    'jsx-quotes': ['warn', 'prefer-double'],
 
     // Enforce boolean attributes notation in JSX
     // In JSX when using a boolean attribute you can set the attribute value to true or omit the
     // value. This rule will enforce one or the other to keep consistency in your code.
-    'react/jsx-boolean-value': [1, 'never'],
+    'react/jsx-boolean-value': ['warn', 'never'],
 
     // Restrict file extensions that may contain JSX
-    'react/jsx-filename-extension': [1, {
+    'react/jsx-filename-extension': ['warn', {
       extensions: ['.js', '.jsx'],
     }],
 
     // Detect missing key prop
     // Warn if an element that likely requires a key prop--namely, one present in an array literal
     // or an arrow function expression.
-    'react/jsx-key': 1,
+    'react/jsx-key': 'warn',
 
     // No .bind() or Arrow Functions in JSX Props
-    'react/jsx-no-bind': [2, {
+    'react/jsx-no-bind': ['error', {
       ignoreRefs: true,
       allowArrowFunctions: true,
       allowBind: false,
@@ -42,14 +42,14 @@ module.exports = {
     // Prevent comments from being inserted as text nodes
     // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally
     // injected as a text node in JSX statements.
-    'react/jsx-no-comment-textnodes': 1,
+    'react/jsx-no-comment-textnodes': 'warn',
 
     // Prevent usage of dangerous JSX properties
-    'react/no-danger': 1,
+    'react/no-danger': 'warn',
 
     // Prevent duplicate properties in JSX
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application.
-    'react/jsx-no-duplicate-props': [2, {
+    'react/jsx-no-duplicate-props': ['error', {
       ignoreCase: true,
     }],
 
@@ -57,22 +57,22 @@ module.exports = {
     // often desired to have the link open in a new tab using the target='_blank' attribute. Using
     // this attribute unaccompanied by rel='noreferrer noopener', however, is a severe security
     // vulnerability.
-    'react/jsx-no-target-blank': 2,
+    'react/jsx-no-target-blank': 'error',
 
     // Disallow undeclared variables in JSX
     // This rules can help you locate potential ReferenceErrors resulting from misspellings or
     // missing components.
-    'react/jsx-no-undef': 2,
+    'react/jsx-no-undef': 'error',
 
     // Prevent React to be incorrectly marked as unused
-    'react/jsx-uses-react': 2,
+    'react/jsx-uses-react': 'error',
 
     // Prevent variables used in JSX to be incorrectly marked as unused
-    'react/jsx-uses-vars': 2,
+    'react/jsx-uses-vars': 'error',
 
     // Prevent missing parentheses around multiline
     // Wrapping multiline JSX in parentheses can improve readability and/or convenience.
-    'react/jsx-wrap-multilines': [2, {
+    'react/jsx-wrap-multilines': ['error', {
       declaration: true,
       assignment: true,
       return: true,
@@ -83,39 +83,39 @@ module.exports = {
     // cases where the array is sorted or an element is added to the beginning of the array, the
     // index will be changed even though the element representing that index may be the same. This
     // results in in unnecessary renders.
-    'react/no-array-index-key': 1,
+    'react/no-array-index-key': 'warn',
 
     // Prevent usage of deprecated methods
-    'react/no-deprecated': 2,
+    'react/no-deprecated': 'error',
 
     // Prevent usage of setState in componentDidMount
     // Updating the state after a component mount will trigger a second render() call and can lead
     // to property/layout thrashing.
-    'react/no-did-mount-set-state': 2,
+    'react/no-did-mount-set-state': 'error',
 
     // Prevent usage of setState in componentDidUpdate
     // Updating the state after a component update will trigger a second render() call and can lead
     // to property/layout thrashing.
-    'react/no-did-update-set-state': 2,
+    'react/no-did-update-set-state': 'error',
 
     // Prevent direct mutation of this.state
     // Never mutate this.state directly, as calling setState() afterwards may replace the mutation
     // you made. Treat this.state as if it were immutable.
-    'react/no-direct-mutation-state': 2,
+    'react/no-direct-mutation-state': 'error',
 
     // Error when using findDOMNode()
     // Facebook will eventually deprecate findDOMNode as it blocks certain improvements in React in
     // the future. It is recommended to use callback refs instead
-    'react/no-find-dom-node': 2,
+    'react/no-find-dom-node': 'error',
 
     // Prevent usage of isMounted
     // isMounted is an anti-pattern, is not available when using ES6 classes, and it is on its way
     // to being officially deprecated.
-    'react/no-is-mounted': 2,
+    'react/no-is-mounted': 'error',
 
     // Prevent multiple component definitions per file
     // Declaring only one component per file improves readability and reusability of components.
-    'react/no-multi-comp': [2, {
+    'react/no-multi-comp': ['error', {
       ignoreStateless: true,
     }],
 
@@ -123,40 +123,40 @@ module.exports = {
     // ReactDOM.render() currently returns a reference to the root ReactComponent instance. However,
     // using this return value is legacy and should be avoided because future versions of React may
     // render components asynchronously in some cases.
-    'react/no-render-return-value': 2,
+    'react/no-render-return-value': 'error',
 
     // Prevent using string references
     // Currently, two ways are supported by React to refer to components. The first one, providing a
     // string identifier is considered legacy in the official documentation. Referring to components
     // by setting a property on the this object in the reference callback is preferred.
-    'react/no-string-refs': 2,
+    'react/no-string-refs': 'error',
 
     // Prevent usage of unknown DOM property
     // In JSX all DOM properties and attributes should be camelCased to be consistent with standard
     // JavaScript style. This can be a possible source of error if you are used to writing plain
     // HTML.
-    'react/no-unknown-property': 2,
+    'react/no-unknown-property': 'error',
 
     // Prevent definitions of unused prop types
     // Warns you if you have defined a prop type but it is never being used anywhere.
-    'react/no-unused-prop-types': [2, {
+    'react/no-unused-prop-types': ['error', {
       customValidators: [],
       skipShapeProps: false,
     }],
 
     // Enforce ES6 class for React Components
-    'react/prefer-es6-class': [2, 'always'],
+    'react/prefer-es6-class': ['error', 'always'],
 
     // Enforce stateless React Components to be written as a pure function
     // Stateless functional components are more simple than class based components and will benefit
     // from future React performance optimizations specific to these components.
-    'react/prefer-stateless-function': 1,
+    'react/prefer-stateless-function': 'warn',
 
     // Prevent missing props validation in a React component definition
     // PropTypes improve the reusability of your component by validating the received data. It can
     // warn other developers if they make a mistake while reusing the component with improper data
     // type.
-    'react/prop-types': [2, {
+    'react/prop-types': ['error', {
       ignore: [],
       customValidators: [],
     }],
@@ -164,21 +164,21 @@ module.exports = {
     // Prevent missing React when using JSX
     // When using JSX, <a /> expands to React.createElement("a"). Therefore the React variable must
     // be in scope.
-    'react/react-in-jsx-scope': 2,
+    'react/react-in-jsx-scope': 'error',
 
     // Enforce a `defaultProps` definition for every prop that is not a required prop
     // This rule aims to ensure that any non-required PropType declaration of a component has a
     // corresponding `defaultProps` value.
-    'react/require-default-props': 2,
+    'react/require-default-props': 'error',
 
     // Enforce ES5 or ES6 class for returning value in render function
     // When writing the render method in a component it is easy to forget to return the JSX content.
     // This rule will warn if the return statement is missing.
-    'react/require-render-return': 2,
+    'react/require-render-return': 'error',
 
     // Enforce style prop value being an object
     // Require that the value of the prop style be an object or a variable that is an object.
-    'react/style-prop-object': 2,
+    'react/style-prop-object': 'error',
 
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
     // There are some HTML elements that are only self-closing (e.g. img, br, hr). These are
@@ -186,6 +186,6 @@ module.exports = {
     // you a warning:
     // Invariant Violation: img is a void element tag and must neither have children nor use
     // dangerouslySetInnerHTML
-    'react/void-dom-elements-no-children': 2,
+    'react/void-dom-elements-no-children': 'error',
   },
 }

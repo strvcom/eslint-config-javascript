@@ -14,14 +14,14 @@ module.exports = {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
-    'consistent-return': [1, {
+    'consistent-return': ['warn', {
       // eslint-disable-next-line id-length
       treatUndefinedAsUnspecified: true,
     }],
 
     // Validates JSDoc comments are syntactically correct
     // This rule aims to prevent invalid and incomplete JSDoc comments.
-    'valid-jsdoc': [1, {
+    'valid-jsdoc': ['warn', {
       requireReturn: true,
       requireReturnDescription: false,
     }],
@@ -29,26 +29,26 @@ module.exports = {
     // Limit Maximum Depth
     // This rule aims to reduce the complexity of your code by allowing you to configure the maximum
     // depth blocks can be nested in a function.
-    'max-depth': [1, 5],
+    'max-depth': ['warn', 5],
 
     // Require Function Expressions to have a Name
     // If you provide the optional name for a function expression then you will get the name of the
     // function expression in the stack trace.
     // If you are tempted to create anonymous function expression, consider using arrow function
     // instead.
-    'func-names': [1, 'as-needed'],
+    'func-names': ['warn', 'as-needed'],
 
     // Disallow Use of `undefined` Variable
     // In ECMAScript 3 it was possible to overwrite the value of undefined. While ECMAScript 5
     // disallows overwriting undefined, it's still possible to shadow `undefined`.
-    'no-undefined': 1,
+    'no-undefined': 'warn',
 
     // Require symbol description
     // This rule requires a description when creating symbols. Using description promotes easier
     // debugging - when a symbol is logged the description is used.
-    'symbol-description': 1,
+    'symbol-description': 'warn',
 
     // Reports if a resolved path is imported more than once
-    'import/no-duplicates': 1,
+    'import/no-duplicates': 'warn',
   },
 }

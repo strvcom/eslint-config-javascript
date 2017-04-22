@@ -16,10 +16,10 @@ module.exports = {
     // Disallow Use of Alert
     // This rule is aimed at catching debugging code that should be removed and popup UI elements
     // that should be replaced with less obtrusive, custom UIs.
-    'no-alert': 1,
+    'no-alert': 'warn',
 
     // Enforce propTypes declarations alphabetical sorting
-    'react/sort-prop-types': [1, {
+    'react/sort-prop-types': ['warn', {
       ignoreCase: true,
       callbacksLast: false,
       requiredFirst: false,
@@ -30,6 +30,6 @@ module.exports = {
     // imported/exported. This allows people who want to use
     // babel-plugin-transform-react-remove-prop-types to remove propTypes from their components in
     // production builds, to do so safely
-    'react/forbid-foreign-prop-types': 1,
+    'react/forbid-foreign-prop-types': 'warn',
   },
 }
