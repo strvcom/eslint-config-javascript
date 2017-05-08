@@ -2,6 +2,7 @@
 
 module.exports = {
   extends: [
-    './default.js'
-  ]
+    './unused.js',
+    './default.js',
+  ],
 }
