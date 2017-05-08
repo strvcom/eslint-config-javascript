@@ -43,11 +43,6 @@ module.exports = {
       ignore: [],
     }],
 
-    // Validate spacing before closing bracket in JSX
-    // This rule checks if there is one or more spaces before the closing bracket of self-closing
-    // JSX elements.
-    'react/jsx-space-before-closing': ['warn', 'always'],
-
     // Validate whitespace in and around the JSX opening and closing brackets
     // This rule checks the whitespace inside and surrounding the JSX syntactic elements.
     'react/jsx-tag-spacing': 'warn',

@@ -86,7 +86,7 @@ module.exports = {
     'react/no-array-index-key': 'warn',
 
     // Prevent usage of deprecated methods
-    'react/no-deprecated': 'error',
+    'react/no-deprecated': 'warn',
 
     // Prevent usage of setState in componentDidMount
     // Updating the state after a component mount will trigger a second render() call and can lead
@@ -97,6 +97,11 @@ module.exports = {
     // Updating the state after a component update will trigger a second render() call and can lead
     // to property/layout thrashing.
     'react/no-did-update-set-state': 'error',
+
+    // Prevent usage of setState in componentWillUpdate
+    // Updating the state during the componentWillUpdate step can lead to indeterminate component
+    // state and is not allowed.
+    'react/no-will-update-set-state': 'error',
 
     // Prevent direct mutation of this.state
     // Never mutate this.state directly, as calling setState() afterwards may replace the mutation
