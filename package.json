@@ -12,7 +12,7 @@
     "eslint-plugin-react": "^6.10.3"
   },
   "devDependencies": {
-    "eslint": "^4.0.0-alpha.1"
+    "eslint": "^4.0.0-alpha.2"
   },
   "engines": {},
   "homepage": "https://github.com/strvcom/eslint-config-javascript",
@@ -23,7 +23,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^4.0.0-alpha.1"
+    "eslint": "^4.0.0-alpha.2"
   },
   "repository": {
     "type": "git",
