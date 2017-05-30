@@ -35,10 +35,6 @@ module.exports = {
     // Unused, no one cares.
     'max-lines': 0,
 
-    // Require or disallow an empty newline after variable declarations
-    // Unused, too restrictive.
-    'newline-after-var': 0,
-
     // Disallow Bitwise Operators
     // Unused, too restrictive.
     'no-bitwise': 0,

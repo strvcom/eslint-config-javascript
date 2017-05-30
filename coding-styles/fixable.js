@@ -129,16 +129,6 @@ module.exports = {
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': ['error', 'unix'],
 
-    // Require or disallow newlines around directives
-    // This rule requires or disallows blank newlines around directive prologues. This rule does not
-    // enforce any conventions about blank newlines between the individual directives. In addition,
-    // it does not require blank newlines before directive prologues unless they are preceded by a
-    // comment.
-    'lines-around-directive': ['warn', {
-      before: 'always',
-      after: 'always',
-    }],
-
     // Require Parens for Constructors
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.
@@ -261,6 +251,14 @@ module.exports = {
     // This rule enforces consistent padding within blocks.
     'padded-blocks': ['warn', 'never'],
 
+    // Require or disallow padding lines between statements
+    // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
+    // blank lines help developers to understand the code.
+    'padding-line-between-statements': ['warn',
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'never', prev: 'directive', next: 'directive' },
+    ],
+
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
     'prefer-arrow-callback': 'warn',
@@ -299,6 +297,12 @@ module.exports = {
       after: true,
     }],
 
+    // Enforce location of semicolons
+    // Generally, semicolons are at the end of lines. However, in semicolon-less style, semicolons
+    // are at the beginning of lines. This rule enforces that semicolons are at the configured
+    // location.
+    'semi-style': ['warn', 'first'],
+
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
     semi: ['warn', 'never'],
@@ -335,6 +339,11 @@ module.exports = {
     // Require or disallow a whitespace beginning a comment
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
     'spaced-comment': 'warn',
+
+    // Enforce spacing around colons of switch statements
+    // This rule controls spacing around colons of case and default clauses in switch statements.
+    // Spacing around colons improves readability of case/default clauses.
+    'switch-colon-spacing': 'warn',
 
     // Enforce Usage of Spacing in Template Strings
     // This rule aims to maintain consistency around the spacing inside of template literals.
