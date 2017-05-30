@@ -602,6 +602,12 @@ module.exports = {
     // Ensure consistent use of file extension within the import path
     'import/extensions': ['warn', 'never'],
 
+    // Reports if a module's default export is unnamed
+    // Ensuring that default exports are named helps improve the grepability of the codebase by
+    // encouraging the re-use of the same identifier for the module's default export at its
+    // declaration site and at its import sites.
+    'import/no-anonymous-default-export': 'warn',
+
     // Forbid the use of extraneous packages
     // Forbid the import of external modules that are not declared in package.json.
     'import/no-extraneous-dependencies': 'error',
