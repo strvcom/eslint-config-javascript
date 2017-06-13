@@ -129,16 +129,6 @@ module.exports = {
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': ['error', 'unix'],
 
-    // Require or disallow newlines around directives
-    // This rule requires or disallows blank newlines around directive prologues. This rule does not
-    // enforce any conventions about blank newlines between the individual directives. In addition,
-    // it does not require blank newlines before directive prologues unless they are preceded by a
-    // comment.
-    'lines-around-directive': ['warn', {
-      before: 'always',
-      after: 'always',
-    }],
-
     // Require Parens for Constructors
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.

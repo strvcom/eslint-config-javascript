@@ -30,10 +30,6 @@ module.exports = {
     // Hit this limit? You are doing it wrong -> refactor!
     'max-statements': ['warn', 15],
 
-    // Require newline before return statement
-    // Make your returns obvious!
-    'newline-before-return': 'warn',
-
     // Disallow use of negated expressions in conditions
     'no-negated-condition': 'warn',
 
