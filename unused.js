@@ -10,6 +10,10 @@
 
 module.exports = {
   rules: {
+    // Enforce line breaks between array elements
+    // Unused, too restrictive
+    'array-element-newline': 0,
+
     // enforce line breaks after opening and before closing array brackets
     // Unused, does not enforce newlines after each array element, resulting in weird-looking code
     'array-bracket-newline': 0,
@@ -40,6 +44,7 @@ module.exports = {
     'no-bitwise': 0,
 
     // Disallow arrow functions where they could be confused with comparisons
+    // Unused, not really confusing enough.
     'no-confusing-arrow': 0,
 
     // Disallow Regexs That Look Like Division
