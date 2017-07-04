@@ -73,8 +73,16 @@ WebStorm has built-in support for ESLint issue reporting. Auto fixing is only su
 To enable ESLint reporter, [follow the guide][webstorm-eslint] on WebStorm's support page.
 To use the new autofix feature, [read their blog post][webstorm-eslint-autofix] on the topic.
 
-> The autofix feature must be manually triggered, ie. no autofix-on-save. However, this is still much better than fixing all the issues by hand... ✍️
-
+To use autofix on save feature
+1. Go to `Preferences` -> `Tools` -> `File watchers`
+2. Click to add (plus) button and choose custom template
+3. Name it for example `eslint`
+4. File type `javascript`
+5. Program will be your path to eslint binary for example `/Users/[yourusername]/git/[yourproject]/node_modules/.bin/eslint`
+6. Arguments `--fix $FilePath$`
+7. Working directory `$ProjectFileDir$`
+8. Show console `never` (if you don't want to see console when --fix command find eslint errors)
+9. Check `Trigger watcher regardless of syntax errors` and uncheck `Immediate file synchronization`
 
 [atom-linter]: https://atom.io/packages/linter
 [atom-linter-eslint]: https://atom.io/packages/linter-eslint
