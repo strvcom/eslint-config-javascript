@@ -34,6 +34,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 > These are for Node.js code.
 
+- @strv/javascript/environments/nodejs/v8
 - @strv/javascript/environments/nodejs/v7
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
