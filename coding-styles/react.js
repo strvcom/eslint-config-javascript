@@ -17,7 +17,8 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 
     // Disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': ['warn', 'never', {
+    'react/jsx-curly-spacing': ['warn', {
+      when: 'never',
       allowMultiline: true,
     }],
 

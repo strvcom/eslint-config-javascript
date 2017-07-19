@@ -22,6 +22,9 @@ module.exports = {
     // value. This rule will enforce one or the other to keep consistency in your code.
     'react/jsx-boolean-value': ['warn', 'never'],
 
+    // Enforce the closing tag location for multiline JSX elements
+    'react/jsx-closing-tag-location': ['warn'],
+
     // Restrict file extensions that may contain JSX
     'react/jsx-filename-extension': ['warn', {
       extensions: ['.js', '.jsx'],
@@ -43,6 +46,12 @@ module.exports = {
     // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally
     // injected as a text node in JSX statements.
     'react/jsx-no-comment-textnodes': 'warn',
+
+    // Enforce all defaultProps have a corresponding non-required PropType
+    // Having defaultProps for non-existent propTypes is likely the result of errors in refactoring
+    // or a sign of a missing propType. Having a defaultProp for a required property similarly
+    // indicates a possible refactoring problem
+    'react/default-props-match-prop-types': 'warn',
 
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 'warn',
@@ -123,6 +132,12 @@ module.exports = {
     'react/no-multi-comp': ['error', {
       ignoreStateless: true,
     }],
+
+    // Prevent usage of shouldComponentUpdate when extending React.PureComponent
+    // Warns if you have shouldComponentUpdate defined when defining a component that extends
+    // React.PureComponent. While having shouldComponentUpdate will still work, it becomes pointless
+    // to extend PureComponent.
+    'react/no-redundant-should-component-update': 'warn',
 
     // Prevent usage of the return value of React.render
     // ReactDOM.render() currently returns a reference to the root ReactComponent instance. However,
