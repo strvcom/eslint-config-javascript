@@ -58,6 +58,10 @@ module.exports = {
     // an infinite for loop is a bug.
     'for-direction': 'error',
 
+    // Enforce that a return statement is present in property getters
+    // Not returning a value from a property getter is most likely a programmer mistake.
+    'getter-return': 'error',
+
     // Require Guarding for-in
     // This rule is aimed at preventing unexpected behavior that could arise from using a for-in
     // loop without filtering the results in the loop.

@@ -79,6 +79,11 @@ module.exports = {
     // allowed on a single line can be very beneficial for readability and maintainability.
     'max-statements-per-line': 'warn',
 
+    // Enforce newlines between operands of ternary expressions
+    // Enforce either the whole ternary on a single line or each part of the ternary on its own line
+    // if the expression contains a newline
+    'multiline-ternary': ['warn', 'always-multiline'],
+
     // Require Constructors to Use Initial Caps
     // This rule is aimed at helping to distinguish regular functions from constructor functions. As
     // such, it warns whenever it sees new followed by an identifier that isn't capitalized or

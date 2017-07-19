@@ -53,6 +53,8 @@ module.exports = {
     // Disallow Synchronous Methods
     // This rule is aimed at preventing synchronous methods from being called in Node.js. It looks
     // specifically for the method suffix "Sync" (as is the convention with Node.js operations).
-    'no-sync': 'warn',
+    'no-sync': ['warn', {
+      allowAtRootLevel: true,
+    }],
   },
 }
