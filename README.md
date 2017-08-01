@@ -44,6 +44,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 - @strv/javascript/environments/react/v15
 - @strv/javascript/environments/react/optional
+- @strv/javascript/environments/react/accessibility
 
 > This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
 

@@ -10,7 +10,10 @@
 
 module.exports = {
 
-  extends: './recommended.js',
+  extends: [
+    './recommended.js',
+    './accessibility.js',
+  ],
 
   env: {
     es6: true,
