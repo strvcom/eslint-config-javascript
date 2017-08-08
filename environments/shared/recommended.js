@@ -229,6 +229,22 @@ module.exports = {
       object: 'it',
       property: 'skip',
       message: 'Skipped test case',
+    }, {
+      object: 'context',
+      property: 'only',
+      message: 'Isolated test suite',
+    }, {
+      object: 'context',
+      property: 'skip',
+      message: 'Skipped test suite',
+    }, {
+      object: 'specify',
+      property: 'only',
+      message: 'Isolated test case',
+    }, {
+      object: 'specify',
+      property: 'skip',
+      message: 'Skipped test case',
     }],
 
     // Disallow unnecessary `return await`
