@@ -19,6 +19,7 @@ node_modules
 *#
 .DS_STORE
 .netbeans
+.vscode
 nbproject
 .idea
 .node_history

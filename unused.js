@@ -168,5 +168,12 @@ module.exports = {
 
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0,
+
+    // Enforces sorting of Object annotations.
+    // This rule mirrors ESlint's sort-keys rule.
+    'flowtype/sort-keys': 0,
+
+    // Enforces a consistent naming pattern for type aliases.
+    'flowtype/type-id-match': 0,
   },
 }

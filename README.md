@@ -46,6 +46,9 @@ See the [tutorial](tutorial) directory for lots of example config files.
 - @strv/javascript/environments/react/optional
 - @strv/javascript/environments/react/accessibility
 
+> These are rules for [Flow][flow-home] type checker.
+- @strv/javascript/environments/flow/recommended
+
 > This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
 
 - @strv/javascript/coding-styles/recommended
@@ -53,6 +56,10 @@ See the [tutorial](tutorial) directory for lots of example config files.
 > This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
 
 - @strv/javascript/coding-styles/fixable
+
+> This one contains coding style rules for Flow
+
+- @strv/javascript/coding-styles/flow
 
 ## License
 
@@ -64,3 +71,4 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
 [eslint-version]: https://img.shields.io/badge/ESLint->=4.5.0-brightgreen.svg
 [eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
+[flow-home]: https://flow.org
