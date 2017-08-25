@@ -151,6 +151,11 @@ module.exports = {
     // by setting a property on the this object in the reference callback is preferred.
     'react/no-string-refs': 'error',
 
+    // Prevents common typos
+    // This rule checks whether the declared static class properties and lifecycle methods related
+    // to React components do not contain any typos.
+    'react/no-typos': 'warn',
+
     // Prevent usage of unknown DOM property
     // In JSX all DOM properties and attributes should be camelCased to be consistent with standard
     // JavaScript style. This can be a possible source of error if you are used to writing plain
@@ -163,6 +168,9 @@ module.exports = {
       customValidators: [],
       skipShapeProps: false,
     }],
+
+    // Prevent definition of unused state fields
+    'react/no-unused-state': ['warn'],
 
     // Enforce ES6 class for React Components
     'react/prefer-es6-class': ['error', 'always'],

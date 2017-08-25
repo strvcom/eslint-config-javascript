@@ -9,7 +9,7 @@
   "contributors": [],
   "dependencies": {
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.3.0"
   },
   "devDependencies": {
     "eslint": "^4.5.0"

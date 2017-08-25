@@ -135,6 +135,9 @@ module.exports = {
 
     // eslint-plugin-react
 
+    // Enforces consistent naming for boolean props
+    'react/boolean-prop-naming': 0,
+
     // Forbid certain elements
     'react/forbid-elements': 0,
 
