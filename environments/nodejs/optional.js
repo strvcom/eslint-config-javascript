@@ -21,6 +21,7 @@ module.exports = {
     // console only.
     //
     // @see  https://www.npmjs.com/package/debug
+    // @see  https://www.npmjs.com/package/pino
     // @see  https://www.npmjs.com/package/bunyan
     'no-console': 'warn',
   },
