@@ -220,7 +220,7 @@ module.exports = {
     }, {
       object: 'describe',
       property: 'skip',
-      message: 'Skipped test suite',
+      message: 'Skipped test suite. Use xdescribe() to write a pending test suite.',
     }, {
       object: 'it',
       property: 'only',
@@ -228,7 +228,7 @@ module.exports = {
     }, {
       object: 'it',
       property: 'skip',
-      message: 'Skipped test case',
+      message: 'Skipped test case. Use xit() to write a pending test case.',
     }, {
       object: 'context',
       property: 'only',
@@ -236,7 +236,7 @@ module.exports = {
     }, {
       object: 'context',
       property: 'skip',
-      message: 'Skipped test suite',
+      message: 'Skipped test suite. Use xcontext() to write a pending test suite.',
     }, {
       object: 'specify',
       property: 'only',
@@ -244,7 +244,7 @@ module.exports = {
     }, {
       object: 'specify',
       property: 'skip',
-      message: 'Skipped test case',
+      message: 'Skipped test case. Use xspecify() to write a pending test case.',
     }],
 
     // Disallow unnecessary `return await`
