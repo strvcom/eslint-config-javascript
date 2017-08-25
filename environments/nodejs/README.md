@@ -16,6 +16,12 @@ Suitable for projects running on Node.js v7.
 
 Suitable for projects running on Node.js v8.
 
+### @strv/javascript/environments/nodejs/v8-3
+
+Suitable for projects running on Node.js v8.3.
+
+> Node.js 8.3 upgraded the v8 engine to 6.0 which [brings some ECMAScript features](https://v8project.blogspot.cz/2017/06/v8-release-60.html) previously not available in Node.js . This ruleset enables those language features.
+
 ### @strv/javascript/environments/nodejs/optional
 
 Use this ruleset in conjunction with any of the above version-specific rulesets. Provides additional insights into potential inconsistencies in the project.
