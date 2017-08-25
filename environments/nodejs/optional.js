@@ -8,6 +8,8 @@
 
 'use strict'
 
+const globs = require('./globs')
+
 module.exports = {
 
   extends: '../shared/optional.js',
@@ -24,5 +26,14 @@ module.exports = {
     // @see  https://www.npmjs.com/package/pino
     // @see  https://www.npmjs.com/package/bunyan
     'no-console': 'warn',
+  },
+
+  overrides: {
+    files: globs.test,
+
+    rules: {
+      // Do not require function names in test files
+      'func-names': 'off',
+    },
   },
 }
