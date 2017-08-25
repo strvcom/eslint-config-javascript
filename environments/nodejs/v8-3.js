@@ -13,11 +13,7 @@
  */
 module.exports = {
 
-  extends: './v7.js',
-
-  parserOptions: {
-    ecmaVersion: 2017,
-  },
+  extends: './v8.js',
 
   rules: {
     // Node.js 8.3 upgraded v8 to 6.0 which brings support for object rest spread -> we can turn
