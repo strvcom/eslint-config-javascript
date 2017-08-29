@@ -166,7 +166,8 @@ module.exports = {
     // Warns you if you have defined a prop type but it is never being used anywhere.
     'react/no-unused-prop-types': ['error', {
       customValidators: [],
-      skipShapeProps: false,
+      // Enabled after discussion in #21
+      skipShapeProps: true,
     }],
 
     // Prevent definition of unused state fields
