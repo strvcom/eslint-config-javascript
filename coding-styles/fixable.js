@@ -48,6 +48,8 @@ module.exports = {
     'generator-star-spacing': ['warn', {
       before: false,
       after: true,
+      // For class/object methods, the * should come together with the name
+      method: 'before',
     }],
 
     // Require Following Curly Brace Conventions
@@ -103,6 +105,11 @@ module.exports = {
     // Benefits of trailing newlines include the ability to concatenate or append to files as well
     // as output files to the terminal without interfering with shell prompts.
     'eol-last': ['warn', 'unix'],
+
+    // Enforce consistent line breaks inside function parentheses
+    // Requires linebreaks inside function parentheses if any of the parameters/arguments have a
+    // line break between them. Otherwise, it disallows linebreaks.
+    'function-paren-newline': ['warn', 'multiline'],
 
     // Validate Indentation
     // This rule is aimed to enforce consistent indentation style.
