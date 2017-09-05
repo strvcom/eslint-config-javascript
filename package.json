@@ -23,7 +23,9 @@
   "devDependencies": {
     "eslint": "^4.6.0"
   },
-  "engines": {},
+  "engines": {
+    "node": ">=6"
+  },
   "homepage": "https://github.com/strvcom/eslint-config-javascript",
   "keywords": [
     "eslint",
