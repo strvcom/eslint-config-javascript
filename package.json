@@ -42,6 +42,6 @@
     "url": "git+https://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
-    "lint": "eslint environments coding-styles unused.js default.js"
+    "lint": "eslint ."
   }
 }
