@@ -12,7 +12,7 @@ module.exports = {
 
   // Configuration files patterns
   config: [
-    'config/**',
-    'configuration/**',
+    '**/config/**',
+    '**/configuration/**',
   ],
 }
