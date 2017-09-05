@@ -27,7 +27,10 @@
   "homepage": "https://github.com/strvcom/eslint-config-javascript",
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "ruleset",
+    "coding-standard",
+    "coding-standards"
   ],
   "license": "BSD-3-Clause",
   "main": "default",
