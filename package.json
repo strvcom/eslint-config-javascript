@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strvcom/eslint-config-javascript.git"
+    "url": "git://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
     "lint": "eslint ."
