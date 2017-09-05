@@ -1,3 +1,13 @@
+[eslint-url]: http://eslint.org
+[travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
+[travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
+[eslint-version]: https://img.shields.io/badge/ESLint->=4.6.0-brightgreen.svg
+[eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
+[flow-home]: https://flow.org
+[react-home]: http://reactjs.com
+[nodejs-home]: https://nodejs.org
+
+
 # JavaScript Coding Standards
 
 > Write bulletproof JavaScript like a pro! 😎
@@ -32,7 +42,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 ### Available rulesets
 
-> These are for Node.js code.
+#### For [Node.js][nodejs-home]
 
 - @strv/javascript/environments/nodejs/v8-3
 - @strv/javascript/environments/nodejs/v8
@@ -40,35 +50,28 @@ See the [tutorial](tutorial) directory for lots of example config files.
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
 
-> These are for browser-specific code which uses React.
+#### For [React][react-home]
 
 - @strv/javascript/environments/react/v15
 - @strv/javascript/environments/react/optional
 - @strv/javascript/environments/react/accessibility
+  > This one contains rules specific to web accessibility best practices.
 
-> These are rules for [Flow][flow-home] type checker.
+#### For [Flow][flow-home]
+
 - @strv/javascript/environments/flow/recommended
 
-> This one includes rules which deal with how the code looks like and not how it works. It helps keep the code clean and consistent.
+#### Coding styles
+
+These rulesets include rules which deal with how the code looks like and not how it works. They help keep the code clean and consistent.
 
 - @strv/javascript/coding-styles/recommended
-
-> This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
-
 - @strv/javascript/coding-styles/fixable
-
-> This one contains coding style rules for Flow
+  > This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
 
 - @strv/javascript/coding-styles/flow
+  > This one contains coding style rules for code using Flow
 
 ## License
 
 This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](LICENSE) file for more information.
-
-
-[eslint-url]: http://eslint.org
-[travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
-[travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
-[eslint-version]: https://img.shields.io/badge/ESLint->=4.6.0-brightgreen.svg
-[eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
-[flow-home]: https://flow.org
