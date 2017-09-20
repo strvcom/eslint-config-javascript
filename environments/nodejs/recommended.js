@@ -72,8 +72,6 @@ module.exports = {
     rules: {
       // Using process.env is encouraged in configuration files
       'no-process-env': 'off',
-      // In config files, it should be ok to export a plain object without naming it first
-      'import/no-anonymous-default-export': ['warn', { allowObject: true }],
     },
   }],
 }

@@ -633,7 +633,9 @@ module.exports = {
     // Ensuring that default exports are named helps improve the grepability of the codebase by
     // encouraging the re-use of the same identifier for the module's default export at its
     // declaration site and at its import sites.
-    'import/no-anonymous-default-export': 'warn',
+    'import/no-anonymous-default-export': ['warn', {
+      allowObject: true,
+    }],
 
     // Forbid the use of extraneous packages
     // Forbid the import of external modules that are not declared in package.json.
