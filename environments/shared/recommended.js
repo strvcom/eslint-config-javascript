@@ -635,6 +635,7 @@ module.exports = {
     // declaration site and at its import sites.
     'import/no-anonymous-default-export': ['warn', {
       allowObject: true,
+      allowArray: true,
     }],
 
     // Forbid the use of extraneous packages
