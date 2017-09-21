@@ -32,9 +32,9 @@ For the _linter_ package, these settings are recommended:
 
 For the _linter-eslint_ package, these settings are recommended:
 
-- [x] Disable when no ESLint config is found
 - [x] Disable when no eslintrc file in PATH
-- [x] Fix errors on save 👈
+- [x] Fix errors on save
+- [x] Ignore fixable rules while typing
 
 ## Visual Studio Code
 
