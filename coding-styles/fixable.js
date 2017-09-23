@@ -156,6 +156,7 @@ module.exports = {
     // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
     'no-extra-parens': ['warn', 'all', {
       nestedBinaryExpressions: false,
+      returnAssign: false,
       ignoreJSX: 'multi-line',
     }],
 
