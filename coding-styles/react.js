@@ -16,6 +16,9 @@ module.exports = {
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 
+    // Disallow unnecessary curly braces in JSX props and/or children
+    'react/jsx-curly-brace-presence': ['warn', 'never'],
+
     // Disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': ['warn', {
       when: 'never',
