@@ -28,6 +28,13 @@ module.exports = {
     // Flow file declaration (or a @noflow annotation).
     'flowtype/no-types-missing-file-annotation': 'error',
 
+    // This rule ignores type cast expressions, but otherwise behaves the same as ESLint's built-in
+    // rule.
+    'flowtype/no-unused-expressions': ['error', {
+      allowShortCircuit: true,
+      allowTernary: true,
+    }],
+
     // Warns against weak type annotations any, Object and Function. These types can cause flow
     // to silently skip over portions of your code, which would have otherwise caused type errors.
     'flowtype/no-weak-types': ['warn', { any: true }],
