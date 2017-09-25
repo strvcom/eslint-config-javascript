@@ -136,6 +136,13 @@ module.exports = {
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': ['error', 'unix'],
 
+    // Newline Per Chained Method Call
+    // This rule checks and reports the chained calls if there are no new lines after each call or
+    // deep member access.
+    'newline-per-chained-call': ['warn', {
+      ignoreChainWithDepth: 3,
+    }],
+
     // Require Parens for Constructors
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.

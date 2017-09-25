@@ -93,13 +93,6 @@ module.exports = {
       capIsNew: true,
     }],
 
-    // Newline Per Chained Method Call
-    // This rule checks and reports the chained calls if there are no new lines after each call or
-    // deep member access.
-    'newline-per-chained-call': ['warn', {
-      ignoreChainWithDepth: 3,
-    }],
-
     // Disallow duplicate exports/imports
     // An ES6/ES2015 import can be spread over multiple lines, but this takes up unneeded
     // whitespace. This rules validates that all imports from a single module exists in a single
