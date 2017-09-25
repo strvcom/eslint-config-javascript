@@ -360,7 +360,7 @@ module.exports = {
     // Require or disallow spacing between template tags and their literals
     // This rule aims to maintain consistency around the spacing between template tag functions and
     // their template literals.
-    'template-tag-spacing': ['warn', 'always'],
+    'template-tag-spacing': ['warn', 'never'],
 
     // Require IIFEs to be Wrapped
     'wrap-iife': ['warn', 'inside'],
