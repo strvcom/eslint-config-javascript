@@ -5,9 +5,9 @@ module.exports = {
   test: [
     // Classic layout
     'test/**',
-    // Lerna monorepo
-    'packages/*/test/**/*.test.*',
-    'packages/*/test/**/*.spec.*',
+    // Nested test files, ie. Lerna monorepo
+    '**/test/**/*.test.*',
+    '**/test/**/*.spec.*',
   ],
 
   // Configuration files patterns
