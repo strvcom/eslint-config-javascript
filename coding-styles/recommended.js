@@ -15,17 +15,6 @@ module.exports = {
   extends: './fixable.js',
 
   rules: {
-    // This rule enforces consistent use of trailing commas in object and array literals
-    // Allow trailing commas for func parameters, array and object literals spread across
-    // multiple lines
-    'comma-dangle': ['warn', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
-    }],
-
     // Require Camelcase
     // This rule looks for any underscores (_) located within the source code. It ignores leading
     // and trailing underscores and only checks those in the middle of a variable name. If ESLint
