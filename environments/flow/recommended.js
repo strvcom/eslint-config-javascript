@@ -43,7 +43,9 @@ module.exports = {
     'flowtype/require-parameter-type': 'error',
 
     // Requires that functions have return type annotation.
-    'flowtype/require-return-type': ['error', 'always'],
+    'flowtype/require-return-type': ['error', 'always', {
+      excludeArrowFunctions: 'expressionsOnly',
+    }],
 
     // Requires that all variable declarators have type annotations.
     'flowtype/require-variable-type': 'error',
