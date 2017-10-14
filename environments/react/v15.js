@@ -15,19 +15,6 @@ module.exports = {
     './accessibility.js',
   ],
 
-  env: {
-    es6: true,
-    browser: true,
-  },
-
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2017,
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-
   rules: {
     'operator-linebreak': 0,
     'require-jsdoc': 0,

@@ -12,6 +12,19 @@ module.exports = {
 
   extends: '../shared/recommended.js',
 
+  env: {
+    es6: true,
+    browser: true,
+  },
+
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2017,
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+
   rules: {
     // Enforce JSX Quote Style
     // This rule enforces the consistent use of either double or single quotes in JSX attributes.
