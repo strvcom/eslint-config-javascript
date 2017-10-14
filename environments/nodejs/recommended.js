@@ -14,6 +14,11 @@ module.exports = {
 
   extends: '../shared/recommended.js',
 
+  env: {
+    node: true,
+    es6: true,
+  },
+
   rules: {
     // Enforce `require()` on the top-level module scope
     // It's arguably harder to identify dependencies when they are deeply nested inside of functions

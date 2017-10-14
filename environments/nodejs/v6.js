@@ -15,11 +15,6 @@ module.exports = {
 
   extends: './recommended.js',
 
-  env: {
-    node: true,
-    es6: true,
-  },
-
   rules: {
     // ESLint no longer supports disabling some still unsuported ES 2015 features, so we need to use
     // this rule to disable that syntax
