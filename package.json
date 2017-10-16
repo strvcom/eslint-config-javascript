@@ -21,7 +21,7 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.7.0"
+    "eslint": "^4.9.0"
   },
   "engines": {
     "node": ">=6"
@@ -37,7 +37,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^4.7.0"
+    "eslint": "^4.9.0"
   },
   "repository": {
     "type": "git",
