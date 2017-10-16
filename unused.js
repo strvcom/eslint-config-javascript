@@ -14,10 +14,6 @@ module.exports = {
     // Unused, too restrictive
     'array-element-newline': 0,
 
-    // enforce line breaks after opening and before closing array brackets
-    // Unused, does not enforce newlines after each array element, resulting in weird-looking code
-    'array-bracket-newline': 0,
-
     // Treat var as Block Scoped
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,

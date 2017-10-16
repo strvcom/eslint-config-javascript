@@ -16,6 +16,11 @@
 module.exports = {
 
   rules: {
+    // enforce line breaks after opening and before closing array brackets
+    // Requires consistent usage of linebreaks for each pair of brackets. It reports an error if one
+    // bracket in the pair has a linebreak inside it and the other bracket does not.
+    'array-bracket-newline': ['warn', 'consistent'],
+
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.
     'arrow-body-style': ['warn', 'as-needed'],
