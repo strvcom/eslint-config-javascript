@@ -152,6 +152,14 @@ module.exports = {
     // This rule aims to ensure having consistent line endings independent of operating system.
     'linebreak-style': ['error', 'unix'],
 
+    // Require an empty line between class members
+    // This rule improves readability by enforcing lines between class members. It will not check
+    // empty lines before the first member and after the last member, since that is already taken
+    // care of by padded-blocks.
+    'lines-between-class-members': ['warn', 'always', {
+      exceptAfterSingleLine: true,
+    }],
+
     // Newline Per Chained Method Call
     // This rule checks and reports the chained calls if there are no new lines after each call or
     // deep member access.
