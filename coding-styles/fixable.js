@@ -160,6 +160,10 @@ module.exports = {
       exceptAfterSingleLine: true,
     }],
 
+    // Enforce a particular style for multiline comments
+    // Prefer consecutive line comments for multiline comment block
+    'multiline-comment-style': ['warn', 'separate-lines'],
+
     // Newline Per Chained Method Call
     // This rule checks and reports the chained calls if there are no new lines after each call or
     // deep member access.
