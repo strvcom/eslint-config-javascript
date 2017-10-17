@@ -167,6 +167,10 @@ module.exports = {
 
     // eslint-plugin-flowtype
 
+    // Requires use of $ReadOnlyArray instead of just Array or array shorthand notation
+    // Unused, not sure about its benefits and probably too restrictive.
+    'no-mutable-array': 0,
+
     // Enforces sorting of Object annotations.
     // This rule mirrors ESlint's sort-keys rule.
     'flowtype/sort-keys': 0,
