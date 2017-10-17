@@ -299,8 +299,7 @@ module.exports = {
     // blank lines help developers to understand the code.
     'padding-line-between-statements': ['warn',
       { blankLine: 'always', prev: 'directive', next: '*' },
-      { blankLine: 'never', prev: 'directive', next: 'directive' },
-    ],
+      { blankLine: 'never', prev: 'directive', next: 'directive' }],
 
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
