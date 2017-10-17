@@ -6,6 +6,10 @@ These configuration files are suitable to lint React components.
 
 ## Configurations
 
+### @strv/javascript/environments/react/v16
+
+Suitable for React v16. This ruleset builds on the react/v15 ruleset documented below and bumps the React version to 16 in the plugin configuration, causing some rules to recognise React 16-specific programming patterns.
+
 ### @strv/javascript/environments/react/v15
 
 Suitable for React v15. This ruleset configures ESLint to recognise JSX syntax and enables some rules that make the linting process more natural. Some accesssibility rules are also included to keep users happy even if they are using screen readers, braile devices or just keyboard.

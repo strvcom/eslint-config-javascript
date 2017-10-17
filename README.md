@@ -52,6 +52,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 #### For [React][react-home]
 
+- @strv/javascript/environments/react/v16
 - @strv/javascript/environments/react/v15
 - @strv/javascript/environments/react/optional
 - @strv/javascript/environments/react/accessibility
