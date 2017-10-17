@@ -18,10 +18,6 @@ module.exports = {
     // that should be replaced with less obtrusive, custom UIs.
     'no-alert': 'warn',
 
-    // Custom logging logic should be implemented, everything else will be considered as debugging
-    // statement developer forget to remove
-    'no-console': 'warn',
-
     // Enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': ['warn', {
       ignoreCase: true,

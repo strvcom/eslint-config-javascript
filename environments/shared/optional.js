@@ -31,6 +31,19 @@ module.exports = {
     // depth blocks can be nested in a function.
     'max-depth': ['warn', 5],
 
+    // Disallow Use of console
+    // In general, you should use a logging library which offers more flexibility in terms of log
+    // level configuration and log destinations (i.e. sending logs to external storage/monitoring
+    // service), such as `debug` or `bunyan`.
+    // Feel free to turn this rule off in your project-level ruleset if you are ok with logging to
+    // console only.
+    // On frontend, custom logging logic should be implemented.
+    //
+    // @see  https://www.npmjs.com/package/debug
+    // @see  https://www.npmjs.com/package/pino
+    // @see  https://www.npmjs.com/package/bunyan
+    'no-console': 'warn',
+
     // Require Function Expressions to have a Name
     // If you provide the optional name for a function expression then you will get the name of the
     // function expression in the stack trace.
