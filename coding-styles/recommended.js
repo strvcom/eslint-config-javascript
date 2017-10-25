@@ -142,6 +142,10 @@ module.exports = {
       const: 'never',
     }],
 
+    // Enforce all exports to be declared at the bottom of the file
+    // The exports-last rule is currently only working on ES6 exports.
+    'import/exports-last': 'warn',
+
     // Enforces having an empty line after the last top-level import statement or require call
     'import/newline-after-import': 'warn',
   },
