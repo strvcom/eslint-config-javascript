@@ -8,6 +8,8 @@
 
 'use strict'
 
+const globs = require('./globs')
+
 module.exports = {
 
   rules: {
@@ -63,5 +65,14 @@ module.exports = {
 
     // Reports if a resolved path is imported more than once
     'import/no-duplicates': 'warn',
+  },
+
+  overrides: {
+    files: globs.test,
+
+    rules: {
+      // Do not require function names in test files
+      'func-names': 'off',
+    },
   },
 }

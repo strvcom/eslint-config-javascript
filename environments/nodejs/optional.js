@@ -8,20 +8,8 @@
 
 'use strict'
 
-const globs = require('./globs')
-
 module.exports = {
 
   extends: '../shared/optional.js',
 
-  rules: {},
-
-  overrides: {
-    files: globs.test,
-
-    rules: {
-      // Do not require function names in test files
-      'func-names': 'off',
-    },
-  },
 }
