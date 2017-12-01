@@ -8,7 +8,7 @@
 
 'use strict'
 
-const globs = require('./globs')
+const globs = require('../../globs')
 
 module.exports = {
 
