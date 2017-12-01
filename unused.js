@@ -31,6 +31,10 @@ module.exports = {
     // Unused, too restrictive.
     'id-blacklist': 0,
 
+    // Enforce the location of arrow function bodies with implicit returns
+    // Unused, too restrictive, especially in tests
+    'implicit-arrow-linebreak': 0,
+
     // Enforce a maximum file length
     // Unused, no one cares.
     'max-lines': 0,
