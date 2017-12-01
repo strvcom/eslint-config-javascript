@@ -8,6 +8,8 @@
 
 'use strict'
 
+const globs = require('./globs')
+
 module.exports = {
 
   plugins: [
@@ -656,4 +658,20 @@ module.exports = {
     // is likely to be a mistake.
     'import/no-named-as-default-member': 'warn',
   },
+
+  overrides: [{
+    files: globs.test,
+
+    env: {
+      mocha: true,
+      jest: true,
+    },
+  }, {
+    files: globs.config,
+
+    rules: {
+      // Using process.env is encouraged in configuration files
+      'no-process-env': 'off',
+    },
+  }]
 }

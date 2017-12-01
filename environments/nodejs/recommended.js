@@ -8,8 +8,6 @@
 
 'use strict'
 
-const globs = require('./globs')
-
 module.exports = {
 
   extends: '../shared/recommended.js',
@@ -64,19 +62,4 @@ module.exports = {
       allowAtRootLevel: true,
     }],
   },
-
-  overrides: [{
-    files: globs.test,
-
-    env: {
-      mocha: true,
-    },
-  }, {
-    files: globs.config,
-
-    rules: {
-      // Using process.env is encouraged in configuration files
-      'no-process-env': 'off',
-    },
-  }],
 }
