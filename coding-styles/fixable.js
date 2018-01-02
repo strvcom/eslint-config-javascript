@@ -303,7 +303,9 @@ module.exports = {
 
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
-    'prefer-arrow-callback': 'warn',
+    'prefer-arrow-callback': ['warn', {
+      allowNamedFunctions: true,
+    }],
 
     // Suggest using const
     // This rule is aimed at flagging variables that are declared using let keyword, but never
