@@ -309,6 +309,8 @@ module.exports = {
       // Newline after directives ("use strict" etc.), but not between them
       { blankLine: 'always', prev: 'directive', next: '*' },
       { blankLine: 'never', prev: 'directive', next: 'directive' },
+      // Newline before class declarations
+      { blankLine: 'always', prev: '*', next: 'class' },
       // Newline before function declarations
       { blankLine: 'always', prev: '*', next: 'function' }],
 
