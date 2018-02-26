@@ -431,5 +431,8 @@ module.exports = {
     // Yoda conditions are so named because the literal value of the condition comes first while the
     // variable comes second ("red" === color).
     yoda: 'warn',
+
+    // Ensure that there are no useless path segments in import statement path
+    'import/no-useless-path-segments': 'warn',
   },
 }
