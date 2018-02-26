@@ -660,6 +660,9 @@ module.exports = {
     // Accessing a property that has a name that is shared by an exported name from the same module
     // is likely to be a mistake.
     'import/no-named-as-default-member': 'warn',
+
+    // Forbid a module from importing itself
+    'import/no-self-import': 'error',
   },
 
   overrides: [{
