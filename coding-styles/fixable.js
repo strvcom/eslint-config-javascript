@@ -268,6 +268,14 @@ module.exports = {
     // applies to EcmaScript 6 destructured assignment and import/export specifiers.
     'object-curly-spacing': ['warn', 'always'],
 
+    // Enforce placing object properties on separate lines
+    // This rule makes it possible to ensure, as some style guides require, that property
+    // specifications appear on separate lines or on the same line for better readability.
+    'object-property-newline': ['warn', {
+      // eslint-disable-next-line id-length
+      allowAllPropertiesOnSameLine: true,
+    }],
+
     // Require Object Literal Shorthand Syntax
     // EcmaScript 6 provides a concise form for defining object literal methods and properties. This
     // syntax can make defining complex object literals much cleaner.
