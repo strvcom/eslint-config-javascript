@@ -315,6 +315,10 @@ module.exports = {
       // Newline after ES modules' import statements, but not between them
       { blankLine: 'always', prev: 'import', next: '*' },
       { blankLine: 'never', prev: 'import', next: 'import' },
+      // Newline before CommonJS export assignments
+      { blankLine: 'always', prev: '*', next: 'cjs-export' },
+      // Newline before ES modules export statements
+      { blankLine: 'always', prev: '*', next: 'export' },
       // Newline before class declarations
       { blankLine: 'always', prev: '*', next: 'class' },
       // Newline before function declarations
