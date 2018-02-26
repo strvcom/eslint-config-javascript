@@ -306,8 +306,11 @@ module.exports = {
     // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
     // blank lines help developers to understand the code.
     'padding-line-between-statements': ['warn',
+      // Newline after directives ("use strict" etc.), but not between them
       { blankLine: 'always', prev: 'directive', next: '*' },
-      { blankLine: 'never', prev: 'directive', next: 'directive' }],
+      { blankLine: 'never', prev: 'directive', next: 'directive' },
+      // Newline before function declarations
+      { blankLine: 'always', prev: '*', next: 'function' }],
 
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
