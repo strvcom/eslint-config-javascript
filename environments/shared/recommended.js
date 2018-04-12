@@ -663,12 +663,6 @@ module.exports = {
 
     // Forbid a module from importing itself
     'import/no-self-import': 'error',
-
-    // Enforce a convention in the order of require() / import statements
-    'import/order': ['error', {
-      // todo: enable moment newslines-between when it will be fixable
-      // 'newlines-between': 'always'
-    }]
   },
 
   overrides: [{

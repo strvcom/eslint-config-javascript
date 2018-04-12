@@ -434,5 +434,8 @@ module.exports = {
 
     // Ensure that there are no useless path segments in import statement path
     'import/no-useless-path-segments': 'warn',
+
+    // Enforce a convention in the order of require() / import statements
+    'import/order': 'warn',
   },
 }
