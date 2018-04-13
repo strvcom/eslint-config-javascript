@@ -45,7 +45,7 @@
     "url": "git://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
-    "postinstall": "utils/install-githooks.sh",
+    "prepare": "utils/install-githooks.sh",
     "lint": "eslint ."
   }
 }
