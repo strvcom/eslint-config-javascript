@@ -663,6 +663,11 @@ module.exports = {
 
     // Forbid a module from importing itself
     'import/no-self-import': 'error',
+
+    // Ensures that there is no resolvable path back to this module via its dependencies
+    'import/no-cycle': ['error', {
+      maxDepth: 8,
+    }],
   },
 
   overrides: [{
