@@ -152,9 +152,7 @@ module.exports = {
     // An export declaration or module.exports assignment can appear anywhere in the code. By
     // requiring a single export declaration all your exports will remain at one place, making it
     // easier to see what exports a module provides.
-    // @TODO: Enable after this fix is released:
-    // https://github.com/benmosher/eslint-plugin-import/commit/402c60a3377fa2bbbb7980b2efa7f4afd62ebcd8
-    // 'import/group-exports': 'warn',
+    'import/group-exports': 'warn',
 
     // Enforces having an empty line after the last top-level import statement or require call
     'import/newline-after-import': 'warn',
