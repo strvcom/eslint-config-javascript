@@ -21,7 +21,8 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "validate-commit-msg": "^2.14.0"
   },
   "engines": {
     "node": ">=6"
@@ -44,6 +45,7 @@
     "url": "git://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
+    "postinstall": "utils/install-githooks.sh",
     "lint": "eslint ."
   }
 }
