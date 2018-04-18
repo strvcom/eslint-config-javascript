@@ -25,6 +25,10 @@ module.exports = {
     },
   },
 
+  plugins: [
+    'react',
+  ],
+
   rules: {
     // Enforce JSX Quote Style
     // This rule enforces the consistent use of either double or single quotes in JSX attributes.

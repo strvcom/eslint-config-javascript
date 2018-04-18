@@ -12,6 +12,10 @@ const globs = require('../../globs')
 
 module.exports = {
 
+  plugins: [
+    'import',
+  ],
+
   rules: {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify

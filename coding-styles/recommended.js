@@ -14,6 +14,10 @@ module.exports = {
 
   extends: './fixable.js',
 
+  plugins: [
+    'import',
+  ],
+
   rules: {
     // Require Camelcase
     // This rule looks for any underscores (_) located within the source code. It ignores leading
