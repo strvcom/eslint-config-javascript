@@ -153,8 +153,5 @@ module.exports = {
     // requiring a single export declaration all your exports will remain at one place, making it
     // easier to see what exports a module provides.
     'import/group-exports': 'warn',
-
-    // Enforces having an empty line after the last top-level import statement or require call
-    'import/newline-after-import': 'warn',
   },
 }

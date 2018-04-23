@@ -437,5 +437,8 @@ module.exports = {
 
     // Enforce a convention in the order of require() / import statements
     'import/order': 'warn',
+
+    // Enforces having an empty line after the last top-level import statement or require call
+    'import/newline-after-import': 'warn',
   },
 }
