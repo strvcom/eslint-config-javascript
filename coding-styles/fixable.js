@@ -15,6 +15,10 @@
 // then rather abandons the effort instead of fixing them.
 module.exports = {
 
+  plugins: [
+    'import',
+  ],
+
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // Requires consistent usage of linebreaks for each pair of brackets. It reports an error if one

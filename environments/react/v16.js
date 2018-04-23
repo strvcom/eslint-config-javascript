@@ -14,6 +14,10 @@ module.exports = {
     './v15.js',
   ],
 
+  plugins: [
+    'react',
+  ],
+
   // Configures the react plugin to treat some rules with regard to this specific React.js version
   settings: {
     react: {

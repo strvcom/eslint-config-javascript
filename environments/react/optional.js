@@ -12,6 +12,10 @@ module.exports = {
 
   extends: '../shared/optional.js',
 
+  plugins: [
+    'react',
+  ],
+
   rules: {
     // Disallow Use of Alert
     // This rule is aimed at catching debugging code that should be removed and popup UI elements
