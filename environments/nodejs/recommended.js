@@ -12,9 +12,12 @@ module.exports = {
 
   extends: '../shared/recommended.js',
 
+  parserOptions: {
+    ecmaVersion: 2015,
+  },
+
   env: {
     node: true,
-    es6: true,
   },
 
   rules: {
