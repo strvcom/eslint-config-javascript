@@ -349,6 +349,13 @@ module.exports = {
     // option of 2 (binary), 8 (octal), or 16 (hexadecimal).
     'prefer-numeric-literals': 'warn',
 
+    // Prefer use of an object spread over Object.assign
+    // When Object.assign is called using an object literal as the first argument, this rule
+    // requires using the object spread syntax instead. This rule also warns on cases where an
+    // Object.assign call is made using a single argument that is an object literal, in this case,
+    // the Object.assign call is not needed.
+    'prefer-object-spread': 'warn',
+
     // Suggest using template literals instead of string concatenation
     // This rule is aimed to flag usage of + operators with strings.
     'prefer-template': 'warn',
