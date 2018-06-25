@@ -9,7 +9,7 @@
 'use strict'
 
 /**
- * This file configures ESLint to work with the Node.js 7.0 release
+ * This file configures ESLint to work with the Node.js 10.0 release
  */
 module.exports = {
 
