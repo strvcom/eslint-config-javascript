@@ -21,8 +21,9 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "validate-commit-msg": "^2.14.0"
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "eslint": "^4.19.1"
   },
   "engines": {
     "node": ">=6"
