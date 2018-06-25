@@ -68,6 +68,11 @@ module.exports = {
     // error. Matches: err, Err, error, someErr, someError, any_error, ...
     'handle-callback-err': ['error', '^.*(e|E)rr(or)?'],
 
+    // Enforce a maximum number of classes per file
+    // Files containing multiple classes can often result in a less navigable and poorly structured
+    // codebase. Best practice is to keep each file limited to a single responsibility.
+    'max-classes-per-file': ['warn', 1],
+
     // Disallow await inside of loops
     // Performing an operation on each element of an iterable is a common task. However, performing
     // an await as part of each operation is an indication that the program is not taking full
