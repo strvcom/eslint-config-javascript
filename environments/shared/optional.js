@@ -29,6 +29,7 @@ module.exports = {
     // This rule aims to prevent invalid and incomplete JSDoc comments.
     'valid-jsdoc': ['warn', {
       requireReturn: true,
+      requireParamType: true,
       requireReturnDescription: false,
     }],
 
