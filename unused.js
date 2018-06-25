@@ -10,10 +10,6 @@
 
 module.exports = {
   rules: {
-    // Enforce line breaks between array elements
-    // Unused, too restrictive
-    'array-element-newline': 0,
-
     // Treat var as Block Scoped
     // Unused in favour of `no-var` rule. Front-end could have some interest in this rule.
     'block-scoped-var': 0,

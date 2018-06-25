@@ -25,6 +25,11 @@ module.exports = {
     // bracket in the pair has a linebreak inside it and the other bracket does not.
     'array-bracket-newline': ['warn', 'consistent'],
 
+    // enforce line breaks between array elements
+    // A number of style guides require or disallow line breaks between array elements. This ruleset
+    // requires consistent usage of linebreaks between array elements.
+    'array-element-newline': ['warn', 'consistent'],
+
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.
     'arrow-body-style': ['warn', 'as-needed'],
