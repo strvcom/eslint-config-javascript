@@ -4,7 +4,7 @@
 // directory, or a subdirectory if your project consists of both node.js and browser code.
 module.exports = {
   extends: [
-    '@strv/javascript/environments/nodejs/v8',
+    '@strv/javascript/environments/nodejs/v10',
     '@strv/javascript/environments/nodejs/optional',
     '@strv/javascript/coding-styles/recommended',
   ],
@@ -23,7 +23,7 @@ module.exports = {
     },
 
     rules: {
-      'func-names': 0,
+      'func-names': 'off',
     },
   }],
 }
