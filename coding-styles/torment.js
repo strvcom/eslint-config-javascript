@@ -30,6 +30,10 @@ module.exports = {
     // Hit this limit? You are doing it wrong -> refactor!
     'max-statements': ['warn', 15],
 
+    // Enforce a maximum function length
+    // More than 30 lines of SLOC in a function? You are doing it wrong -> refactor!
+    'max-lines-per-function': ['warn', 30],
+
     // Disallow use of negated expressions in conditions
     'no-negated-condition': 'warn',
 
