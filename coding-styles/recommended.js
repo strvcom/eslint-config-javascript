@@ -23,9 +23,7 @@ module.exports = {
     // This rule looks for any underscores (_) located within the source code. It ignores leading
     // and trailing underscores and only checks those in the middle of a variable name. If ESLint
     // decides that the variable is a constant (all uppercase), then no warning will be thrown.
-    camelcase: ['warn', {
-      properties: 'always',
-    }],
+    camelcase: ['warn'],
 
     // Require Consistent This
     // This rule designates a variable as the chosen alias for `this`.

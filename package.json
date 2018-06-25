@@ -23,7 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
-    "eslint": "^4.19.1"
+    "eslint": "^5.0.0"
   },
   "engines": {
     "node": ">=6"
@@ -39,7 +39,7 @@
   "license": "BSD-3-Clause",
   "main": "default",
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.0.0"
   },
   "repository": {
     "type": "git",
