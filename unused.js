@@ -173,5 +173,11 @@ module.exports = {
 
     // Enforces a consistent naming pattern for type aliases.
     'flowtype/type-id-match': 0,
+
+
+    // Disallow relative imports from parent directories
+    // Unused, too restrictive, although I do agree about imorting stuff from parent modules'
+    // subdirectories is generally a bad idea... ⚠️
+    'import/no-relative-parent-imports': 0,
   },
 }
