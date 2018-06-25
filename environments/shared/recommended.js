@@ -17,15 +17,6 @@ module.exports = {
   ],
 
   settings: {
-    // @TODO: Remove these overrides on next major release as the `import` plugin already supports
-    // .mjs extensions and the .jsx extension does not seem to be the preferred way to write JSX
-    // components anymore.
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.mjs',
-      '.es',
-    ],
     'import/resolver': {
       node: {
         extensions: [
