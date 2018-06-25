@@ -44,9 +44,9 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 #### For [Node.js][nodejs-home]
 
+- @strv/javascript/environments/nodejs/v10
 - @strv/javascript/environments/nodejs/v8-3
 - @strv/javascript/environments/nodejs/v8
-- @strv/javascript/environments/nodejs/v7
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
 
