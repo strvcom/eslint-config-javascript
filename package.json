@@ -1,5 +1,5 @@
 {
-  "name": "@strv/eslint-config",
+  "name": "@strv/eslint-config-javascript",
   "description": "Write bulletproof JavaScript like a pro! 😎",
   "version": "8.0.2",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",

@@ -8,7 +8,7 @@
 [nodejs-home]: https://nodejs.org
 
 
-# ESLint-Config
+# JavaScript Coding Standards
 
 > Write bulletproof JavaScript like a pro! 😎
 
@@ -26,7 +26,7 @@ This repository contains various configuration files for the awesome JavaScript 
 
 This package can be installed via npm (make sure you also install the latest version of ESLint):
 
-`npm install --save-dev eslint@latest @strv/eslint-config@latest`
+`npm install --save-dev eslint@latest @strv/eslint-config-javascript@latest`
 
 ### Configuration
 
@@ -44,33 +44,33 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 #### For [Node.js][nodejs-home]
 
-- @strv/environments/nodejs/v10
-- @strv/environments/nodejs/v8-3
-- @strv/environments/nodejs/v8
-- @strv/environments/nodejs/v6
-- @strv/environments/nodejs/optional
+- @strv/javascript/environments/nodejs/v10
+- @strv/javascript/environments/nodejs/v8-3
+- @strv/javascript/environments/nodejs/v8
+- @strv/javascript/environments/nodejs/v6
+- @strv/javascript/environments/nodejs/optional
 
 #### For [React][react-home]
 
-- @strv/environments/react/v16
-- @strv/environments/react/v15
-- @strv/environments/react/optional
-- @strv/environments/react/accessibility
+- @strv/javascript/environments/react/v16
+- @strv/javascript/environments/react/v15
+- @strv/javascript/environments/react/optional
+- @strv/javascript/environments/react/accessibility
   > This one contains rules specific to web accessibility best practices.
 
 #### For [Flow][flow-home]
 
-- @strv/environments/flow/recommended
+- @strv/javascript/environments/flow/recommended
 
 #### Coding styles
 
 These rulesets include rules which deal with how the code looks like and not how it works. They help keep the code clean and consistent.
 
-- @strv/coding-styles/recommended
-- @strv/coding-styles/fixable
+- @strv/javascript/coding-styles/recommended
+- @strv/javascript/coding-styles/fixable
   > This is a subset of the `recommended` coding style ruleset and includes only rules which [ESLint can fix automatically][eslint-fixing]. This is great for gradual adoption of coding style rulesets into existing projects.
 
-- @strv/coding-styles/flow
+- @strv/javascript/coding-styles/flow
   > This one contains coding style rules for code using Flow
 
 ## License

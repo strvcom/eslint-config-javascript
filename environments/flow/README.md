@@ -4,7 +4,7 @@ These configuration files are suitable to lint Flow type annotations.
 
 ## Configurations
 
-### @strv/environments/flow/recommended
+### @strv/javascript/environments/flow/recommended
 
 Basic ruleset for Flow. Main focus is on consistent way to write type annotations.
 
