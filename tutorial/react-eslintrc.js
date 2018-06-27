@@ -4,8 +4,8 @@
 // directory, or a subdirectory if your project consists of both node.js and browser code.
 module.exports = {
   extends: [
-    '@strv/javascript/environments/react/v16',
-    '@strv/javascript/environments/react/optional',
-    '@strv/javascript/coding-styles/recommended',
+    '@strv/environments/react/v16',
+    '@strv/environments/react/optional',
+    '@strv/coding-styles/recommended',
   ],
 }

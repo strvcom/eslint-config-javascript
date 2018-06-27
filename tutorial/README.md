@@ -13,11 +13,11 @@ When configuring js-coding-standards, please keep the following in mind:
 - Do not include extensions when extending
   > You should not include the file extension in your `extends:` properties - the format in which this ruleset is written should be an implementation detail for ESLint to figure out.
   >
-  > - Good: `@strv/javascript/environments/nodejs/v8`
-  > - Bad: `@strv/javascript/environments/nodejs/v8.js`
+  > - Good: `@strv/environments/nodejs/v8`
+  > - Bad: `@strv/environments/nodejs/v8.js`
 
 - Extend from the `optional` rulesets after you extend from the main, version-specific environment ruleset
-  > In other words, if you decide to include ie. `@strv/javascript/environments/nodejs/optional`, include it **after** you have included `@strv/javascript/environments/nodejs/v8`.
+  > In other words, if you decide to include ie. `@strv/environments/nodejs/optional`, include it **after** you have included `@strv/environments/nodejs/v8`.
 
 - Some rules are **meant** to be disabled, but only for some folders/files
   > For example, the rule `no-process-env` is enabled by default because accessing any property on `process.env` object causes an expensive C-level function call. However, using `process.env` is the recommended way to manage application configuration. Therefore, some configuration files disable this rule for all files located in a directory named _config_ or _configuration_. Here, you gather all the required configuration options from `process.env` and export them in a module. The rest of your application no longer needs to access `process.env` directly and instead reads the configuration from that module.

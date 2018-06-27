@@ -1,5 +1,5 @@
 {
-  "name": "@strv/eslint-config-javascript",
+  "name": "@strv/eslint-config",
   "description": "Write bulletproof JavaScript like a pro! 😎",
   "version": "8.0.1",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",
@@ -32,9 +32,11 @@
   "keywords": [
     "eslint",
     "eslintconfig",
+    "eslint-config",
     "ruleset",
     "coding-standard",
-    "coding-standards"
+    "coding-standards",
+    "style-guide"
   ],
   "license": "BSD-3-Clause",
   "main": "default",
