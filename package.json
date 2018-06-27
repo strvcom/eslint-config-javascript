@@ -30,12 +30,12 @@
   },
   "homepage": "https://github.com/strvcom/eslint-config-javascript",
   "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "ruleset",
     "coding-standard",
     "coding-standards",
+    "eslint",
+    "eslint-config",
+    "eslintconfig",
+    "ruleset",
     "style-guide"
   ],
   "license": "BSD-3-Clause",
@@ -43,12 +43,15 @@
   "peerDependencies": {
     "eslint": "^5.0.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/eslint-config-javascript.git"
   },
   "scripts": {
-    "prepare": "utils/install-githooks.sh",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "utils/install-githooks.sh"
   }
 }
