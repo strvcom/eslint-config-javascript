@@ -13,4 +13,14 @@ module.exports = {
     '**/config/**',
     '**/configuration/**',
   ],
+
+  javascripts: [
+    '*.js',
+    '.*.js',
+  ],
+
+  esmodules: [
+    '*.mjs',
+    '.*.mjs',
+  ],
 }
