@@ -673,21 +673,5 @@ module.exports = {
       // Using process.env is encouraged in configuration files
       'no-process-env': 'off',
     },
-  }, {
-    files: globs.javascripts,
-
-    parserOptions: {
-      sourceType: 'script',
-    },
-  }, {
-    files: globs.esmodules,
-
-    parserOptions: {
-      sourceType: 'module',
-    },
-
-    env: {
-      es6: true,
-    },
   }],
 }
