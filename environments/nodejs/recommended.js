@@ -8,6 +8,8 @@
 
 'use strict'
 
+const globs = require('../../globs')
+
 module.exports = {
 
   extends: '../shared/recommended.js',
@@ -66,4 +68,22 @@ module.exports = {
       allowAtRootLevel: true,
     }],
   },
+
+  overrides: [{
+    files: globs.javascripts,
+
+    parserOptions: {
+      sourceType: 'script',
+    },
+  }, {
+    files: globs.esmodules,
+
+    parserOptions: {
+      sourceType: 'module',
+    },
+
+    env: {
+      es6: true,
+    },
+  }],
 }
