@@ -611,6 +611,17 @@ module.exports = {
     // refactoring.
     'require-await': 'warn',
 
+    // Enforce the use of u flag on RegExp
+    // RegExp u flag has two effects:
+    // - Make the regular expression handling UTF-16 surrogate pairs correctly
+    // - Make the regular expression throw syntax errors early by disabling Annex B extensions
+    //
+    // The u flag disables the recovering logic Annex B defined. As a result, you can find errors
+    // early. This is similar to the strict mode. Therefore, the u flag lets us work better with
+    // regular expressions.
+    // @TODO (semver-major): Raise to `error`
+    'require-unicode-regexp': 'warn',
+
     // Disallow generator functions that do not have yield
     'require-yield': 'error',
 
