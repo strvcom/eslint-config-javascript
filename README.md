@@ -1,7 +1,7 @@
 [eslint-url]: http://eslint.org
 [travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
 [travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
-[eslint-version]: https://img.shields.io/badge/ESLint-^5.0.0-brightgreen.svg
+[eslint-version]: https://img.shields.io/badge/ESLint-^5.3.0-brightgreen.svg
 [eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
 [flow-home]: https://flow.org
 [react-home]: http://reactjs.com
