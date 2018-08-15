@@ -463,7 +463,10 @@ module.exports = {
 
     // Disallow Shadowing
     // This rule aims to eliminate shadowed variable declarations.
-    'no-shadow': 'error',
+    'no-shadow': ['error', {
+      builtinGlobals: true,
+      hoist: 'functions',
+    }],
 
     // Disallow Undeclared Variables
     // This rule can help you locate potential ReferenceErrors resulting from misspellings of
