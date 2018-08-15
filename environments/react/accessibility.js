@@ -96,6 +96,7 @@ module.exports = {
     }],
 
     // Enforce label tags have associated control.
+    // @TODO(a11y): Replace with label-has-associated-control
     'jsx-a11y/label-has-for': 'warn',
 
     // Providing captions for media is essential for deaf users to follow along. Captions should be
