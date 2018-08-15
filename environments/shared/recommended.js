@@ -215,6 +215,14 @@ module.exports = {
     // could also indicate a misunderstanding of how the language works.
     'no-loop-func': 'warn',
 
+    // Disallow characters which are made with multiple code points in character class syntax
+    // Unicode includes characters which are made with multiple code points. RegExp character class
+    // syntax (/[abc]/) cannot handle characters which are made by multiple code points as a
+    // character; those characters will be dissolved to each code point. For example, ❇️ is made by
+    // ❇ (U+2747) and VARIATION SELECTOR-16 (U+FE0F). If this character is in RegExp character
+    // class, it will match to either ❇ (U+2747) or VARIATION SELECTOR-16 (U+FE0F) rather than ❇️.
+    'no-misleading-character-class': 'error',
+
     // Disallow certain object properties
     // Currently configured for the following (more can be added as necessary):
     // - Mocha test isolation features (skipping tests, running only certain tests)
