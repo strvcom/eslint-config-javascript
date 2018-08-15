@@ -73,6 +73,10 @@ module.exports = {
     // codebase. Best practice is to keep each file limited to a single responsibility.
     'max-classes-per-file': ['warn', 1],
 
+    // Disallow using an async function as a Promise executor
+    // This rule aims to disallow async Promise executor functions.
+    'no-async-promise-executor': 'error',
+
     // Disallow await inside of loops
     // Performing an operation on each element of an iterable is a common task. However, performing
     // an await as part of each operation is an indication that the program is not taking full
