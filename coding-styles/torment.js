@@ -22,10 +22,6 @@ module.exports = {
     // You think you can get away with uninitialised variables? Hah! Forget it, dude!
     'init-declarations': 'warn',
 
-    // Disallow Shadowing of Variables Inside of catch
-    // No. Make up a new variable name.
-    'no-catch-shadow': 'warn',
-
     // Limit Maximum Number of Statements
     // Hit this limit? You are doing it wrong -> refactor!
     'max-statements': ['warn', 15],
