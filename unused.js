@@ -79,6 +79,10 @@ module.exports = {
     // them.
     'no-plusplus': 0,
 
+    // Disallow certain object properties
+    // Unused, no use case.
+    'no-restricted-properties': 0,
+
     // Disallow use of the void operator
     // void is quite useful with IIFEs and for discarding return values when using return for
     // short-circuiting.
@@ -179,5 +183,52 @@ module.exports = {
     // Unused, too restrictive, although I do agree about imorting stuff from parent modules'
     // subdirectories is generally a bad idea... ⚠️
     'import/no-relative-parent-imports': 0,
+
+    // Disallow hooks
+    // Unused, hooks are quite useful if they are used responsibly.
+    'mocha/no-hooks': 0,
+
+    // Disallow hooks for a single test or test suite
+    // Unused, usually you start with the setup hooks and write the first test, and once everything
+    // is working you continue writing new tests.
+    'mocha/no-hooks-for-single-case': 0,
+
+    // Disallow arrow functions as arguments to mocha functions
+    // Unused, arrow functions are preferred unless you need to access `this` inside of them.
+    'mocha/no-mocha-arrows': 0,
+
+    // Disallow pending tests
+    // Unused, Mocha already displays pending tests quite nicely, no need to bother the developer
+    // with extra warnings from the linter.
+    'mocha/no-pending-tests': 0,
+
+    // Disallow duplicate uses of a hook at the same level inside a describe
+    // Unused, too restrictive. Sometimes it is useful to have the preparaction code separated, to
+    // "stand out" to make it more obvious.
+    'mocha/no-sibling-hooks': 0,
+
+    // Disallow skipped tests
+    // Unused, too restrictive. Developers should be able to author and commit pending tests.
+    'mocha/no-skipped-tests': 0,
+
+    // Disallow synchronous tests
+    // Unused, too restrictive.
+    'mocha/no-synchronous-tests': 0,
+
+    // Disallow top-level hooks
+    // Unused, too restrictive.
+    'mocha/no-top-level-hooks': 0,
+
+    // Require using arrow functions for callbacks
+    // Unused, the ESLint's original implementation works just fine for Mocha tests as well.
+    'mocha/prefer-arrow-callback': 0,
+
+    // Match suite descriptions against a pre-configured regular expression
+    // Unused, too restrictive.
+    'mocha/valid-suite-description': 0,
+
+    // Match test descriptions against a pre-configured regular expression
+    // Unused, too restrictive.
+    'mocha/valid-test-description': 0,
   },
 }

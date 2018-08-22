@@ -6,6 +6,7 @@
 [flow-home]: https://flow.org
 [react-home]: http://reactjs.com
 [nodejs-home]: https://nodejs.org
+[mocha-home]: https://mochajs.org
 
 
 # JavaScript Coding Standards
@@ -61,6 +62,10 @@ See the [tutorial](tutorial) directory for lots of example config files.
 #### For [Flow][flow-home]
 
 - @strv/javascript/environments/flow/recommended
+
+#### For [Mocha][mocha-home]
+
+- @strv/javascript/environments/mocha/recommended
 
 #### Coding styles
 

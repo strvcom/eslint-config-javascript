@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     '@strv/javascript/environments/nodejs/v10',
     '@strv/javascript/environments/nodejs/optional',
+    '@strv/javascript/environments/mocha/recommended',
     '@strv/javascript/coding-styles/recommended',
   ],
 
@@ -18,9 +19,6 @@ module.exports = {
     files: [
       'test/**',
     ],
-    env: {
-      mocha: true,
-    },
 
     rules: {
       'func-names': 'off',

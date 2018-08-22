@@ -223,43 +223,6 @@ module.exports = {
     // class, it will match to either ❇ (U+2747) or VARIATION SELECTOR-16 (U+FE0F) rather than ❇️.
     'no-misleading-character-class': 'error',
 
-    // Disallow certain object properties
-    // Currently configured for the following (more can be added as necessary):
-    // - Mocha test isolation features (skipping tests, running only certain tests)
-    'no-restricted-properties': ['warn', {
-      object: 'describe',
-      property: 'only',
-      message: 'Isolated test suite',
-    }, {
-      object: 'describe',
-      property: 'skip',
-      message: 'Skipped test suite. Use xdescribe() to write a pending test suite.',
-    }, {
-      object: 'it',
-      property: 'only',
-      message: 'Isolated test case',
-    }, {
-      object: 'it',
-      property: 'skip',
-      message: 'Skipped test case. Use xit() to write a pending test case.',
-    }, {
-      object: 'context',
-      property: 'only',
-      message: 'Isolated test suite',
-    }, {
-      object: 'context',
-      property: 'skip',
-      message: 'Skipped test suite. Use xcontext() to write a pending test suite.',
-    }, {
-      object: 'specify',
-      property: 'only',
-      message: 'Isolated test case',
-    }, {
-      object: 'specify',
-      property: 'skip',
-      message: 'Skipped test case. Use xspecify() to write a pending test case.',
-    }],
-
     // Disallow unnecessary `return await`
     // Inside an async function, return await is useless. Since the return value of an async
     // function is always wrapped in Promise.resolve, return await doesn’t actually do anything

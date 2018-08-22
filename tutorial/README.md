@@ -8,7 +8,7 @@ When configuring js-coding-standards, please keep the following in mind:
 - Always extend only from **one environment configuration** per _.eslintrc.js_
   > Some environment configuration files in this ruleset have conflicting rule configurations - you **will** experience weird issues if you include ie. both nodejs and react environments into a single _.eslintrc.js_ file.
   >
-  > If your project consists of both React and Node.js code, put them into separate folders and create _.eslintrc.js_ file for each of those folders.
+  > If your project consists of both React and Node.js code, you should utilise the `overrides` functionality in ESLint to only enable one environment ruleset for each type of code.
 
 - Do not include extensions when extending
   > You should not include the file extension in your `extends:` properties - the format in which this ruleset is written should be an implementation detail for ESLint to figure out.
