@@ -1,5 +1,3 @@
-[a11y-repo]: https://github.com/evcohen/eslint-plugin-jsx-a11y
-
 # React
 
 These configuration files are suitable to lint React components.
@@ -23,3 +21,5 @@ Use this ruleset in conjunction with any of the above version-specific rulesets.
 ### @strv/javascript/environment/react/accessibility
 
 Use this ruleset to enable the [`a11y`][a11y-repo] rules which provide checks for writing accessible JSX components.
+
+[a11y-repo]: https://github.com/evcohen/eslint-plugin-jsx-a11y

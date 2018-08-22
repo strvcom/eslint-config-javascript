@@ -1,14 +1,3 @@
-[atom-linter]: https://atom.io/packages/linter
-[atom-linter-eslint]: https://atom.io/packages/linter-eslint
-[vscode-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-[subl-packagecontrol]: https://packagecontrol.io
-[subl-linter]: https://packagecontrol.io/packages/SublimeLinter
-[subl-linter-eslint]: https://packagecontrol.io/packages/SublimeLinter-contrib-eslint
-[subl-eslint-formatter]: https://packagecontrol.io/packages/ESLint-Formatter
-[webstorm-eslint]: https://www.jetbrains.com/help/webstorm/2016.3/using-javascript-code-quality-tools.html#ESLint
-[webstorm-eslint-autofix]: https://blog.jetbrains.com/webstorm/2016/09/webstorm-2016-3-eap-163-3983
-
-
 # ESLint integrations with your IDE/editors
 
 To make the whole developer experience more pleasant and convenient, it is important to configure your code editor of choice integrate with ESLint. The following can be achieved with most editors:
@@ -56,7 +45,7 @@ Install the following packages:
 - [SublimeLinter-Contrib-ESLint][subl-linter-eslint]
 - [ESLint-Formatter][subl-eslint-formatter]
 
-Make sure ESLint does not lint files in *node_modules* folder: (`Preferences` -> `Package Settings` -> `SublimeLinter` -> `Settings - User`):
+Make sure ESLint does not lint files in _node_modules_ folder: (`Preferences` -> `Package Settings` -> `SublimeLinter` -> `Settings - User`):
 
 ```json
 "linters": {
@@ -95,3 +84,13 @@ To use autofix on save feature:
 1. Working directory `$ProjectFileDir$`
 1. Show console `never` (if you don't want to see the console when `--fix` command finds errors)
 1. Check `Trigger watcher regardless of syntax errors` and uncheck `Immediate file synchronization`
+
+[atom-linter]: https://atom.io/packages/linter
+[atom-linter-eslint]: https://atom.io/packages/linter-eslint
+[vscode-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[subl-packagecontrol]: https://packagecontrol.io
+[subl-linter]: https://packagecontrol.io/packages/SublimeLinter
+[subl-linter-eslint]: https://packagecontrol.io/packages/SublimeLinter-contrib-eslint
+[subl-eslint-formatter]: https://packagecontrol.io/packages/ESLint-Formatter
+[webstorm-eslint]: https://www.jetbrains.com/help/webstorm/2016.3/using-javascript-code-quality-tools.html#ESLint
+[webstorm-eslint-autofix]: https://blog.jetbrains.com/webstorm/2016/09/webstorm-2016-3-eap-163-3983

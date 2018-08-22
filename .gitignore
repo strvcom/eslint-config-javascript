@@ -5,6 +5,9 @@ thumbs.db
 # Node.js-specific excludes
 node_modules
 
+# Generated files
+.eslintcache
+
 # Logs'n stuff
 *.seed
 *.log

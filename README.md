@@ -1,21 +1,9 @@
-[eslint-url]: http://eslint.org
-[travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
-[travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
-[eslint-version]: https://img.shields.io/badge/ESLint-^5.3.0-brightgreen.svg
-[eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
-[flow-home]: https://flow.org
-[react-home]: http://reactjs.com
-[nodejs-home]: https://nodejs.org
-[mocha-home]: https://mochajs.org
-
-
 # JavaScript Coding Standards
 
 > Write bulletproof JavaScript like a pro! 😎
 
 [![Build Status][travis-badge]][travis-url]
 ![ESLint version][eslint-version]
-
 
 ## About
 
@@ -31,7 +19,7 @@ This package can be installed via npm (make sure you also install the latest ver
 
 ### Configuration
 
-Once the ruleset is installed, you must create your own *.eslintrc.{js,json,yml}* configuration file in your project's root (or in some of the subfolders, if you want to apply different rules to different parts of your code) and include those rulesets that you want to use. See the [tutorial](tutorial) directory for, well... tutorial.
+Once the ruleset is installed, you must create your own _.eslintrc.{js,json,yml}_ configuration file in your project's root (or in some of the subfolders, if you want to apply different rules to different parts of your code) and include those rulesets that you want to use. See the [tutorial](tutorial) directory for, well... tutorial.
 
 ### Integrating ESLint with your IDE/editor
 
@@ -81,3 +69,13 @@ These rulesets include rules which deal with how the code looks like and not how
 ## License
 
 This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](LICENSE) file for more information.
+
+[eslint-url]: http://eslint.org
+[travis-badge]: https://travis-ci.org/strvcom/eslint-config-javascript.svg
+[travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
+[eslint-version]: https://img.shields.io/badge/ESLint-^5.3.0-brightgreen.svg
+[eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
+[flow-home]: https://flow.org
+[react-home]: http://reactjs.com
+[nodejs-home]: https://nodejs.org
+[mocha-home]: https://mochajs.org
