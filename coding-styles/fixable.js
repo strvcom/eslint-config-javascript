@@ -281,7 +281,6 @@ module.exports = {
     // This rule makes it possible to ensure, as some style guides require, that property
     // specifications appear on separate lines or on the same line for better readability.
     'object-property-newline': ['warn', {
-      // eslint-disable-next-line id-length
       allowAllPropertiesOnSameLine: true,
     }],
 

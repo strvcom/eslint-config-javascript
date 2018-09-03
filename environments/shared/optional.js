@@ -21,7 +21,6 @@ module.exports = {
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
     'consistent-return': ['warn', {
-      // eslint-disable-next-line id-length
       treatUndefinedAsUnspecified: true,
     }],
 
