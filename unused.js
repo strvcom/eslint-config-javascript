@@ -230,5 +230,13 @@ module.exports = {
     // Match test descriptions against a pre-configured regular expression
     // Unused, too restrictive.
     'mocha/valid-test-description': 0,
+
+    // Enforces naming conventions for class members by visibility
+    // Unused, too restrictive.
+    'typescript/member-naming': 0,
+
+    // Disallow the use of type aliases
+    // Unused, type aliases seem useful.
+    'typescript/no-type-alias': 0,
   },
 }

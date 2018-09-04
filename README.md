@@ -51,6 +51,12 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 - @strv/javascript/environments/flow/recommended
 
+#### For [TypeScript][typescript-docs]
+
+> Requires configuration. See the docs for more info.
+
+- @strv/javascript/environments/typescript/recommended
+
 #### For [Mocha][mocha-docs]
 
 - @strv/javascript/environments/mocha/recommended
@@ -75,6 +81,7 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
 [eslint-version]: https://img.shields.io/badge/ESLint-^5.3.0-brightgreen.svg
 [eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
+[typescript-docs]: environments/typescript
 [flow-docs]: environments/flow
 [react-docs]: environments/react
 [nodejs-docs]: environments/nodejs
