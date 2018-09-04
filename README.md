@@ -31,7 +31,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 
 ### Available rulesets
 
-#### For [Node.js][nodejs-home]
+#### For [Node.js][nodejs-docs]
 
 - @strv/javascript/environments/nodejs/v10
 - @strv/javascript/environments/nodejs/v8-3
@@ -39,7 +39,7 @@ See the [tutorial](tutorial) directory for lots of example config files.
 - @strv/javascript/environments/nodejs/v6
 - @strv/javascript/environments/nodejs/optional
 
-#### For [React][react-home]
+#### For [React][react-docs]
 
 - @strv/javascript/environments/react/v16
 - @strv/javascript/environments/react/v15
@@ -47,11 +47,11 @@ See the [tutorial](tutorial) directory for lots of example config files.
 - @strv/javascript/environments/react/accessibility
   > This one contains rules specific to web accessibility best practices.
 
-#### For [Flow][flow-home]
+#### For [Flow][flow-docs]
 
 - @strv/javascript/environments/flow/recommended
 
-#### For [Mocha][mocha-home]
+#### For [Mocha][mocha-docs]
 
 - @strv/javascript/environments/mocha/recommended
 
@@ -75,7 +75,7 @@ This software is licensed under the **BSD-3-Clause License**. See the [LICENSE](
 [travis-url]: https://travis-ci.org/strvcom/eslint-config-javascript
 [eslint-version]: https://img.shields.io/badge/ESLint-^5.3.0-brightgreen.svg
 [eslint-fixing]: http://eslint.org/docs/user-guide/command-line-interface#fix
-[flow-home]: https://flow.org
-[react-home]: http://reactjs.com
-[nodejs-home]: https://nodejs.org
-[mocha-home]: https://mochajs.org
+[flow-docs]: environments/flow
+[react-docs]: environments/react
+[nodejs-docs]: environments/nodejs
+[mocha-docs]: environments/mocha
