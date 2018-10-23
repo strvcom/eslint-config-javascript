@@ -582,8 +582,7 @@ module.exports = {
     // The u flag disables the recovering logic Annex B defined. As a result, you can find errors
     // early. This is similar to the strict mode. Therefore, the u flag lets us work better with
     // regular expressions.
-    // @TODO (semver-major): Raise to `error`
-    'require-unicode-regexp': 'warn',
+    'require-unicode-regexp': 'error',
 
     // Disallow generator functions that do not have yield
     'require-yield': 'error',

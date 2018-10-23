@@ -28,8 +28,7 @@ module.exports = {
       // Mocha allows you to write asynchronous tests by adding a done callback to the parameters of
       // your test function. It is easy to forget calling this callback after the asynchronous
       // operation is done.
-      // @TODO (semver-major): Raise to `error`
-      'mocha/handle-done-callback': 'warn',
+      'mocha/handle-done-callback': 'error',
 
       // Limit the number of top-level suites in a single file
       // This rule enforces having a limited amount of top-level suites in a file.
@@ -52,16 +51,14 @@ module.exports = {
       // Disallow tests to be nested within other tests
       // This rule looks for all test cases (it, specify and test) or suites (describe, context and
       // suite) which are nested within another test case.
-      // @TODO (semver-major): Raise to `error`
-      'mocha/no-nested-tests': 'warn',
+      'mocha/no-nested-tests': 'error',
 
       // Disallow returning in a test or hook function that uses a callback
       // Mocha's tests or hooks (like before) may be asynchronous by either returning a Promise or
       // specifying a callback parameter for the function. It can be confusing to have both methods
       // used in a test or hook, and from Mocha v3 on, causes the test to fail in order to force
       // developers to remove this source of confusion.
-      // @TODO (semver-major): Raise to `error`
-      'mocha/no-return-and-callback': 'warn',
+      'mocha/no-return-and-callback': 'error',
 
       // Disallow setup in describe blocks
       // Any setup directly in a describe is run before all tests execute. This rule reports all
