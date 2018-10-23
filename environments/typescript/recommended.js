@@ -10,6 +10,21 @@
 
 module.exports = {
 
+  settings: {
+    // Correctly recognise .ts and .d.ts files when checking import paths against the filesystem
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.ts',
+          '.d.ts',
+          '.mjs',
+          '.js',
+          '.json',
+        ],
+      },
+    },
+  },
+
   plugins: [
     'typescript',
   ],
