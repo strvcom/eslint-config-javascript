@@ -27,6 +27,7 @@ module.exports = {
       ignoreCase: true,
       callbacksLast: false,
       requiredFirst: false,
+      sortShapeProp: true,
     }],
 
     // Forbid foreign propTypes

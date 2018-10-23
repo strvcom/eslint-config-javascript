@@ -16,6 +16,11 @@ module.exports = {
   ],
 
   rules: {
+    // Enforce consistent usage of destructuring assignment of props, state, and context
+    'react/destructuring-assignment': ['warn', {
+      ignoreClassFields: true,
+    }],
+
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
@@ -43,6 +48,11 @@ module.exports = {
     // Validate props indentation in JSX
     'react/jsx-indent-props': ['warn', 2],
 
+    // Validate JSX maximum depth
+    'react/jsx-max-depth': ['warn', {
+      max: 4,
+    }],
+
     // Enforce PascalCase for user-defined JSX components
     // Enforces coding style that user-defined JSX components are defined and referenced in
     // PascalCase.
@@ -51,9 +61,20 @@ module.exports = {
       ignore: [],
     }],
 
+    // Disallow multiple spaces between inline JSX props
+    // Enforces that there is exactly one space between all attributes and after tag name and the
+    // first attribute in the same line.
+    'react/jsx-props-no-multi-spaces': 'warn',
+
     // Validate whitespace in and around the JSX opening and closing brackets
     // This rule checks the whitespace inside and surrounding the JSX syntactic elements.
     'react/jsx-tag-spacing': 'warn',
+
+    // Enforce one JSX element per line
+    // This option limits every line in JSX to one expression each.
+    'react/jsx-one-expression-per-line': ['warn', {
+      allow: 'single-child',
+    }],
 
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 'warn',

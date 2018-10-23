@@ -19,7 +19,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-mocha": "^5.2.0",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.11.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",

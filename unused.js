@@ -144,11 +144,17 @@ module.exports = {
     // Prevent usage of setState
     'react/no-set-state': 0,
 
+    // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+    'react/jsx-child-element-spacing': 0,
+
     // Prevent usage of unwrapped JSX strings
     'react/jsx-no-literals': 0,
 
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 0,
+
+    // Enforce defaultProps declarations alphabetical sorting
+    'react/jsx-sort-default-props': 0,
 
     // Limit maximum of props on a single line in JSX
     'react/jsx-max-props-per-line': 0,
@@ -161,6 +167,9 @@ module.exports = {
 
     // Forbid certain props on Components
     'react/forbid-component-props': 0,
+
+    // Forbid certain props on DOM Nodes
+    'react/forbid-dom-props': 0,
 
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0,

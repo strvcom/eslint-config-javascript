@@ -34,6 +34,13 @@ module.exports = {
     // This rule enforces the consistent use of either double or single quotes in JSX attributes.
     'jsx-quotes': ['warn', 'prefer-double'],
 
+    // Prevent usage of button elements without an explicit type attribute
+    // The default value of type attribute for button HTML element is "submit" which is often not
+    // the desired behavior and may lead to unexpected page reloads. This rules enforces an explicit
+    // type attribute for all the button elements and checks that its value is valid per spec
+    // (button, submit, reset).
+    'react/button-has-type': 'warn',
+
     // Enforce boolean attributes notation in JSX
     // In JSX when using a boolean attribute you can set the attribute value to true or omit the
     // value. This rule will enforce one or the other to keep consistency in your code.
@@ -111,6 +118,12 @@ module.exports = {
     // results in in unnecessary renders.
     'react/no-array-index-key': 'warn',
 
+    // Prevent using this.state within a this.setState
+    // This rule should prevent usage of this.state inside setState calls. Such usage of this.state
+    // might result in errors when two state calls are called in batch and thus referencing old
+    // state and not the current state.
+    'react/no-access-state-in-setstate': 'error',
+
     // Prevent usage of deprecated methods
     'react/no-deprecated': 'warn',
 
@@ -168,6 +181,13 @@ module.exports = {
     // by setting a property on the this object in the reference callback is preferred.
     'react/no-string-refs': 'error',
 
+    // Prevent this from being used in stateless functional components
+    // When using a stateless functional component (SFC), props/context aren't accessed in the same
+    // way as a class component or the create-react-class format. Both props and context are passed
+    // as separate arguments to the component instead. Also, as the name suggests, a stateless
+    // component does not have state on this.state.
+    'react/no-this-in-sfc': 'error',
+
     // Prevents common typos
     // This rule checks whether the declared static class properties and lifecycle methods related
     // to React components do not contain any typos.
@@ -179,6 +199,13 @@ module.exports = {
     // HTML.
     'react/no-unknown-property': 'error',
 
+
+    // Prevent usage of UNSAFE_ methods
+    // Certain legacy lifecycle methods are unsafe for use in async React applications and cause
+    // warnings in strict mode. These also happen to be the lifecycles that cause the most confusion
+    // within the React community.
+    'react/no-unsafe': 'error',
+
     // Prevent definitions of unused prop types
     // Warns you if you have defined a prop type but it is never being used anywhere.
     'react/no-unused-prop-types': ['error', {
@@ -188,7 +215,7 @@ module.exports = {
     }],
 
     // Prevent definition of unused state fields
-    'react/no-unused-state': ['warn'],
+    'react/no-unused-state': 'warn',
 
     // Enforce ES6 class for React Components
     'react/prefer-es6-class': ['error', 'always'],
@@ -215,7 +242,9 @@ module.exports = {
     // Enforce a `defaultProps` definition for every prop that is not a required prop
     // This rule aims to ensure that any non-required PropType declaration of a component has a
     // corresponding `defaultProps` value.
-    'react/require-default-props': 'error',
+    'react/require-default-props': ['error', {
+      forbidDefaultForRequired: true,
+    }],
 
     // Enforce ES5 or ES6 class for returning value in render function
     // When writing the render method in a component it is easy to forget to return the JSX content.
