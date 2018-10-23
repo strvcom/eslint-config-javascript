@@ -14,6 +14,12 @@ module.exports = {
   ],
 
   rules: {
+    // Enforces a particular annotation style of complex types
+    'flowtype/array-style-complex-type': ['warn', 'shorthand'],
+
+    // Enforces a particular annotation style of simple types
+    'flowtype/array-style-simple-type': ['warn', 'shorthand'],
+
     // Enforces a particular style for boolean type annotations.
     'flowtype/boolean-style': ['warn', 'boolean'],
 
@@ -26,6 +32,15 @@ module.exports = {
     // Enforces consistent use of trailing commas in Object and Tuple annotations.
     // This rule takes one argument which mirrors ESLint's default comma-dangle rule.
     'flowtype/delimiter-dangle': ['warn', 'always-multiline'],
+
+    // Enforces a particular style for type imports
+    'flowtype/type-import-style': ['warn', 'identifier'],
+
+    // This rule requires an empty line after the Flow annotation
+    'flowtype/newline-after-flow-annotation': 'warn',
+
+    // Require all type declarations to be at the top of the file, after any import declarations
+    'flowtype/require-types-at-top': 'warn',
 
     // Enforces consistent use of semicolons after type aliases.
     'flowtype/semi': ['warn', 'never'],

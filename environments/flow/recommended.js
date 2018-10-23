@@ -21,6 +21,15 @@ module.exports = {
     // Checks for duplicate properties in Object annotations.
     'flowtype/no-dupe-keys': 'error',
 
+    // Disallows use of the existential type (*)
+    // https://flow.org/en/docs/types/utilities/#toc-existential-type
+    'flowtype/no-existential-type': 'warn',
+
+    // Disallows $FlowFixMe comment suppressions
+    // This is especially useful as a warning to ensure instances of $FlowFixMe in your codebase get
+    // fixed over time.
+    'flowtype/no-flow-fix-me-comments': 'warn',
+
     // Disallows use of primitive constructors as types, such as Boolean, Number and String.
     'flowtype/no-primitive-constructor-types': 'error',
 
@@ -37,7 +46,13 @@ module.exports = {
 
     // Warns against weak type annotations any, Object and Function. These types can cause flow
     // to silently skip over portions of your code, which would have otherwise caused type errors.
-    'flowtype/no-weak-types': ['warn', { any: true }],
+    'flowtype/no-weak-types': ['warn', {
+      any: true,
+    }],
+
+    // This rule enforces exact object types
+    // https://flow.org/en/docs/types/objects/#toc-exact-object-types
+    'flowtype/require-exact-type': 'warn',
 
     // Requires that all function parameters have type annotations.
     'flowtype/require-parameter-type': 'error',
