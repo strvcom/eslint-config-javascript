@@ -180,6 +180,10 @@ module.exports = {
     // Unused, not sure about its benefits and probably too restrictive.
     'no-mutable-array': 0,
 
+    // Require to make a type alias for all union and intersection types
+    // Unused, too restrictive.
+    'flowtype/require-compound-type-alias': 0,
+
     // Enforces sorting of Object annotations.
     // This rule mirrors ESlint's sort-keys rule.
     'flowtype/sort-keys': 0,

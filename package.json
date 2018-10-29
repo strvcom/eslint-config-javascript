@@ -15,7 +15,7 @@
     "Vladimir Vanek <vladimir.vanek@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-flowtype": "^3.0.0",
+    "eslint-plugin-flowtype": "^3.1.4",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-mocha": "^5.2.0",
