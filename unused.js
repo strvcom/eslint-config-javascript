@@ -251,5 +251,41 @@ module.exports = {
     // Disallow the use of type aliases
     // Unused, type aliases seem useful.
     'typescript/no-type-alias': 0,
+
+    // Disallow import declarations which import extraneous modules
+    // Unused, already implemented using eslint-plugin-import
+    'node/no-extraneous-import': 0,
+
+    // Disallow require declarations which require extraneous modules
+    // Unused, already implemented using eslint-plugin-import
+    'node/no-extraneous-require': 0,
+
+    // Disallow import, export and require declarations for files that don't exist
+    // Unused, already implemented using eslint-plugin-import
+    'node/no-missing-import': 0,
+    'node/no-missing-require': 0,
+
+    // disallow 'bin' files that npm ignores
+    // Unused, not very useful and the rule does not work well with compiled files (JSX, Babel etc.)
+    'node/no-unpublished-bin': 0,
+
+    // Disallow import/require declarations which import unpublished files/modules
+    // Unused, already implemented using eslint-plugin-import
+    'node/no-unpublished-import': 0,
+    'node/no-unpublished-require': 0,
+
+    // enforce either module.exports or exports
+    // Unused, implemented in eslint-plugin-import/group-exports
+    'node/exports-style': 0,
+
+    // Prefer global variants of these core modules
+    // Unused, already being handled by `no-shadow` rule in combination with env: node: true
+    'node/prefer-global/buffer': 0,
+    'node/prefer-global/console': 0,
+    'node/prefer-global/process': 0,
+    'node/prefer-global/text-decoder': 0,
+    'node/prefer-global/text-encoder': 0,
+    'node/prefer-global/url-search-params': 0,
+    'node/prefer-global/url': 0,
   },
 }

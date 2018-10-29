@@ -23,6 +23,10 @@ module.exports = {
     node: true,
   },
 
+  plugins: [
+    'node',
+  ],
+
   rules: {
     // Enforce `require()` on the top-level module scope
     // It's arguably harder to identify dependencies when they are deeply nested inside of functions
@@ -67,6 +71,40 @@ module.exports = {
     'no-sync': ['warn', {
       allowAtRootLevel: true,
     }],
+
+    // Disallow unsupported ECMAScript features on the specified version
+    // This rule reports unsupported ECMAScript built-in variables on the configured Node.js version
+    // as lint errors. This rule reads the engines field of package.json to detect which Node.js
+    // versions your module is supporting.
+    'node/no-unsupported-features/es-builtins': 'error',
+
+    // Disallow unsupported ECMAScript syntax on the specified version
+    // This rule reports unsupported ECMAScript syntax on the configured Node.js version as lint
+    // errors. This rule reads the engines field of package.json to detect which Node.js versions
+    // your module is supporting.
+    'node/no-unsupported-features/es-syntax': 'error',
+
+    // Disallow unsupported Node.js built-in APIs on the specified version
+    // This rule reports unsupported Node.js built-in APIs on the configured Node.js version as lint
+    // errors. This rule reads the engines field of package.json to detect which Node.js versions
+    // your module is supporting.
+    'node/no-unsupported-features/node-builtins': 'error',
+
+    // Treat process.exit() the same code path as throw
+    // If you turn this rule on, ESLint comes to address process.exit() as throw in code path
+    // analysis.
+    'node/process-exit-as-throw': 'error',
+
+    // Suggest correct usage of shebang
+    // This rule checks bin field of package.json, then if a target file matches one of bin files,
+    // it checks whether or not there is a correct shebang. Otherwise it checks whether or not there
+    // is not a shebang.
+    'node/shebang': 'warn',
+
+    // Disallow deprecated API
+    // Node has many deprecated API. The community is going to remove those API from Node in future,
+    // so we should not use those.
+    'node/no-deprecated-api': 'warn',
   },
 
   overrides: [{

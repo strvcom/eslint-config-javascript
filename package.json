@@ -19,6 +19,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-react": "^7.11.1"
   },
   "devDependencies": {
