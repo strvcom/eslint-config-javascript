@@ -168,9 +168,6 @@ module.exports = {
     // Forbid certain props on Components
     'react/forbid-component-props': 0,
 
-    // Forbid certain props on DOM Nodes
-    'react/forbid-dom-props': 0,
-
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0,
 
