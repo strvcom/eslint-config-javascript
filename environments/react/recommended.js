@@ -262,5 +262,10 @@ module.exports = {
     // Invariant Violation: img is a void element tag and must neither have children nor use
     // dangerouslySetInnerHTML
     'react/void-dom-elements-no-children': 'error',
+
+    // Forbid certain props on DOM Nodes
+    // This rule checks all JSX elements and verifies that no forbidden props are used on DOM Nodes.
+    // This rule only applies to DOM Nodes (e.g. <div />) and not Components (e.g. <Component />).
+    'react/forbid-dom-props': ['error', { forbid: ['style', 'id'] }],
   },
 }
