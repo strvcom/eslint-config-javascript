@@ -15,7 +15,6 @@
     "Vladimir Vanek <vladimir.vanek@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-flowtype": "^3.1.4",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-mocha": "^5.2.0",
@@ -26,6 +25,7 @@
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
     "eslint": "^5.8.0",
+    "eslint-plugin-flowtype": "^3.2.0",
     "remark-cli": "^6.0.0",
     "remark-preset-lint-consistent": "^2.0.2",
     "remark-preset-lint-markdown-style-guide": "^2.1.2",
