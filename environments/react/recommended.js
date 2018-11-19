@@ -266,6 +266,9 @@ module.exports = {
     // Forbid certain props on DOM Nodes
     // This rule checks all JSX elements and verifies that no forbidden props are used on DOM Nodes.
     // This rule only applies to DOM Nodes (e.g. <div />) and not Components (e.g. <Component />).
-    'react/forbid-dom-props': ['error', { forbid: ['style', 'id'] }],
+    // @TODO(semver-major): Change to error
+    'react/forbid-dom-props': ['warn', {
+      forbid: ['style', 'id'],
+    }],
   },
 }
