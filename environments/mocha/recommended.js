@@ -24,6 +24,12 @@ module.exports = {
     },
 
     rules: {
+      // Set Maximum Depth of Nested Callbacks
+      // This rule is aimed at increasing code clarity by discouraging deeply nesting callbacks.
+      // Allow some extra nesting for Mocha tests, due to Mocha's test coding patterns encouraging
+      // some extra callback nesting.
+      'max-nested-callbacks': ['warn', 6],
+
       // Enforces handling of callbacks for async tests
       // Mocha allows you to write asynchronous tests by adding a done callback to the parameters of
       // your test function. It is easy to forget calling this callback after the asynchronous
