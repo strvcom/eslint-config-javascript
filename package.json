@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-javascript",
   "description": "Write bulletproof JavaScript like a pro! 😎",
-  "version": "9.1.0",
+  "version": "9.1.1",
   "author": "Robert Rossmann <robert.rossmann@strv.com>",
   "bugs": {
     "url": "https://github.com/strvcom/eslint-config-javascript/issues"
