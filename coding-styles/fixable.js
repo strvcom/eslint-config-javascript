@@ -420,7 +420,10 @@ module.exports = {
 
     // Require or disallow a whitespace beginning a comment
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
-    'spaced-comment': 'warn',
+    'spaced-comment': ['warn', 'always', {
+      // Allow TypeScript's `/// <reference />` stanzas
+      markers: ['/'],
+    }],
 
     // Enforce spacing around colons of switch statements
     // This rule controls spacing around colons of case and default clauses in switch statements.
