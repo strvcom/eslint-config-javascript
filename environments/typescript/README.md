@@ -11,7 +11,7 @@ These configuration files are suitable to lint TypeScript code.
 You must install an ESLint-compatible TypeScript parser and add it to your _.eslintrc.js_ file:
 
 ```sh
-npm i -D typescript-eslint-parser@latest
+npm i -D @typescript-eslint/parser@latest
 ```
 
 In addition to using this ruleset, you should also choose one base ruleset depending on your target platform:
@@ -26,7 +26,8 @@ A full configuration for a TypeScript on Node.js project:
 'use strict'
 
 module.exports = {
-  parser: 'typescript-eslint-parser',
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
 
   extends: [
     '@strv/javascript/environments/nodejs/v10',
