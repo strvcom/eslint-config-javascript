@@ -1,6 +1,10 @@
 # JavaScript Coding Standards
 
-> Write bulletproof JavaScript like a pro! 😎
+> **DEPRECATED:** This project has been deprecated in favour of a more granular variant hosted over at [@strvcom/code-quality-tools](https://github.com/strvcom/code-quality-tools).
+>
+> See [migrating.md](migrating.md) for help in moving over to the new ESLint-specific rulesets.
+
+---
 
 [![Build Status][travis-badge]][travis-url]
 ![ESLint version][eslint-version]
